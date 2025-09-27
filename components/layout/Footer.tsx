@@ -37,16 +37,16 @@ const Footer = () => {
   return (
     <footer className="bg-accent-100 dark:bg-accent-900 pt-12 pb-6 text-sm">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo & Description */}
-          <div className="space-y-4 flex flex-col justify-start">
+          <div className="space-y-4">
             <Link href="/" className="inline-block">
-              <div className="relative h-20 w-[220px] mb-1">
+              <div className="relative h-16 w-[180px] mb-1">
                 <Image 
                   src="https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfw7IOvbpN0J62eowUxLNWCEqFd8DsRkfZznI4u" 
                   alt="SMfit Logo" 
                   fill
-                  sizes="220px"
+                  sizes="180px"
                   className="object-contain object-left"
                   style={{ backgroundColor: 'transparent' }}
                 />
@@ -69,7 +69,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="flex flex-col">
             <h3 className="text-lg font-medium mb-4">{t('footer.quickLinks')}</h3>
             <ul className="space-y-3">
               {NAV_LINKS.map((link) => (
@@ -83,7 +83,7 @@ const Footer = () => {
           </div>
 
           {/* Legal & Policies */}
-          <div>
+          <div className="flex flex-col">
             <h3 className="text-lg font-medium mb-4">{t('footer.legalPolicies')}</h3>
             <ul className="space-y-3">
               <li>
@@ -98,32 +98,45 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+
           {/* Contact Info */}
-          <div>
+          <div className="flex flex-col">
             <h3 className="text-lg font-medium mb-4">{t('footer.contact')}</h3>
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
-                <Mail className="h-5 w-5 text-primary-600 shrink-0" />
-                <span className="text-sm text-muted-foreground hover:text-primary-600 transition">
-                  {CONTACT_INFO.email}
-                </span>
+                <div className="h-8 w-8 rounded-full bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center shrink-0">
+                  <Mail className="h-4 w-4 text-primary-600" />
+                </div>
+                <div>
+                  <span className="text-sm text-muted-foreground hover:text-primary-600 transition">
+                    {CONTACT_INFO.email}
+                  </span>
+                </div>
               </li>
               <li className="flex items-start space-x-3">
-                <Phone className="h-5 w-5 text-primary-600 shrink-0" />
-                <span className="text-sm text-muted-foreground hover:text-primary-600 transition">
-                  {CONTACT_INFO.phone}
-                </span>
+                <div className="h-8 w-8 rounded-full bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center shrink-0">
+                  <Phone className="h-4 w-4 text-primary-600" />
+                </div>
+                <div>
+                  <span className="text-sm text-muted-foreground hover:text-primary-600 transition">
+                    {CONTACT_INFO.phone}
+                  </span>
+                </div>
               </li>
               <li className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-primary-600 shrink-0" />
-                <a 
-                  href="https://www.google.com/maps/place/18+Gym+Auchan+Tudor-Targu+Mures/@46.5309835,24.5979599,17z/data=!3m1!4b1!4m6!3m5!1s0x474bb7b43baa946d:0xd452015a86f12cd7!8m2!3d46.5309835!4d24.5979599!16s%2Fg%2F11y3kdp8qy?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-muted-foreground hover:text-primary-600 transition"
-                >
-                  {CONTACT_INFO.address}
-                </a>
+                <div className="h-8 w-8 rounded-full bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center shrink-0">
+                  <MapPin className="h-4 w-4 text-primary-600" />
+                </div>
+                <div>
+                  <a 
+                    href="https://www.google.com/maps/place/18+Gym+Auchan+Tudor-Targu+Mures/@46.5309835,24.5979599,17z/data=!3m1!4b1!4m6!3m5!1s0x474bb7b43baa946d:0xd452015a86f12cd7!8m2!3d46.5309835!4d24.5979599!16s%2Fg%2F11y3kdp8qy?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-muted-foreground hover:text-primary-600 transition"
+                  >
+                    {CONTACT_INFO.address}
+                  </a>
+                </div>
               </li>
             </ul>
           </div>

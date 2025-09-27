@@ -110,7 +110,7 @@ export default function TermeniSiConditiiPage() {
               Termeni și <span className="text-primary-600">Condiții</span>
             </h1>
             <p className="text-lg text-muted-foreground mb-2">
-              {t('pages:terms.hero.subtitle')}
+              Regulile care guvernează utilizarea site-ului nostru web.
             </p>
             <p className="text-sm text-muted-foreground">
               Ultima actualizare: {lastUpdatedDate}

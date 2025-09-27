@@ -144,7 +144,7 @@ export default function PoliticaCookiePage() {
               Politica de <span className="text-primary-600">Cookie-uri</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              {t('pages:cookie.hero.subtitle')}
+              Informații detaliate despre utilizarea cookie-urilor pe site-ul nostru.
             </p>
           </div>
         </div>
