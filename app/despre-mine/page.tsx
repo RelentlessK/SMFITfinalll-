@@ -123,7 +123,7 @@ export default function DespreMine() {
             {/* Partners Section */}
             <section id="partners" className="py-12 px-6 lg:px-12 mb-12">
               <h2 className="text-3xl font-bold mb-6 text-center">Partenerii Mei</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 <Link 
                   href="https://18gym.ro" 
                   target="_blank" 
@@ -188,6 +188,25 @@ export default function DespreMine() {
                   </div>
                 </Link>
               </div>
+                <Link 
+                  href="https://cocosolis.com/ro/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block h-full"
+                >
+                  <div className="bg-gradient-to-br from-[#f7cfd8]/50 to-[#ffe3e8]/50 hover:from-[#f7cfd8]/60 hover:to-[#ffe3e8]/60 border border-primary-200 rounded-lg shadow-sm p-6 h-full flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-md">
+                    <h4 className="text-lg font-semibold mb-2 text-center">Cocosolis</h4>
+                    <p className="text-sm text-muted-foreground mb-4 text-center">
+                      Cocosolis oferă uleiuri naturale pentru îngrijirea pielii și bronzare. Produsele hidratează, regenerează și sprijină recuperarea pielii după antrenamente, menținând-o sănătoasă.
+                    </p>
+                    <p className="text-sm font-medium text-primary-600 mb-2 text-center">Cod promoțional: <strong>affsabina</strong></p>
+                    <div className="mt-auto text-center">
+                      <button className="inline-block bg-primary-500 text-white rounded-full py-2 px-4 hover:bg-primary-600 transition" aria-label="Vezi Cocosolis">
+                        Vezi Cocosolis
+                      </button>
+                    </div>
+                  </div>
+                </Link>
             </section>
 
             <div className="text-center">
