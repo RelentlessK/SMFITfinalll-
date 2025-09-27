@@ -24,14 +24,14 @@ export default function TermeniSiConditiiPage() {
       content: (
         <>
           <p className="text-muted-foreground mb-4">
-            Prin accesarea și utilizarea acestui site web, sunteți de acord să respectați și să fiți legat de termenii și condițiile prezentului acord. Dacă nu sunteți de acord cu aceste prevederi, vă rugăm să nu utilizați serviciile noastre.
+            Prin accesarea și utilizarea acestui site web, acceptați și sunteți de acord să fiți legat de termenii și prevederile acestui acord. Dacă nu sunteți de acord să respectați cele de mai sus, vă rugăm să nu utilizați acest serviciu.
           </p>
         </>
       ),
     },
     {
       id: 'utilizarea-site-ului',
-      title: 'Utilizarea Site-ului Web',
+      title: 'Utilizarea Site-ului',
       label: 'Reguli',
       content: (
         <>
@@ -39,7 +39,7 @@ export default function TermeniSiConditiiPage() {
             Acest site web este destinat utilizării în scopuri informaționale și de afaceri legitime. Nu aveți voie să utilizați site-ul pentru activități ilegale sau neautorizate.
           </p>
           <p className="text-muted-foreground mb-4">
-            Toate informațiile prezentate pe acest site web sunt furnizate cu bună-credință și doar în scopuri generale de informare. Nu oferim garanții cu privire la acuratețea, fiabilitatea sau caracterul complet al acestor informații.
+            Toate informațiile prezentate pe acest site web sunt furnizate cu bună credință și doar în scopuri generale de informare. Nu oferim garanții cu privire la acuratețea, fiabilitatea sau caracterul complet al acestor informații.
           </p>
         </>
       ),
@@ -67,12 +67,12 @@ export default function TermeniSiConditiiPage() {
             <div>
               <h3 className="text-lg font-semibold text-primary-600 mb-2">Notă Legală Importantă</h3>
               <p className="text-muted-foreground text-sm">
-                SMfit nu va fi răspunzător pentru niciun fel de daune directe, indirecte, incidentale sau consecvențiale rezultate din utilizarea sau incapacitatea de a utiliza acest site web. Aceasta include, dar nu se limitează la, pierderi de profit, date sau alte bunuri intangibile.
+                SMfit nu va fi răspunzător pentru orice daune directe, indirecte, incidentale sau consecutive rezultate din utilizarea sau incapacitatea de a utiliza acest site web. Aceasta include, dar nu se limitează la, pierderea profiturilor, datelor sau altor bunuri intangibile.
               </p>
             </div>
           </div>
           <p className="text-muted-foreground mb-4">
-            Utilizarea serviciilor și informațiilor de pe acest site se face pe propriul risc. Vă recomandăm să consultați un specialist înainte de a lua decizii bazate pe informațiile prezentate aici.
+            Utilizarea serviciilor și informațiilor de pe acest site se face pe propriul risc. Recomandăm consultarea unui specialist înainte de a lua decizii bazate pe informațiile prezentate aici.
           </p>
         </>
       ),
@@ -93,7 +93,7 @@ export default function TermeniSiConditiiPage() {
             </a>
           </div>
           <p className="text-muted-foreground text-sm">
-            Vă vom răspunde în cel mai scurt timp posibil.
+            Vă vom răspunde la întrebare în cel mai scurt timp posibil.
           </p>
         </>
       ),
