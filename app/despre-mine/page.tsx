@@ -1,21 +1,15 @@
+"use client";
+
+import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
-import { Metadata } from 'next';
 import PhotoCarousel from '@/components/shared/PhotoCarousel';
 
-export const metadata: Metadata = {
-  title: 'Despre Mine | SMfit',
-  description: 'Află mai multe despre Ștefan Mircea, fondatorul SMfit, expertiza și filozofia sa despre fitness și nutriție personalizată.',
-  openGraph: {
-    title: 'Despre Mine | SMfit',
-    description: 'Află mai multe despre Ștefan Mircea, fondatorul SMfit, expertiza și filozofia sa despre fitness și nutriție.',
-    url: 'https://smfit.ro/despre-mine',
-  },
-};
-
 export default function DespreMine() {
+  const { t } = useTranslation(['common', 'pages']);
+
   return (
     <div className="mt-24">
       {/* Hero Section */}
@@ -23,10 +17,10 @@ export default function DespreMine() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Despre <span className="text-primary-600">Mine</span>
+              {t('common:about.title')} <span className="text-primary-600">{t('common:about.titleName')}</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              Pasiunea mea este să ajut oamenii să își atingă potențialul maxim prin fitness și nutriție personalizată.
+              {t('common:about.subtitle')}
             </p>
           </div>
         </div>
@@ -37,62 +31,57 @@ export default function DespreMine() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-20">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Cine Sunt Eu</h2>
+              <h2 className="text-3xl font-bold mb-6">{t('common:about.whoAmI')}</h2>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                Salut!
-                Sunt Sabina Meruță, fondatoarea SMfit și antrenoare personală certificată internațional, cu peste 2 ani de experiență în fitness și nutriție.
+                {t('common:about.greeting')} {t('pages:about.mainContent.intro1')}
               </p>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                Pasiunea mea pentru mișcare și artă s-a conturat încă din adolescență, când am obținut diploma de Coregraf și Dansator Profesionist, iar mai târziu am descoperit efectele transformatoare ale antrenamentelor în sala de sport. M-a uimit cum exercițiile regulate, combinate cu o alimentație corectă, pot revitaliza corpul și pot crește semnificativ nivelul de energie.
+                {t('pages:about.mainContent.intro2')}
               </p>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                În prezent, sunt studentă la Facultatea de Farmacie – specializarea Nutriție și Dietetică, din cadrul Universității de Medicină, Farmacie, Științe și Tehnologie „George Emil Palade" din Târgu Mureș, și dețin numeroase cursuri internaționale acreditate în fitness și alimentație sănătoasă.
+                {t('pages:about.mainContent.intro3')}
               </p>
               <p className="text-muted-foreground mb-8 leading-relaxed pt-4">
-                Cu fiecare program personalizat, combin experiența practică, știința nutriției și creativitatea coregrafică pentru a te ajuta să-ți atingi obiectivele!
+                {t('pages:about.mainContent.intro4')}
               </p>
             </div>
             <div className="relative h-auto flex justify-center rounded-lg overflow-hidden">
               <img
                 src="https://zbm5woa3iy.ufs.sh/f/1fxqa6mYldrz1fnyBrRYldrzIivN7xYcX6jQtJ8ybZFBS9Hn"
-                alt="Ștefan Mircea - Fondator SMfit"
+                alt={t('common:about.trainerImageAlt')}
                 className="rounded-lg max-w-full h-auto max-h-[600px] object-contain"
               />
             </div>
           </div>
 
           <div className="max-w-4xl mx-auto mb-20">
-            <h2 className="text-3xl font-bold mb-6 text-center">Filosofia Mea</h2>
+            <h2 className="text-3xl font-bold mb-6 text-center">{t('common:about.philosophy')}</h2>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Filosofia mea se bazează pe câteva principii fundamentale:
+              {t('common:about.philosophyIntro')}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-card border border-primary-200 dark:border-primary-900/30 p-6 rounded-lg shadow-md transition-all duration-300 hover:transform hover:scale-105 hover:border-primary-400 dark:hover:border-primary-700 hover:shadow-lg">
-                <h3 className="text-xl font-bold mb-2">Personalizare</h3>
+                <h3 className="text-xl font-bold mb-2">{t('common:about.principles.personalization.title')}</h3>
                 <p className="text-muted-foreground">
-                  Fiecare persoană este unică, cu nevoi, limitări și obiective diferite. De aceea, toate programele mele sunt 
-                  personalizate 100% pentru fiecare client în parte.
+                  {t('common:about.principles.personalization.description')}
                 </p>
               </div>
               <div className="bg-card border border-primary-200 dark:border-primary-900/30 p-6 rounded-lg shadow-md transition-all duration-300 hover:transform hover:scale-105 hover:border-primary-400 dark:hover:border-primary-700 hover:shadow-lg">
-                <h3 className="text-xl font-bold mb-2">Abordare Științifică</h3>
+                <h3 className="text-xl font-bold mb-2">{t('common:about.principles.scientific.title')}</h3>
                 <p className="text-muted-foreground">
-                  Mă bazez pe cercetări științifice actuale și metode dovedite, nu pe tendințe trecătoare sau "soluții miraculoase". 
-                  Eficiența și siguranța sunt prioritare.
+                  {t('common:about.principles.scientific.description')}
                 </p>
               </div>
               <div className="bg-card border border-primary-200 dark:border-primary-900/30 p-6 rounded-lg shadow-md transition-all duration-300 hover:transform hover:scale-105 hover:border-primary-400 dark:hover:border-primary-700 hover:shadow-lg">
-                <h3 className="text-xl font-bold mb-2">Sustenabilitate</h3>
+                <h3 className="text-xl font-bold mb-2">{t('common:about.principles.sustainability.title')}</h3>
                 <p className="text-muted-foreground">
-                  Cred în schimbări sustenabile, nu în soluții temporare. Scopul meu este să te ajut să dezvolți obiceiuri sănătoase 
-                  pe termen lung, nu doar să obții rezultate rapide care nu durează.
+                  {t('common:about.principles.sustainability.description')}
                 </p>
               </div>
               <div className="bg-card border border-primary-200 dark:border-primary-900/30 p-6 rounded-lg shadow-md transition-all duration-300 hover:transform hover:scale-105 hover:border-primary-400 dark:hover:border-primary-700 hover:shadow-lg">
-                <h3 className="text-xl font-bold mb-2">Educație</h3>
+                <h3 className="text-xl font-bold mb-2">{t('common:about.principles.education.title')}</h3>
                 <p className="text-muted-foreground">
-                  Dincolo de antrenamente și planuri nutriționale, îmi propun să te educ despre corpul tău și să te ajut să înțelegi 
-                  de ce facem anumite exerciții sau alegeri alimentare.
+                  {t('common:about.principles.education.description')}
                 </p>
               </div>
             </div>
@@ -102,27 +91,29 @@ export default function DespreMine() {
           <PhotoCarousel />
 
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6 text-center">Certificări și Educație</h2>
+            <h2 className="text-3xl font-bold mb-6 text-center">{t('pages:about.certifications.title')}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
               <div className="bg-card border border-primary-200 dark:border-primary-900/30 p-6 rounded-lg shadow-md transition-all duration-300 hover:transform hover:scale-105 hover:border-primary-400 dark:hover:border-primary-700 hover:shadow-lg">
-                <h3 className="text-xl font-bold mb-2">Educație Formală</h3>
+                <h3 className="text-xl font-bold mb-2">{t('pages:about.certifications.formal.title')}</h3>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                  <li>Absolventă a Colegiului Național "Unirea"</li>
-                  <li>Studentă la UMFST, Nutriție și Dietetică</li>
+                  {(t('pages:about.certifications.formal.items', { returnObjects: true }) as string[]).map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
                 </ul>
               </div>
               <div className="bg-card border border-primary-200 dark:border-primary-900/30 p-6 rounded-lg shadow-md transition-all duration-300 hover:transform hover:scale-105 hover:border-primary-400 dark:hover:border-primary-700 hover:shadow-lg">
-                <h3 className="text-xl font-bold mb-2">Certificări Internaționale</h3>
+                <h3 className="text-xl font-bold mb-2">{t('pages:about.certifications.international.title')}</h3>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                  <li>Coregraf și Dansator Profesionist</li>
-                  <li>Instructor de Fitness Certificat Level 2 și 4, <span className="ml-4">Antrenor de grup</span></li>
+                  {(t('pages:about.certifications.international.items', { returnObjects: true }) as string[]).map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
                 </ul>
               </div>
             </div>
 
             {/* Partners Section */}
             <section id="partners" className="py-12 px-6 lg:px-12 mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-center">Partenerii Mei</h2>
+              <h2 className="text-3xl font-bold mb-6 text-center">{t('pages:about.partners.title')}</h2>
               <div className="flex flex-col gap-6 max-w-4xl mx-auto">
                 <Link 
                   href="https://18gym.ro" 
@@ -133,12 +124,12 @@ export default function DespreMine() {
                   <div className="bg-gradient-to-br from-[#f7cfd8]/50 to-[#ffe3e8]/50 hover:from-[#f7cfd8]/60 hover:to-[#ffe3e8]/60 border border-primary-200 rounded-lg shadow-sm p-6 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-md">
                     <h4 className="text-xl font-semibold mb-3 text-center">18GYM</h4>
                     <p className="text-muted-foreground mb-4 text-center">
-                      18GYM este lanțul premium de săli de fitness unde Sabina oferă sesiuni personalizate, asigurând rezultate rapide și o experiență de antrenament de top.
+                      {t('pages:about.partners.18gym.description')}
                     </p>
-                    <p className="text-sm font-medium text-primary-600 mb-4 text-center">Cod promoțional: <strong>29SABINAM</strong></p>
+                    <p className="text-sm font-medium text-primary-600 mb-4 text-center">{t('pages:about.partners.18gym.promoCode')}</p>
                     <div className="text-center">
-                      <button className="inline-block bg-primary-500 text-white rounded-full py-2 px-4 hover:bg-primary-600 transition" aria-label="Vezi oferta 18GYM">
-                        Vezi oferta 18GYM
+                      <button className="inline-block bg-primary-500 text-white rounded-full py-2 px-4 hover:bg-primary-600 transition" aria-label={t('pages:about.partners.18gym.button')}>
+                        {t('pages:about.partners.18gym.button')}
                       </button>
                     </div>
                   </div>
@@ -153,12 +144,12 @@ export default function DespreMine() {
                   <div className="bg-gradient-to-br from-[#f7cfd8]/50 to-[#ffe3e8]/50 hover:from-[#f7cfd8]/60 hover:to-[#ffe3e8]/60 border border-primary-200 rounded-lg shadow-sm p-6 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-md">
                     <h4 className="text-xl font-semibold mb-3 text-center">Scitec Nutrition</h4>
                     <p className="text-muted-foreground mb-4 text-center">
-                      Scitec Nutrition furnizează suplimente și echipament sportiv de calitate superioară, optimizate pentru performanță și recuperare eficientă.
+                      {t('pages:about.partners.scitec.description')}
                     </p>
-                    <p className="text-sm font-medium text-primary-600 mb-4 text-center">Cod promoțional: <strong>SABINAM10</strong></p>
+                    <p className="text-sm font-medium text-primary-600 mb-4 text-center">{t('pages:about.partners.scitec.promoCode')}</p>
                     <div className="text-center">
-                      <button className="inline-block bg-primary-500 text-white rounded-full py-2 px-4 hover:bg-primary-600 transition" aria-label="Descoperă Scitec">
-                        Descoperă Scitec
+                      <button className="inline-block bg-primary-500 text-white rounded-full py-2 px-4 hover:bg-primary-600 transition" aria-label={t('pages:about.partners.scitec.button')}>
+                        {t('pages:about.partners.scitec.button')}
                       </button>
                     </div>
                   </div>
@@ -173,15 +164,14 @@ export default function DespreMine() {
                   <div className="bg-gradient-to-br from-[#f7cfd8]/50 to-[#ffe3e8]/50 hover:from-[#f7cfd8]/60 hover:to-[#ffe3e8]/60 border border-primary-200 rounded-lg shadow-sm p-6 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-md">
                     <h4 className="text-xl font-semibold mb-3 text-center">GymHyper</h4>
                     <p className="text-muted-foreground mb-4 text-center">
-                      GymHyper propune îmbrăcăminte și accesorii tehnice inovatoare, concepute pentru confort și susținerea oricărui tip de antrenament.
+                      {t('pages:about.partners.gymhyper.description')}
                     </p>
                     <div className="text-center mb-4">
-                      <p className="text-sm font-medium text-primary-600">Cod promoțional:</p>
-                      <p className="text-sm font-medium text-primary-600"><strong>SABINA</strong></p>
+                      <p className="text-sm font-medium text-primary-600">{t('pages:about.partners.gymhyper.promoCode')}</p>
                     </div>
                     <div className="text-center">
-                      <button className="inline-block bg-primary-500 text-white rounded-full py-2 px-4 hover:bg-primary-600 transition" aria-label="Vizitează GymHyper">
-                        Vizitează GymHyper
+                      <button className="inline-block bg-primary-500 text-white rounded-full py-2 px-4 hover:bg-primary-600 transition" aria-label={t('pages:about.partners.gymhyper.button')}>
+                        {t('pages:about.partners.gymhyper.button')}
                       </button>
                     </div>
                   </div>
@@ -196,12 +186,12 @@ export default function DespreMine() {
                   <div className="bg-gradient-to-br from-[#f7cfd8]/50 to-[#ffe3e8]/50 hover:from-[#f7cfd8]/60 hover:to-[#ffe3e8]/60 border border-primary-200 rounded-lg shadow-sm p-6 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-md">
                     <h4 className="text-xl font-semibold mb-3 text-center">Cocosolis</h4>
                     <p className="text-muted-foreground mb-4 text-center">
-                      Cocosolis oferă uleiuri naturale pentru îngrijirea pielii și bronzare. Produsele hidratează, regenerează și sprijină recuperarea pielii după antrenamente, menținând-o sănătoasă.
+                      {t('pages:about.partners.cocosolis.description')}
                     </p>
-                    <p className="text-sm font-medium text-primary-600 mb-4 text-center">Cod promoțional: <strong>affsabina</strong></p>
+                    <p className="text-sm font-medium text-primary-600 mb-4 text-center">{t('pages:about.partners.cocosolis.promoCode')}</p>
                     <div className="text-center">
-                      <button className="inline-block bg-primary-500 text-white rounded-full py-2 px-4 hover:bg-primary-600 transition" aria-label="Vezi Cocosolis">
-                        Vezi Cocosolis
+                      <button className="inline-block bg-primary-500 text-white rounded-full py-2 px-4 hover:bg-primary-600 transition" aria-label={t('pages:about.partners.cocosolis.button')}>
+                        {t('pages:about.partners.cocosolis.button')}
                       </button>
                     </div>
                   </div>
@@ -212,7 +202,7 @@ export default function DespreMine() {
             <div className="text-center">
               <Button asChild size="lg" className="bg-primary-500 hover:bg-primary-600 text-white">
                 <Link href="/contact" className="flex items-center">
-                  Fă primul pas spre transformare
+                  {t('pages:about.cta')}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>

@@ -1,21 +1,56 @@
+import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
-import { SERVICES } from '@/lib/constants';
 import { Button } from '@/components/ui/button';
 import { Check } from 'lucide-react';
 import Link from 'next/link';
-import { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'Servicii | SMfit',
-  description: 'Descoperă serviciile personalizate de fitness și nutriție oferite de SMfit pentru a-ți atinge obiectivele de sănătate și formă fizică.',
-  openGraph: {
-    title: 'Servicii | SMfit',
-    description: 'Descoperă serviciile personalizate de fitness și nutriție oferite de SMfit.',
-    url: 'https://smfit.ro/servicii',
-  },
+"use client";
+
+const iconMap = {
+  Dumbbell,
+  Apple, 
+  Laptop,
+  BarChart,
 };
 
 export default function ServiciiPage() {
+  const { t } = useTranslation(['common', 'pages']);
+
+  const SERVICES = [
+    {
+      id: 'antrenament-personal',
+      title: t('common:services.personal.title'),
+      description: t('common:services.personal.description'),
+      price: t('common:services.personal.price'),
+      icon: 'Dumbbell',
+      features: t('common:services.personal.features', { returnObjects: true }) as string[],
+    },
+    {
+      id: 'nutritie-personalizata', 
+      title: t('common:services.nutrition.title'),
+      description: t('common:services.nutrition.description'),
+      price: t('common:services.nutrition.price'),
+      icon: 'Apple',
+      features: t('common:services.nutrition.features', { returnObjects: true }) as string[],
+    },
+    {
+      id: 'antrenament-online',
+      title: t('common:services.online.title'),
+      description: t('common:services.online.description'),
+      price: t('common:services.online.price'),
+      icon: 'Laptop',
+      features: t('common:services.online.features', { returnObjects: true }) as string[],
+    },
+    {
+      id: 'program-transformare',
+      title: t('common:services.transformation.title'),
+      description: t('common:services.transformation.description'),
+      price: t('common:services.transformation.price'),
+      icon: 'BarChart',
+      features: t('common:services.transformation.features', { returnObjects: true }) as string[],
+    },
+  ];
+
   return (
     <div className="mt-24">
       {/* Hero Section */}
@@ -23,11 +58,10 @@ export default function ServiciiPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Servicii <span className="text-primary-600">Personalizate</span>
+              {t('pages:services.hero.title')}
             </h1>
             <p className="text-lg text-muted-foreground">
-              Programele SMfit sunt create special pentru a se adapta nevoilor, obiectivelor și stilului tău de viață.
-              Explorează serviciile noastre și alege soluția perfectă pentru tine.
+              {t('pages:services.hero.subtitle')}
             </p>
           </div>
         </div>
@@ -110,15 +144,14 @@ export default function ServiciiPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Nu ești sigur ce ți se potrivește?
+              {t('pages:services.cta.title')}
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Programează o consultație gratuită pentru a discuta despre obiectivele tale și pentru a afla
-              care dintre serviciile noastre este cel mai bine adaptat nevoilor tale.
+              {t('pages:services.cta.subtitle')}
             </p>
             <Button asChild size="lg" className="bg-primary-500 hover:bg-primary-600 text-white">
               <Link href="/contact">
-                Fă primul pas spre transformare
+                {t('pages:services.cta.button')}
               </Link>
             </Button>
           </div>

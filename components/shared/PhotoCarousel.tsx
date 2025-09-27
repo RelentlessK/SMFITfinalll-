@@ -1,5 +1,8 @@
 "use client";
 
+"use client";
+
+import { useTranslation } from 'react-i18next';
 import { useState, useEffect, useCallback } from 'react';
 import AnimatedSection from '@/components/shared/AnimatedSection';
 import { cn } from '@/lib/utils';
@@ -39,6 +42,7 @@ const images = [
 ];
 
 const PhotoCarousel = () => {
+  const { t } = useTranslation('pages');
   const [isMounted, setIsMounted] = useState(false);
   const [index, setIndex] = useState(0);
   const [autoPlay, setAutoPlay] = useState(true);
@@ -73,7 +77,7 @@ const PhotoCarousel = () => {
   return (
     <AnimatedSection className="max-w-4xl mx-auto my-24">
       <h2 className="text-3xl font-bold mb-8 text-center">
-        Momente din <span className="text-primary-600">Activitatea Mea</span>
+        {t('about.photos.title')}
       </h2>
       
       <div className="relative mx-auto">

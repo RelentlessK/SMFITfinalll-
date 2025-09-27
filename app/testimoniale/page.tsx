@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslation } from 'react-i18next';
 import { testimonials } from '@/data/testimonials';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
@@ -9,6 +10,8 @@ import { motion } from 'framer-motion';
 import AnimatedSection from '@/components/shared/AnimatedSection';
 
 export default function TestimonialePage() {
+  const { t } = useTranslation(['common', 'pages']);
+
   return (
     <div className="mt-24">
       {/* Hero Section */}
@@ -16,10 +19,10 @@ export default function TestimonialePage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="text-primary-600">Testimoniale</span> Clienți
+              <span className="text-primary-600">{t('pages:testimonials.hero.title')}</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              Citește experiențele reale ale clienților care și-au transformat corpul și viața cu ajutorul programelor SMfit.
+              {t('pages:testimonials.hero.subtitle')}
             </p>
           </div>
         </div>
@@ -72,10 +75,10 @@ export default function TestimonialePage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Povești de <span className="text-primary-600">Succes</span>
+              {t('pages:testimonials.successStories.title')}
             </h2>
             <p className="text-lg text-muted-foreground">
-              Transformări reale ale clienților care au urmat programele SMfit și și-au schimbat viața.
+              {t('pages:testimonials.successStories.subtitle')}
             </p>
           </div>
           
@@ -93,28 +96,28 @@ export default function TestimonialePage() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Mădălina I.</h3>
-                  <p className="text-sm text-muted-foreground mb-4">Antrenamente Personale și Nutriție Personalizată - 1 lună</p>
+                  <h3 className="text-xl font-bold mb-2">{t('pages:testimonials.successStories.madalina.name')}</h3>
+                  <p className="text-sm text-muted-foreground mb-4">{t('pages:testimonials.successStories.madalina.program')}</p>
                   <div className="mb-4">
                     <div className="flex justify-between text-sm mb-1">
-                      <span>Greutate pierdută:</span>
+                      <span>{t('pages:testimonials.successStories.madalina.results.weightLost')}</span>
                       <span className="font-medium">3 kg</span>
                     </div>
                     <div className="flex justify-between text-sm mb-1">
-                      <span>Piept redus:</span>
+                      <span>{t('pages:testimonials.successStories.madalina.results.chestReduced')}</span>
                       <span className="font-medium">3 cm</span>
                     </div>
                     <div className="flex justify-between text-sm mb-1">
-                      <span>Talie redusă:</span>
+                      <span>{t('pages:testimonials.successStories.madalina.results.waistReduced')}</span>
                       <span className="font-medium">4 cm</span>
                     </div>
                     <div className="flex justify-between text-sm">
-                      <span>Șold redus:</span>
+                      <span>{t('pages:testimonials.successStories.madalina.results.hipsReduced')}</span>
                       <span className="font-medium">5 cm</span>
                     </div>
                   </div>
                   <p className="text-muted-foreground text-sm italic">
-                    "Disciplină, seriozitate și încredere îmbinate cu blândețe și calm – așa aș descrie sesiunile de antrenament ale Sabinei. Îți mulțumesc din suflet, Sabina! ❤️"
+                    "{t('pages:testimonials.successStories.madalina.quote')}"
                   </p>
                 </div>
               </div>
@@ -133,28 +136,28 @@ export default function TestimonialePage() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Carina C.</h3>
-                  <p className="text-sm text-muted-foreground mb-4">Antrenamente Online și Nutriție Personalizată - 8 săptămâni</p>
+                  <h3 className="text-xl font-bold mb-2">{t('pages:testimonials.successStories.carina.name')}</h3>
+                  <p className="text-sm text-muted-foreground mb-4">{t('pages:testimonials.successStories.carina.program')}</p>
                   <div className="mb-4">
                     <div className="flex justify-between text-sm mb-1">
-                      <span>Greutate pierdută:</span>
+                      <span>{t('pages:testimonials.successStories.carina.results.weightLost')}</span>
                       <span className="font-medium">6 kg</span>
                     </div>
                     <div className="flex justify-between text-sm mb-1">
-                      <span>Piept redus:</span>
+                      <span>{t('pages:testimonials.successStories.carina.results.chestReduced')}</span>
                       <span className="font-medium">7 cm</span>
                     </div>
                     <div className="flex justify-between text-sm mb-1">
-                      <span>Talie redusă:</span>
+                      <span>{t('pages:testimonials.successStories.carina.results.waistReduced')}</span>
                       <span className="font-medium">9 cm</span>
                     </div>
                     <div className="flex justify-between text-sm">
-                      <span>Șold redus:</span>
+                      <span>{t('pages:testimonials.successStories.carina.results.hipsReduced')}</span>
                       <span className="font-medium">12 cm</span>
                     </div>
                   </div>
                   <p className="text-muted-foreground text-sm italic">
-                    "Alegerea serviciilor Sabinei s-a dovedit a fi foarte utilă: susținerea ei psihică și programele de antrenament personalizate au adus progres zilnic. Planul alimentar echilibrat face stilul de viață sănătos plăcut și sustenabil."
+                    "{t('pages:testimonials.successStories.carina.quote')}"
                   </p>
                 </div>
               </div>
@@ -168,15 +171,14 @@ export default function TestimonialePage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Vrei să fii următoarea poveste de succes?
+              {t('common:testimonials.cta.title')}
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Programează o consultație gratuită pentru a discuta despre obiectivele tale și pentru a afla
-              cum te poate ajuta SMfit să le atingi.
+              {t('common:testimonials.cta.subtitle')}
             </p>
             <Button asChild size="lg" className="bg-primary-500 hover:bg-primary-600 text-white">
               <Link href="/contact">
-                Rezervă-ți prima sesiune gratuită
+                {t('common:testimonials.cta.button')}
               </Link>
             </Button>
           </div>
