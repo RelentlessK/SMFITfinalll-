@@ -120,7 +120,7 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              {t('common:contact.title')}<span className="text-primary-600">{t('common:contact.titleAccent')}</span>
+              {t('common:contact.title')} <span className="text-primary-600">{t('common:contact.titleAccent')}</span>
             </h1>
             <p className="text-lg text-muted-foreground">
               {t('common:contact.subtitle')}
