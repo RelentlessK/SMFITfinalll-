@@ -59,7 +59,7 @@ export default function ServiciiPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              {t('pages:services.hero.title')}
+              {t('pages:services.hero.title')} <span className="text-primary-600">{t('pages:services.hero.titleAccent')}</span>
             </h1>
             <p className="text-lg text-muted-foreground">
               {t('pages:services.hero.subtitle')}
@@ -145,7 +145,7 @@ export default function ServiciiPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              {t('pages:services.cta.title')}
+              {t('pages:services.cta.title')} <span className="text-primary-600">{t('pages:services.cta.titleAccent')}</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
               {t('pages:services.cta.subtitle')}

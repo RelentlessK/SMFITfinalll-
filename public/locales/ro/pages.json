@@ -57,11 +57,13 @@
     "pageTitle": "Servicii | SMfit",
     "pageDescription": "Descoperă serviciile personalizate de fitness și nutriție oferite de SMfit pentru a-ți atinge obiectivele de sănătate și formă fizică.",
     "hero": {
-      "title": "Servicii Personalizate", 
+      "title": "Servicii",
+      "titleAccent": "Personalizate",
       "subtitle": "Programele SMfit sunt create special pentru a se adapta nevoilor, obiectivelor și stilului tău de viață. Explorează serviciile noastre și alege soluția perfectă pentru tine."
     },
     "cta": {
-      "title": "Nu ești sigur ce ți se potrivește?",
+      "title": "Nu ești sigur ce ți se",
+      "titleAccent": "potrivește?",
       "subtitle": "Programează o consultație gratuită pentru a discuta despre obiectivele tale și pentru a afla care dintre serviciile noastre este cel mai bine adaptat nevoilor tale.",
       "button": "Fă primul pas spre transformare"
     }
@@ -70,11 +72,13 @@
     "pageTitle": "Testimoniale | SMfit",
     "pageDescription": "Descoperă poveștile de succes și feedback-ul clienților SMfit care și-au transformat corpul și obiceiurile cu ajutorul programelor noastre.",
     "hero": {
-      "title": "Testimoniale Clienți",
+      "title": "Testimoniale",
+      "titleAccent": "Clienți",
       "subtitle": "Citește experiențele reale ale clienților care și-au transformat corpul și viața cu ajutorul programelor SMfit."
     },
     "successStories": {
-      "title": "Povești de Succes",
+      "title": "Povești de",
+      "titleAccent": "Succes",
       "subtitle": "Transformări reale ale clienților care au urmat programele SMfit și și-au schimbat viața.",
       "madalina": {
         "name": "Mădălina I.",

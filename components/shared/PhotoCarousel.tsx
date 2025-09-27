@@ -77,7 +77,7 @@ const PhotoCarousel = () => {
   return (
     <AnimatedSection className="max-w-4xl mx-auto my-24">
       <h2 className="text-3xl font-bold mb-8 text-center">
-        {t('about.photos.title')}
+        {t('about.photos.title').split(' ')[0]} <span className="text-primary-600">{t('about.photos.title').split(' ').slice(1).join(' ')}</span>
       </h2>
       
       <div className="relative mx-auto">

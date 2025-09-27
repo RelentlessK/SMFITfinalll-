@@ -55,7 +55,7 @@ export default function DespreMine() {
           </div>
 
           <div className="max-w-4xl mx-auto mb-20">
-            <h2 className="text-3xl font-bold mb-6 text-center">{t('common:about.philosophy')}</h2>
+            <h2 className="text-3xl font-bold mb-6 text-center">{t('common:about.philosophy').split(' ')[0]} <span className="text-primary-600">{t('common:about.philosophy').split(' ')[1]}</span></h2>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               {t('common:about.philosophyIntro')}
             </p>
@@ -91,7 +91,7 @@ export default function DespreMine() {
           <PhotoCarousel />
 
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6 text-center">{t('pages:about.certifications.title')}</h2>
+            <h2 className="text-3xl font-bold mb-6 text-center">{t('pages:about.certifications.title').split(' ')[0]} <span className="text-primary-600">{t('pages:about.certifications.title').split(' ').slice(1).join(' ')}</span></h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
               <div className="bg-card border border-primary-200 dark:border-primary-900/30 p-6 rounded-lg shadow-md transition-all duration-300 hover:transform hover:scale-105 hover:border-primary-400 dark:hover:border-primary-700 hover:shadow-lg">
                 <h3 className="text-xl font-bold mb-2">{t('pages:about.certifications.formal.title')}</h3>
@@ -113,7 +113,7 @@ export default function DespreMine() {
 
             {/* Partners Section */}
             <section id="partners" className="py-12 px-6 lg:px-12 mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-center">{t('pages:about.partners.title')}</h2>
+              <h2 className="text-3xl font-bold mb-6 text-center">{t('pages:about.partners.title').split(' ')[0]} <span className="text-primary-600">{t('pages:about.partners.title').split(' ')[1]}</span></h2>
               <div className="flex flex-col gap-6 max-w-4xl mx-auto">
                 <Link 
                   href="https://18gym.ro" 

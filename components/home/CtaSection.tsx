@@ -23,7 +23,7 @@ const CtaSection = () => {
               viewport={{ once: true }}
               className="text-3xl md:text-4xl font-bold mb-6"
             >
-              {t('cta.title')}
+              {t('cta.title')} <span className="text-primary-600">{t('cta.titleAccent')}</span> {t('cta.titleSuffix')}
             </motion.h2>
             
             <motion.p 

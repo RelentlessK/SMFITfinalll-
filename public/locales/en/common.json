@@ -12,7 +12,8 @@
     "subtitle": "Personalized workouts, real motivation — results you can see in weeks."
   },
   "services": {
-    "title": "Personalized Services",
+    "title": "Personalized",
+    "titleAccent": "Services",
     "subtitle": "Choose the service that best fits your fitness needs and goals.",
     "learnMore": "Learn More",
     "personal": {
@@ -102,7 +103,9 @@
     }
   },
   "testimonials": {
-    "title": "What Our Clients Say",
+    "title": "What Our",
+    "titleAccent": "Clients",
+    "titleSuffix": "Say",
     "subtitle": "Real results and experiences from people who have transformed their lives with SMfit.",
     "cta": {
       "title": "Want to be the next success story?",
@@ -111,11 +114,14 @@
     }
   },
   "faq": {
-    "title": "Frequently Asked Questions",
+    "title": "Frequently Asked",
+    "titleAccent": "Questions",
     "subtitle": "Answers to the most common questions about our workouts and programs."
   },
   "cta": {
-    "title": "Ready to transform your body?",
+    "title": "Ready to",
+    "titleAccent": "transform",
+    "titleSuffix": "your body?",
     "subtitle": "Schedule a free consultation now and start your journey to the best version of yourself!",
     "primaryButton": "Book your first free session",
     "secondaryButton": "Explore services"
@@ -127,7 +133,8 @@
     "copyright": "All rights reserved."
   },
   "contact": {
-    "title": "Contact Me",
+    "title": "Contact",
+    "titleAccent": "Me",
     "subtitle": "Have questions or ready to start? Fill out the form below or use the contact information to reach me directly.",
     "formTitle": "Let's get in touch!",
     "form": {

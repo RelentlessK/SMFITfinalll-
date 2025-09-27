@@ -57,11 +57,13 @@
     "pageTitle": "Services | SMfit",
     "pageDescription": "Discover the personalized fitness and nutrition services offered by SMfit to achieve your health and fitness goals.",
     "hero": {
-      "title": "Personalized Services",
+      "title": "Personalized",
+      "titleAccent": "Services",
       "subtitle": "SMfit programs are created specifically to adapt to your needs, goals and lifestyle. Explore our services and choose the perfect solution for you."
     },
     "cta": {
-      "title": "Not sure what suits you?",
+      "title": "Not sure what",
+      "titleAccent": "suits you?",
       "subtitle": "Schedule a free consultation to discuss your goals and find out which of our services is best adapted to your needs.",
       "button": "Take the first step towards transformation"
     }
@@ -70,11 +72,13 @@
     "pageTitle": "Testimonials | SMfit", 
     "pageDescription": "Discover real success stories and feedback from SMfit clients who have transformed their bodies and habits with our programs.",
     "hero": {
-      "title": "Client Testimonials",
+      "title": "Client",
+      "titleAccent": "Testimonials",
       "subtitle": "Read the real experiences of clients who have transformed their bodies and lives with SMfit programs."
     },
     "successStories": {
-      "title": "Success Stories",
+      "title": "Success",
+      "titleAccent": "Stories",
       "subtitle": "Real transformations of clients who followed SMfit programs and changed their lives.",
       "madalina": {
         "name": "Mădălina I.",

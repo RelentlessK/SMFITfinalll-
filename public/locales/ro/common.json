@@ -12,7 +12,8 @@
     "subtitle": "Antrenamente personalizate, motivație reală — rezultate pe care le poți vedea în săptămâni."
   },
   "services": {
-    "title": "Servicii Personalizate",
+    "title": "Servicii",
+    "titleAccent": "Personalizate",
     "subtitle": "Alege serviciul care se potrivește cel mai bine nevoilor și obiectivelor tale fitness.",
     "learnMore": "Află mai multe",
     "personal": {
@@ -102,7 +103,9 @@
     }
   },
   "testimonials": {
-    "title": "Ce Spun Clienții Noștri",
+    "title": "Ce Spun",
+    "titleAccent": "Clienții",
+    "titleSuffix": "Noștri",
     "subtitle": "Rezultatele și experiențele reale ale persoanelor care și-au transformat viața cu SMfit.",
     "cta": {
       "title": "Vrei să fii următoarea poveste de succes?",
@@ -111,11 +114,14 @@
     }
   },
   "faq": {
-    "title": "Întrebări Frecvente", 
+    "title": "Întrebări",
+    "titleAccent": "Frecvente",
     "subtitle": "Răspunsuri la cele mai comune întrebări despre antrenamentele și programele noastre."
   },
   "cta": {
-    "title": "Pregătit să-ți transformi corpul?",
+    "title": "Pregătit să-ți",
+    "titleAccent": "transformi",
+    "titleSuffix": "corpul?",
     "subtitle": "Programează acum o consultație gratuită și începe călătoria către cea mai bună versiune a ta!",
     "primaryButton": "Rezervă-ți prima sesiune gratuită",
     "secondaryButton": "Explorează serviciile"
@@ -127,7 +133,8 @@
     "copyright": "Toate drepturile rezervate."
   },
   "contact": {
-    "title": "Contactează-mă",
+    "title": "Contactează-",
+    "titleAccent": "mă",
     "subtitle": "Ai întrebări sau ești gata să începi? Completează formularul de mai jos sau folosește informațiile de contact pentru a mă contacta direct.",
     "formTitle": "Hai să luăm legătura!",
     "form": {
