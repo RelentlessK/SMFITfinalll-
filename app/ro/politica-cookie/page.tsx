@@ -24,7 +24,7 @@ export default function PoliticaCookiePage() {
       content: (
         <>
           <p className="text-muted-foreground mb-4">
-            Un fișier cookie este un fișier text de mici dimensiuni, format din litere și numere, care va fi stocat pe computerul, terminalul mobil sau alte echipamente ale unui utilizator de pe care se accesează internetul. Cookie-ul este „pasiv” (nu conține programe software, viruși sau spyware și nu poate accesa informațiile de pe hard disk-ul utilizatorului).
+            Un fișier cookie este un fișier text de mici dimensiuni, format din litere și numere, care va fi stocat pe computerul, terminalul mobil sau alte echipamente ale unui utilizator de pe care se accesează internetul. Cookie-ul este „pasiv" (nu conține programe software, viruși sau spyware și nu poate accesa informațiile de pe hard disk-ul utilizatorului).
           </p>
         </>
       ),
@@ -187,7 +187,7 @@ export default function PoliticaCookiePage() {
                 {sections.map((section) => (
                   <li key={section.id}>
                     <Link
-                      href={`#${section.id}`}
+                      href={\`#${section.id}`}
                       className="text-muted-foreground hover:text-primary-600 transition-colors text-base"
                     >
                       {section.title}
@@ -222,7 +222,7 @@ export default function PoliticaCookiePage() {
               </div>
               <Accordion type="single" collapsible className="w-full bg-accent-100/50 dark:bg-accent-900/20 p-6 rounded-lg">
                 {faqItems.map((item, index) => (
-                  <AccordionItem key={index} value={\`item-${index}`}>
+                  <AccordionItem key={index} value={`item-${index}`}>
                     <AccordionTrigger className="text-left text-lg font-medium hover:no-underline">
                       {item.question}
                     </AccordionTrigger>
