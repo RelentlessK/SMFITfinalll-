@@ -1,4 +1,6 @@
 ```tsx
+'use client';
+
 import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
 import { Cookie, Info, HelpCircle, ChevronRight, ExternalLink, CheckCircle2 } from 'lucide-react';

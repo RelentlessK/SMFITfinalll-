@@ -1,4 +1,6 @@
 ```tsx
+'use client';
+
 import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
 import { Mail, Info, CheckCircle2 } from 'lucide-react';
