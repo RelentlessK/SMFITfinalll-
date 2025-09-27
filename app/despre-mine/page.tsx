@@ -123,20 +123,20 @@ export default function DespreMine() {
             {/* Partners Section */}
             <section id="partners" className="py-12 px-6 lg:px-12 mb-12">
               <h2 className="text-3xl font-bold mb-6 text-center">Partenerii Mei</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+              <div className="flex flex-col gap-6 max-w-4xl mx-auto">
                 <Link 
                   href="https://18gym.ro" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block h-full"
+                  className="block"
                 >
-                  <div className="bg-gradient-to-br from-[#f7cfd8]/50 to-[#ffe3e8]/50 hover:from-[#f7cfd8]/60 hover:to-[#ffe3e8]/60 border border-primary-200 rounded-lg shadow-sm p-6 h-full flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-md">
-                    <h4 className="text-lg font-semibold mb-2 text-center">18GYM</h4>
-                    <p className="text-sm text-muted-foreground mb-4 text-center">
+                  <div className="bg-gradient-to-br from-[#f7cfd8]/50 to-[#ffe3e8]/50 hover:from-[#f7cfd8]/60 hover:to-[#ffe3e8]/60 border border-primary-200 rounded-lg shadow-sm p-6 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-md">
+                    <h4 className="text-xl font-semibold mb-3 text-center">18GYM</h4>
+                    <p className="text-muted-foreground mb-4 text-center">
                       18GYM este lanțul premium de săli de fitness unde Sabina oferă sesiuni personalizate, asigurând rezultate rapide și o experiență de antrenament de top.
                     </p>
-                    <p className="text-sm font-medium text-primary-600 mb-2 text-center">Cod promoțional: <strong>29SABINAM</strong></p>
-                    <div className="mt-auto text-center">
+                    <p className="text-sm font-medium text-primary-600 mb-4 text-center">Cod promoțional: <strong>29SABINAM</strong></p>
+                    <div className="text-center">
                       <button className="inline-block bg-primary-500 text-white rounded-full py-2 px-4 hover:bg-primary-600 transition" aria-label="Vezi oferta 18GYM">
                         Vezi oferta 18GYM
                       </button>
@@ -148,15 +148,15 @@ export default function DespreMine() {
                   href="https://scitec.ro/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block h-full"
+                  className="block"
                 >
-                  <div className="bg-gradient-to-br from-[#f7cfd8]/50 to-[#ffe3e8]/50 hover:from-[#f7cfd8]/60 hover:to-[#ffe3e8]/60 border border-primary-200 rounded-lg shadow-sm p-6 h-full flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-md">
-                    <h4 className="text-lg font-semibold mb-2 text-center">Scitec Nutrition</h4>
-                    <p className="text-sm text-muted-foreground mb-4 text-center">
+                  <div className="bg-gradient-to-br from-[#f7cfd8]/50 to-[#ffe3e8]/50 hover:from-[#f7cfd8]/60 hover:to-[#ffe3e8]/60 border border-primary-200 rounded-lg shadow-sm p-6 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-md">
+                    <h4 className="text-xl font-semibold mb-3 text-center">Scitec Nutrition</h4>
+                    <p className="text-muted-foreground mb-4 text-center">
                       Scitec Nutrition furnizează suplimente și echipament sportiv de calitate superioară, optimizate pentru performanță și recuperare eficientă.
                     </p>
-                    <p className="text-sm font-medium text-primary-600 mb-2 text-center">Cod promoțional: <strong>SABINAM10</strong></p>
-                    <div className="mt-auto text-center">
+                    <p className="text-sm font-medium text-primary-600 mb-4 text-center">Cod promoțional: <strong>SABINAM10</strong></p>
+                    <div className="text-center">
                       <button className="inline-block bg-primary-500 text-white rounded-full py-2 px-4 hover:bg-primary-600 transition" aria-label="Descoperă Scitec">
                         Descoperă Scitec
                       </button>
@@ -168,19 +168,18 @@ export default function DespreMine() {
                   href="https://gymhyper.ro" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block h-full"
+                  className="block"
                 >
-                  <div className="bg-gradient-to-br from-[#f7cfd8]/50 to-[#ffe3e8]/50 hover:from-[#f7cfd8]/60 hover:to-[#ffe3e8]/60 border border-primary-200 rounded-lg shadow-sm p-6 h-full flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-md">
-                    <h4 className="text-lg font-semibold mb-2 text-center">GymHyper</h4>
-                    <p className="text-sm text-muted-foreground mb-4 text-center">
+                  <div className="bg-gradient-to-br from-[#f7cfd8]/50 to-[#ffe3e8]/50 hover:from-[#f7cfd8]/60 hover:to-[#ffe3e8]/60 border border-primary-200 rounded-lg shadow-sm p-6 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-md">
+                    <h4 className="text-xl font-semibold mb-3 text-center">GymHyper</h4>
+                    <p className="text-muted-foreground mb-4 text-center">
                       GymHyper propune îmbrăcăminte și accesorii tehnice inovatoare, concepute pentru confort și susținerea oricărui tip de antrenament.
                     </p>
-                    <div className="flex-grow"></div>
-                    <div className="text-center mb-2">
+                    <div className="text-center mb-4">
                       <p className="text-sm font-medium text-primary-600">Cod promoțional:</p>
                       <p className="text-sm font-medium text-primary-600"><strong>SABINA</strong></p>
                     </div>
-                    <div className="mt-auto text-center">
+                    <div className="text-center">
                       <button className="inline-block bg-primary-500 text-white rounded-full py-2 px-4 hover:bg-primary-600 transition" aria-label="Vizitează GymHyper">
                         Vizitează GymHyper
                       </button>
@@ -192,15 +191,15 @@ export default function DespreMine() {
                   href="https://cocosolis.com/ro/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block h-full"
+                  className="block"
                 >
-                  <div className="bg-gradient-to-br from-[#f7cfd8]/50 to-[#ffe3e8]/50 hover:from-[#f7cfd8]/60 hover:to-[#ffe3e8]/60 border border-primary-200 rounded-lg shadow-sm p-6 h-full flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-md">
-                    <h4 className="text-lg font-semibold mb-2 text-center">Cocosolis</h4>
-                    <p className="text-sm text-muted-foreground mb-4 text-center">
+                  <div className="bg-gradient-to-br from-[#f7cfd8]/50 to-[#ffe3e8]/50 hover:from-[#f7cfd8]/60 hover:to-[#ffe3e8]/60 border border-primary-200 rounded-lg shadow-sm p-6 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-md">
+                    <h4 className="text-xl font-semibold mb-3 text-center">Cocosolis</h4>
+                    <p className="text-muted-foreground mb-4 text-center">
                       Cocosolis oferă uleiuri naturale pentru îngrijirea pielii și bronzare. Produsele hidratează, regenerează și sprijină recuperarea pielii după antrenamente, menținând-o sănătoasă.
                     </p>
-                    <p className="text-sm font-medium text-primary-600 mb-2 text-center">Cod promoțional: <strong>affsabina</strong></p>
-                    <div className="mt-auto text-center">
+                    <p className="text-sm font-medium text-primary-600 mb-4 text-center">Cod promoțional: <strong>affsabina</strong></p>
+                    <div className="text-center">
                       <button className="inline-block bg-primary-500 text-white rounded-full py-2 px-4 hover:bg-primary-600 transition" aria-label="Vezi Cocosolis">
                         Vezi Cocosolis
                       </button>
