@@ -1,0 +1,113 @@
+{
+  "about": {
+    "pageTitle": "About Me | SMfit",
+    "pageDescription": "Learn more about Sabina Meruță, founder of SMfit, her expertise and philosophy about fitness and personalized nutrition.",
+    "mainContent": {
+      "intro1": "I'm Sabina Meruță, founder of SMfit and internationally certified personal trainer, with over 2 years of experience in fitness and nutrition.",
+      "intro2": "My passion for movement and art began in adolescence, when I obtained my diploma as Professional Choreographer and Dancer, and later I discovered the transformative effects of gym workouts. I was amazed at how regular exercise, combined with proper nutrition, can revitalize the body and significantly increase energy levels.",
+      "intro3": "Currently, I am a student at the Faculty of Pharmacy – Nutrition and Dietetics, at the University of Medicine, Pharmacy, Sciences and Technology \"George Emil Palade\" in Târgu Mureș, and I hold numerous internationally accredited courses in fitness and healthy eating.",
+      "intro4": "With each personalized program, I combine practical experience, nutrition science and choreographic creativity to help you achieve your goals!"
+    },
+    "certifications": {
+      "title": "Certifications and Education",
+      "formal": {
+        "title": "Formal Education",
+        "items": [
+          "Graduate of \"Unirea\" National College",
+          "Student at UMFST, Nutrition and Dietetics"
+        ]
+      },
+      "international": {
+        "title": "International Certifications", 
+        "items": [
+          "Professional Choreographer and Dancer",
+          "Certified Fitness Instructor Level 2 and 4, Group Trainer"
+        ]
+      }
+    },
+    "partners": {
+      "title": "My Partners",
+      "18gym": {
+        "description": "18GYM is the premium fitness chain where Sabina offers personalized sessions, ensuring fast results and a top-notch workout experience.",
+        "promoCode": "Promo code: 29SABINAM",
+        "button": "See 18GYM offer"
+      },
+      "scitec": {
+        "description": "Scitec Nutrition provides high-quality supplements and sports equipment, optimized for performance and efficient recovery.",
+        "promoCode": "Promo code: SABINAM10", 
+        "button": "Discover Scitec"
+      },
+      "gymhyper": {
+        "description": "GymHyper offers innovative technical clothing and accessories, designed for comfort and support for any type of workout.",
+        "promoCode": "Promo code: SABINA",
+        "button": "Visit GymHyper"
+      },
+      "cocosolis": {
+        "description": "Cocosolis offers natural oils for skin care and tanning. The products hydrate, regenerate and support skin recovery after workouts, keeping it healthy.",
+        "promoCode": "Promo code: affsabina",
+        "button": "See Cocosolis"
+      }
+    },
+    "photos": {
+      "title": "Moments from My Activity"
+    },
+    "cta": "Take the first step towards transformation"
+  },
+  "services": {
+    "pageTitle": "Services | SMfit",
+    "pageDescription": "Discover the personalized fitness and nutrition services offered by SMfit to achieve your health and fitness goals.",
+    "hero": {
+      "title": "Personalized Services",
+      "subtitle": "SMfit programs are created specifically to adapt to your needs, goals and lifestyle. Explore our services and choose the perfect solution for you."
+    },
+    "cta": {
+      "title": "Not sure what suits you?",
+      "subtitle": "Schedule a free consultation to discuss your goals and find out which of our services is best adapted to your needs.",
+      "button": "Take the first step towards transformation"
+    }
+  },
+  "testimonials": {
+    "pageTitle": "Testimonials | SMfit", 
+    "pageDescription": "Discover real success stories and feedback from SMfit clients who have transformed their bodies and habits with our programs.",
+    "hero": {
+      "title": "Client Testimonials",
+      "subtitle": "Read the real experiences of clients who have transformed their bodies and lives with SMfit programs."
+    },
+    "successStories": {
+      "title": "Success Stories",
+      "subtitle": "Real transformations of clients who followed SMfit programs and changed their lives.",
+      "madalina": {
+        "name": "Mădălina I.",
+        "program": "Personal Training and Personalized Nutrition - 1 month",
+        "results": {
+          "weightLost": "Weight lost: 3 kg",
+          "chestReduced": "Chest reduced: 3 cm",
+          "waistReduced": "Waist reduced: 4 cm", 
+          "hipsReduced": "Hips reduced: 5 cm"
+        },
+        "quote": "Discipline, seriousness and confidence combined with gentleness and calm – that's how I would describe Sabina's training sessions. Thank you from the heart, Sabina! ❤️"
+      },
+      "carina": {
+        "name": "Carina C.",
+        "program": "Online Training and Personalized Nutrition - 8 weeks",
+        "results": {
+          "weightLost": "Weight lost: 6 kg",
+          "chestReduced": "Chest reduced: 7 cm",
+          "waistReduced": "Waist reduced: 9 cm",
+          "hipsReduced": "Hips reduced: 12 cm"
+        },
+        "quote": "Choosing Sabina's services proved to be very useful: her psychological support and personalized training programs brought daily progress. The balanced meal plan makes healthy lifestyle pleasant and sustainable."
+      }
+    }
+  },
+  "contact": {
+    "pageTitle": "Contact | SMfit",
+    "pageDescription": "Get in touch with SMfit. Fill out the contact form or use the provided contact information to start your fitness journey.",
+    "validation": {
+      "nameRequired": "Name must be at least 2 characters",
+      "emailInvalid": "Email address is not valid",
+      "phoneInvalid": "Phone number must start with 07 and have 10 digits",
+      "messageRequired": "Message must be at least 10 characters"
+    }
+  }
+}

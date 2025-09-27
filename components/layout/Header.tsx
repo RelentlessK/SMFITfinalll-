@@ -4,17 +4,28 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { NAV_LINKS } from '@/lib/constants';
+import { useTranslation } from 'react-i18next';
 import { Menu, X } from 'lucide-react';
 import MobileNav from './MobileNav';
 import { Button } from '@/components/ui/button';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/utils';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
+
+  const { t } = useTranslation('common');
+
+  const NAV_LINKS = [
+    { path: '/', title: t('nav.home') },
+    { path: '/servicii', title: t('nav.services') },
+    { path: '/despre-mine', title: t('nav.about') },
+    { path: '/testimoniale', title: t('nav.testimonials') },
+    { path: '/contact', title: t('nav.contact') },
+  ];
 
   // Check if header should be transparent (homepage + not scrolled)
   const isTransparent = pathname === '/' && !scrolled;
@@ -102,6 +113,9 @@ const Header = () => {
               </li>
             ))}
           </ul>
+          <LanguageSwitcher className={cn(
+            isTransparent ? "text-white hover:bg-white/10" : "text-foreground"
+          )} />
           <Button asChild size="sm" className={cn(
             "min-w-[140px]",
             isTransparent 
@@ -109,7 +123,7 @@ const Header = () => {
               : "bg-primary-500 hover:bg-primary-600 text-white"
           )}>
             <Link href="/contact">
-              Contactează-mă
+              {t('nav.contactButton')}
             </Link>
           </Button>
         </nav>
@@ -130,7 +144,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         <AnimatePresence>
-          {isOpen && <MobileNav links={NAV_LINKS} />}
+          {isOpen && <MobileNav />}
         </AnimatePresence>
       </div>
     </header>

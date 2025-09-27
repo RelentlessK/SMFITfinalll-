@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
+import { Suspense } from 'react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { Toaster } from '@/components/ui/toaster';
@@ -9,6 +10,7 @@ import { ThemeProvider } from '@/components/providers/ThemeProvider';
 import VortexEffect from '@/components/shared/VortexEffect';
 import FitnessIconSystem from '@/components/shared/FitnessIconSystem';
 import InstagramIcon from '@/components/ui/InstagramIcon';
+import I18nProvider from '@/components/providers/I18nProvider';
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -47,18 +49,22 @@ export default function RootLayout({
   return (
     <html lang="ro" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans min-h-screen flex flex-col`}>
-        <ThemeProvider attribute="class" defaultTheme="light">
-          <Header />
-          <main className="flex-grow relative">
-            {children}
-          </main>
-          <Footer />
-          <Toaster />
-          <Analytics />
-          <VortexEffect excludeHomepageHero={true} />
-          <FitnessIconSystem />
-          <InstagramIcon />
-        </ThemeProvider>
+        <Suspense fallback={<div>Loading...</div>}>
+          <I18nProvider>
+            <ThemeProvider attribute="class" defaultTheme="light">
+              <Header />
+              <main className="flex-grow relative">
+                {children}
+              </main>
+              <Footer />
+              <Toaster />
+              <Analytics />
+              <VortexEffect excludeHomepageHero={true} />
+              <FitnessIconSystem />
+              <InstagramIcon />
+            </ThemeProvider>
+          </I18nProvider>
+        </Suspense>
       </body>
     </html>
   );

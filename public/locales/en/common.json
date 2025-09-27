@@ -1,0 +1,166 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services", 
+    "about": "About Me",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "contactButton": "Contact Me"
+  },
+  "hero": {
+    "title": "Train Smarter. Get Stronger.",
+    "subtitle": "Personalized workouts, real motivation — results you can see in weeks."
+  },
+  "services": {
+    "title": "Personalized Services",
+    "subtitle": "Choose the service that best fits your fitness needs and goals.",
+    "learnMore": "Learn More",
+    "personal": {
+      "title": "Personal Training",
+      "description": "Personalized workouts for your goals, with constant monitoring and adjustments for maximum results.",
+      "price": "From 350 RON / month",
+      "features": [
+        "Complete physical assessment",
+        "Personalized workout plan", 
+        "Progress monitoring",
+        "Basic nutritional support",
+        "Regular plan adjustments"
+      ]
+    },
+    "nutrition": {
+      "title": "Personalized Nutrition",
+      "description": "Nutrition plan adapted to your metabolic needs and food preferences, for sustainable results.",
+      "price": "From 70 RON / plan",
+      "features": [
+        "Detailed caloric needs analysis",
+        "Personalized meal plan",
+        "Recipes and alternatives", 
+        "Weekly adjustments",
+        "Continuous WhatsApp support"
+      ]
+    },
+    "online": {
+      "title": "Online Training",
+      "description": "Efficient remote workouts with all the benefits of a personal trainer, but with more flexibility.",
+      "price": "From 200 RON / month", 
+      "features": [
+        "Personalized weekly program",
+        "Demo videos",
+        "Video recording feedback",
+        "Nutritional consultation",
+        "Real-time adjustments"
+      ]
+    },
+    "transformation": {
+      "title": "Transformation Program",
+      "description": "Complete 12-week program for total body and eating habits transformation.",
+      "price": "From 500 RON",
+      "features": [
+        "✓ 12 weeks of progressive workouts",
+        "✓ Flexible meal plan", 
+        "✓ Video and PDF guides",
+        "✓ Access to private community",
+        "✓ Weekly check-ins & personalized feedback"
+      ]
+    }
+  },
+  "about": {
+    "title": "About",
+    "titleName": "Sabina Meruță",
+    "subtitle": "My passion is helping people reach their maximum potential through fitness and personalized nutrition.",
+    "whoAmI": "Who Am I",
+    "greeting": "Hello!",
+    "intro1": "I'm Sabina Meruță, founder of SMfit and internationally certified personal trainer (Level 4 and Level 2) with over 2 years of experience in transforming my clients' bodies and lives.",
+    "intro2": "I believe every person deserves a unique, personalized approach built on solid training and nutrition principles, continuously adapted to achieve the best results. My goal is to support you on your journey to a healthier, stronger, and more confident version of yourself.",
+    "stats": {
+      "certifications": "International Certifications",
+      "experience": "Years of Experience", 
+      "clients": "Clients Transformed",
+      "workouts": "Workouts Completed"
+    },
+    "learnMore": "Learn more about me",
+    "philosophy": "My Philosophy",
+    "philosophyIntro": "My philosophy is based on several fundamental principles:",
+    "principles": {
+      "personalization": {
+        "title": "Personalization",
+        "description": "Each person is unique, with different needs, limitations, and goals. That's why all my programs are 100% personalized for each individual client."
+      },
+      "scientific": {
+        "title": "Scientific Approach", 
+        "description": "I base my methods on current scientific research and proven methods, not on passing trends or \"miracle solutions\". Efficiency and safety are priorities."
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "description": "I believe in sustainable changes, not temporary solutions. My goal is to help you develop long-term healthy habits, not just get quick results that don't last."
+      },
+      "education": {
+        "title": "Education",
+        "description": "Beyond workouts and nutrition plans, I aim to educate you about your body and help you understand why we do certain exercises or make certain food choices."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Real results and experiences from people who have transformed their lives with SMfit.",
+    "cta": {
+      "title": "Want to be the next success story?",
+      "subtitle": "Schedule a free consultation to discuss your goals and find out how SMfit can help you achieve them.",
+      "button": "Book your first free session"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Answers to the most common questions about our workouts and programs."
+  },
+  "cta": {
+    "title": "Ready to transform your body?",
+    "subtitle": "Schedule a free consultation now and start your journey to the best version of yourself!",
+    "primaryButton": "Book your first free session",
+    "secondaryButton": "Explore services"
+  },
+  "footer": {
+    "description": "Transform your body and habits with SMfit: personalized workouts and nutrition plans adapted to your specific needs.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "copyright": "All rights reserved."
+  },
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Have questions or ready to start? Fill out the form below or use the contact information to reach me directly.",
+    "formTitle": "Let's get in touch!",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "First and last name",
+      "email": "Email",
+      "emailPlaceholder": "email@example.com", 
+      "phone": "Phone",
+      "phonePlaceholder": "07XX XXX XXX",
+      "service": "Service of Interest",
+      "servicePlaceholder": "Select a service (optional)",
+      "message": "Message",
+      "messagePlaceholder": "Details about your fitness goals, questions or preferences",
+      "submit": "Send Message",
+      "submitting": "Sending..."
+    },
+    "info": {
+      "title": "Contact Information",
+      "schedule": "Working Hours & Services",
+      "hours": {
+        "weekdays": "Monday–Friday: 08:00–20:00",
+        "saturday": "Saturday: 10:00–18:00", 
+        "sunday": "Sunday: 12:00–18:00",
+        "support": "24/7 support through Mira, SMfit chat agent"
+      }
+    },
+    "success": "Message sent successfully!",
+    "successDescription": "We will contact you as soon as possible.",
+    "error": "Error",
+    "errorDescription": "An error occurred. Please try again."
+  },
+  "seo": {
+    "homeTitle": "SMfit - Personalized Training & Nutrition",
+    "homeDescription": "Transform your body with SMfit: personalized online or live workouts and nutrition plans adapted to your needs.",
+    "pageTitleTemplate": "%s | SMfit"
+  }
+}

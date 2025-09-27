@@ -3,17 +3,24 @@
 import { useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { X } from 'lucide-react';
+import LanguageSwitcher from './LanguageSwitcher';
 
-interface MobileNavProps {
-  links: { path: string; title: string }[];
-}
-
-const MobileNav = ({ links }: MobileNavProps) => {
+const MobileNav = () => {
   const pathname = usePathname();
+  const { t } = useTranslation('common');
+
+  const NAV_LINKS = [
+    { path: '/', title: t('nav.home') },
+    { path: '/servicii', title: t('nav.services') },
+    { path: '/despre-mine', title: t('nav.about') },
+    { path: '/testimoniale', title: t('nav.testimonials') },
+    { path: '/contact', title: t('nav.contact') },
+  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -72,7 +79,7 @@ const MobileNav = ({ links }: MobileNavProps) => {
         variants={containerVariants}
         className="flex flex-col space-y-8 items-center text-lg mt-12 w-full"
       >
-        {links.map((link) => (
+        {NAV_LINKS.map((link) => (
           <motion.li key={link.path} variants={itemVariants} className="w-full">
             <Link
               href={link.path}
@@ -88,10 +95,13 @@ const MobileNav = ({ links }: MobileNavProps) => {
             </Link>
           </motion.li>
         ))}
+        <motion.li variants={itemVariants} className="w-full pt-2">
+          <LanguageSwitcher className="w-full justify-center py-3" />
+        </motion.li>
         <motion.li variants={itemVariants} className="w-full pt-4">
           <Button asChild className="bg-primary-500 hover:bg-primary-600 text-white w-full min-h-[48px] px-6">
             <Link href="/contact" onClick={() => document.dispatchEvent(new CustomEvent('close-mobile-menu'))}>
-              Contactează-mă
+              {t('nav.contactButton')}
             </Link>
           </Button>
         </motion.li>

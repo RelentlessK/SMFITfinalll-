@@ -1,0 +1,166 @@
+{
+  "nav": {
+    "home": "Acasă",
+    "services": "Servicii",
+    "about": "Despre Mine", 
+    "testimonials": "Testimoniale",
+    "contact": "Contact",
+    "contactButton": "Contactează-mă"
+  },
+  "hero": {
+    "title": "Antrenează-te mai inteligent. Devino mai puternic.",
+    "subtitle": "Antrenamente personalizate, motivație reală — rezultate pe care le poți vedea în săptămâni."
+  },
+  "services": {
+    "title": "Servicii Personalizate",
+    "subtitle": "Alege serviciul care se potrivește cel mai bine nevoilor și obiectivelor tale fitness.",
+    "learnMore": "Află mai multe",
+    "personal": {
+      "title": "Antrenament Personal",
+      "description": "Antrenamente personalizate pentru obiectivele tale, cu monitorizare constantă și ajustări pentru rezultate maxime.",
+      "price": "De la 350 RON / lună",
+      "features": [
+        "Evaluare fizică completă",
+        "Plan personalizat de antrenament",
+        "Monitorizare progres",
+        "Suport nutrițional de bază", 
+        "Ajustări regulate ale planului"
+      ]
+    },
+    "nutrition": {
+      "title": "Nutriție Personalizată",
+      "description": "Plan nutrițional adaptat nevoilor tale metabolice și preferințelor alimentare, pentru rezultate sustenabile.",
+      "price": "De la 70 RON / plan",
+      "features": [
+        "Analiză detaliată a necesarului caloric",
+        "Plan personalizat de mese",
+        "Rețete și alternative",
+        "Ajustări săptămânale",
+        "Suport continuu pe WhatsApp"
+      ]
+    },
+    "online": {
+      "title": "Antrenament Online", 
+      "description": "Antrenamente eficiente de la distanță, cu toate beneficiile unui antrenor personal, dar cu mai multă flexibilitate.",
+      "price": "De la 200 RON / lună",
+      "features": [
+        "Program săptămânal personalizat",
+        "Videoclipuri demonstrative",
+        "Feedback prin înregistrări video",
+        "Consultanță nutrițională",
+        "Ajustări în timp real"
+      ]
+    },
+    "transformation": {
+      "title": "Program Transformare",
+      "description": "Program complet de 12 săptămâni pentru o transformare totală a corpului și a obiceiurilor alimentare.",
+      "price": "De la 500 RON",
+      "features": [
+        "✓ 12 săptămâni de antrenamente progresive",
+        "✓ Plan alimentar flexibil",
+        "✓ Ghiduri video și PDF", 
+        "✓ Acces la comunitate privată",
+        "✓ Check-in săptămânal & feedback personalizat"
+      ]
+    }
+  },
+  "about": {
+    "title": "Despre",
+    "titleName": "Sabina Meruță",
+    "subtitle": "Pasiunea mea este să ajut oamenii să își atingă potențialul maxim prin fitness și nutriție personalizată.",
+    "whoAmI": "Cine Sunt Eu",
+    "greeting": "Salut!",
+    "intro1": "Sunt Sabina Meruță, fondatoarea SMfit și antrenoare personală certificată internațional (Level 4 și Level 2) cu peste 2 ani de experiență în transformarea corpurilor și vieților clienților mei.",
+    "intro2": "Cred că fiecare persoană merită o abordare unică, personalizată și construită pe principii solide de antrenament și nutriție, adaptată continuu pentru a obține cele mai bune rezultate. Scopul meu este să te susțin în drumul tău către o versiune mai sănătoasă, mai puternică și mai încrezătoare a ta.",
+    "stats": {
+      "certifications": "Certificări Internaționale",
+      "experience": "Ani de Experiență",
+      "clients": "Clienți Transformați", 
+      "workouts": "Antrenamente Efectuate"
+    },
+    "learnMore": "Află mai multe despre mine",
+    "philosophy": "Filosofia Mea",
+    "philosophyIntro": "Filosofia mea se bazează pe câteva principii fundamentale:",
+    "principles": {
+      "personalization": {
+        "title": "Personalizare",
+        "description": "Fiecare persoană este unică, cu nevoi, limitări și obiective diferite. De aceea, toate programele mele sunt personalizate 100% pentru fiecare client în parte."
+      },
+      "scientific": {
+        "title": "Abordare Științifică",
+        "description": "Mă bazez pe cercetări științifice actuale și metode dovedite, nu pe tendințe trecătoare sau \"soluții miraculoase\". Eficiența și siguranța sunt prioritare."
+      },
+      "sustainability": {
+        "title": "Sustenabilitate", 
+        "description": "Cred în schimbări sustenabile, nu în soluții temporare. Scopul meu este să te ajut să dezvolți obiceiuri sănătoase pe termen lung, nu doar să obții rezultate rapide care nu durează."
+      },
+      "education": {
+        "title": "Educație",
+        "description": "Dincolo de antrenamente și planuri nutriționale, îmi propun să te educ despre corpul tău și să te ajut să înțelegi de ce facem anumite exerciții sau alegeri alimentare."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Ce Spun Clienții Noștri",
+    "subtitle": "Rezultatele și experiențele reale ale persoanelor care și-au transformat viața cu SMfit.",
+    "cta": {
+      "title": "Vrei să fii următoarea poveste de succes?",
+      "subtitle": "Programează o consultație gratuită pentru a discuta despre obiectivele tale și pentru a afla cum te poate ajuta SMfit să le atingi.",
+      "button": "Rezervă-ți prima sesiune gratuită"
+    }
+  },
+  "faq": {
+    "title": "Întrebări Frecvente", 
+    "subtitle": "Răspunsuri la cele mai comune întrebări despre antrenamentele și programele noastre."
+  },
+  "cta": {
+    "title": "Pregătit să-ți transformi corpul?",
+    "subtitle": "Programează acum o consultație gratuită și începe călătoria către cea mai bună versiune a ta!",
+    "primaryButton": "Rezervă-ți prima sesiune gratuită",
+    "secondaryButton": "Explorează serviciile"
+  },
+  "footer": {
+    "description": "Transformă-ți corpul și obiceiurile cu SMfit: antrenamente personalizate și planuri nutriționale adaptate nevoilor tale specifice.",
+    "quickLinks": "Link-uri rapide",
+    "contact": "Contact", 
+    "copyright": "Toate drepturile rezervate."
+  },
+  "contact": {
+    "title": "Contactează-mă",
+    "subtitle": "Ai întrebări sau ești gata să începi? Completează formularul de mai jos sau folosește informațiile de contact pentru a mă contacta direct.",
+    "formTitle": "Hai să luăm legătura!",
+    "form": {
+      "name": "Nume Complet",
+      "namePlaceholder": "Nume și prenume",
+      "email": "Email", 
+      "emailPlaceholder": "email@exemplu.com",
+      "phone": "Telefon",
+      "phonePlaceholder": "07XX XXX XXX",
+      "service": "Serviciu de interes",
+      "servicePlaceholder": "Selectează un serviciu (opțional)",
+      "message": "Mesaj",
+      "messagePlaceholder": "Detalii despre obiectivele tale fitness, întrebări sau preferințe",
+      "submit": "Trimite mesaj",
+      "submitting": "Se trimite..."
+    },
+    "info": {
+      "title": "Informații de contact",
+      "schedule": "Program de lucru & Servicii",
+      "hours": {
+        "weekdays": "Luni–Vineri: 08:00–20:00",
+        "saturday": "Sâmbătă: 10:00–18:00",
+        "sunday": "Duminică: 12:00–18:00", 
+        "support": "24/7 asistență prin Mira, chat agent SMfit"
+      }
+    },
+    "success": "Mesaj trimis cu succes!",
+    "successDescription": "Vă vom contacta în cel mai scurt timp posibil.",
+    "error": "Eroare",
+    "errorDescription": "A apărut o eroare. Vă rugăm să încercați din nou."
+  },
+  "seo": {
+    "homeTitle": "SMfit - Antrenamente Personalizate & Nutriție",
+    "homeDescription": "Transformă-ți corpul cu SMfit: antrenamente personalizate online sau live și planuri nutriționale adaptate nevoilor tale.",
+    "pageTitleTemplate": "%s | SMfit"
+  }
+}
