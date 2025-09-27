@@ -1,4 +1,3 @@
-```tsx
 'use client';
 
 import { useTranslation } from 'react-i18next';
@@ -26,7 +25,7 @@ export default function PoliticaCookiePage() {
       content: (
         <>
           <p className="text-muted-foreground mb-4">
-            Un fișier cookie este un fișier text de mici dimensiuni, format din litere și numere, care va fi stocat pe computerul, terminalul mobil sau alte echipamente ale unui utilizator de pe care se accesează internetul. Cookie-ul este „pasiv" (nu conține programe software, viruși sau spyware și nu poate accesa informațiile de pe hard disk-ul utilizatorului).
+            Un cookie este un fișier text de mici dimensiuni, format din litere și numere, care va fi stocat pe computerul, terminalul mobil sau alte echipamente ale unui utilizator de pe care se accesează internetul. Cookie-ul este „pasiv" (nu conține programe software, viruși sau spyware și nu poate accesa informațiile de pe hard disk-ul utilizatorului).
           </p>
         </>
       ),
@@ -119,17 +118,17 @@ export default function PoliticaCookiePage() {
 
   const faqItems = [
     {
-      question: t('pages:cookie.faq.whatIsCookie'),
+      question: 'Ce este un cookie?',
       answer: 'Un cookie este un fișier text mic stocat pe dispozitivul dumneavoastră, care ajută site-ul să funcționeze mai bine și să rețină preferințele dumneavoastră. Nu conține informații personale. Pentru mai multe detalii, consultați secțiunea "Ce este un Cookie?".',
       link: '#ce-este-un-cookie',
     },
     {
-      question: t('pages:cookie.faq.disableCookies'),
+      question: 'Pot dezactiva cookie-urile?',
       answer: 'Da, puteți dezactiva cookie-urile din setările browserului dumneavoastră. Rețineți însă că acest lucru poate afecta funcționalitatea site-ului. Pentru instrucțiuni, consultați secțiunea "Controlul Cookie-urilor".',
       link: '#controlul-cookie-urilor',
     },
     {
-      question: t('pages:cookie.faq.privacyImpact'),
+      question: 'Cum îmi afectează cookie-urile confidențialitatea?',
       answer: 'Cookie-urile în sine nu vă identifică personal. Ele ajută la personalizarea experienței dumneavoastră online și la colectarea de statistici anonime. Datele personale colectate prin cookie-uri sunt criptate. Mai multe informații găsiți în secțiunea "Date Personale și Securitate".',
       link: '#date-personale-si-securitate',
     },
@@ -276,4 +275,3 @@ export default function PoliticaCookiePage() {
     </div>
   );
 }
-```

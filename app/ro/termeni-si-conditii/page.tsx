@@ -1,4 +1,3 @@
-```tsx
 'use client';
 
 import { useTranslation } from 'react-i18next';
@@ -19,7 +18,7 @@ export default function TermeniSiConditiiPage() {
 
   const sections = [
     {
-      id: 'acceptarea-termenilor',
+      id: 'acceptare-termeni',
       title: 'Acceptarea Termenilor',
       label: 'Introducere',
       content: (
@@ -165,4 +164,3 @@ export default function TermeniSiConditiiPage() {
     </div>
   );
 }
-```
