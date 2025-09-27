@@ -16,6 +16,9 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
 
+  // Check if header should be transparent (homepage + not scrolled)
+  const isTransparent = pathname === '/' && !scrolled;
+
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 20;
@@ -58,7 +61,7 @@ const Header = () => {
   return (
     <header className={cn(
       'fixed top-0 w-full z-50 transition-all duration-300 bg-white py-2',
-      scrolled ? 'shadow-sm' : ''
+      isTransparent ? 'bg-transparent' : 'bg-white shadow-sm'
     )}>
       <div className="container mx-auto px-0 md:px-2 flex items-center justify-between">
         <Link href="/" className="flex items-center z-50 ml-0 mr-auto">
@@ -88,10 +91,10 @@ const Header = () => {
                 <Link
                   href={link.path}
                   className={cn(
-                    'text-base font-medium transition-all duration-300 font-heading',
-                    isActive(link.path) 
-                      ? 'text-primary-300 border-b-2 border-primary-400' 
-                      : 'text-foreground/80 hover:text-primary-300'
+                    'text-base font-medium transition-all duration-300 font-heading', 
+                    isActive(link.path)
+                      ? (isTransparent ? 'text-white border-b-2 border-white' : 'text-primary-300 border-b-2 border-primary-400')
+                      : (isTransparent ? 'text-white hover:text-primary-300' : 'text-foreground/80 hover:text-primary-300')
                   )}
                 >
                   {link.title}
@@ -99,7 +102,12 @@ const Header = () => {
               </li>
             ))}
           </ul>
-          <Button asChild size="sm" className="bg-primary-500 hover:bg-primary-600 text-white min-w-[140px]">
+          <Button asChild size="sm" className={cn(
+            "min-w-[140px]",
+            isTransparent 
+              ? "bg-white text-primary-600 hover:bg-gray-100" 
+              : "bg-primary-500 hover:bg-primary-600 text-white"
+          )}>
             <Link href="/contact">
               Contactează-mă
             </Link>
@@ -110,7 +118,10 @@ const Header = () => {
         <div className="flex items-center space-x-4 md:hidden">
           <button 
             onClick={() => setIsOpen(!isOpen)}
-            className="z-50 focus:outline-none p-2"
+            className={cn(
+              "z-50 focus:outline-none p-2",
+              isTransparent ? "text-white" : "text-foreground"
+            )}
             aria-label={isOpen ? 'Închide meniul' : 'Deschide meniul'}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
