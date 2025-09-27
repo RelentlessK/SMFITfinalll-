@@ -1,16 +1,23 @@
 "use client";
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const VIDEO_URL = "https://vhqd75bvbs.ufs.sh/f/xRpe82xlR4uclILHWMYAo4dNGScRMZe6x8Fv3Os7Pnf2UtVb";
-const POSTER_URL = "https://images.pexels.com/photos/3768916/pexels-photo-3768916.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
 
 const HeroVideo = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
   useEffect(() => {
     const video = videoRef.current;
     if (video) {
+      // Set loading state to false when video can play
+      const handleCanPlay = () => {
+        setIsVideoLoaded(true);
+      };
+      
+      video.addEventListener('canplay', handleCanPlay);
+      
       // Ensure video is ready and plays immediately
       video.load(); // Force load
       const playVideo = async () => {
@@ -23,16 +30,39 @@ const HeroVideo = () => {
       
       if (video.readyState >= 3) {
         // Video is already loaded enough to play
+        setIsVideoLoaded(true);
         playVideo();
       } else {
         // Wait for video to be ready
-        video.addEventListener('canplay', playVideo, { once: true });
+        video.addEventListener('canplay', () => {
+          setIsVideoLoaded(true);
+          playVideo();
+        }, { once: true });
       }
+      
+      return () => {
+        video.removeEventListener('canplay', handleCanPlay);
+      };
     }
   }, []);
 
   return (
     <section className="min-h-screen relative w-full flex items-center justify-center overflow-hidden">
+      {/* Custom Loading Spinner */}
+      {!isVideoLoaded && (
+        <div className="absolute inset-0 z-30 bg-gradient-to-b from-gray-900 to-black flex items-center justify-center">
+          <div className="flex flex-col items-center space-y-4">
+            <div className="relative">
+              {/* Outer ring */}
+              <div className="w-16 h-16 border-4 border-pink-200/30 rounded-full"></div>
+              {/* Spinning ring */}
+              <div className="absolute top-0 left-0 w-16 h-16 border-4 border-transparent border-t-pink-400 border-r-pink-300 rounded-full animate-spin"></div>
+            </div>
+            <p className="text-pink-200/80 text-sm font-medium tracking-wide">Loading...</p>
+          </div>
+        </div>
+      )}
+
       {/* Background Video */}
       <video
         ref={videoRef}
@@ -42,7 +72,6 @@ const HeroVideo = () => {
         loop
         playsInline
         preload="metadata"
-        poster={POSTER_URL}
         aria-label="Video background: short clip of the trainer doing exercises"
         style={{ backgroundColor: 'transparent' }}
       >
