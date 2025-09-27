@@ -119,7 +119,7 @@ const Header = () => {
           <Button asChild size="sm" className={cn(
             "min-w-[140px]",
             isTransparent 
-              ? "bg-white text-primary-600 hover:bg-gray-100" 
+              ? "bg-white/20 text-white hover:bg-white/30" 
               : "bg-primary-500 hover:bg-primary-600 text-white"
           )}>
             <Link href="/contact">

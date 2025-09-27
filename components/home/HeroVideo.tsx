@@ -95,7 +95,7 @@ const HeroVideo = () => {
         aria-label="Intro"
       >
         <div className="max-w-xs sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight bg-gradient-to-r from-pink-200 via-pink-300 to-rose-400 bg-clip-text text-transparent drop-shadow-lg">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight bg-gradient-to-r from-primary-300 via-primary-500 to-secondary-400 bg-clip-text text-transparent drop-shadow-lg">
             {t('hero.title')}
           </h1>
           <p className="text-base sm:text-lg md:text-xl font-medium bg-gradient-to-r from-pink-100 via-pink-200 to-rose-300 bg-clip-text text-transparent drop-shadow-md">
