@@ -11,7 +11,7 @@ import pagesRo from '../public/locales/ro/pages.json';
 import faqEn from '../public/locales/en/faq.json';
 import faqRo from '../public/locales/ro/faq.json';
 
-const resources = {
+export const resources = {
   en: {
     common: commonEn,
     pages: pagesEn,
