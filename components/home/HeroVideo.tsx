@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from 'react';
+import { Component as LumaSpin } from '@/components/ui/luma-spin';
 
 const VIDEO_URL = "https://vhqd75bvbs.ufs.sh/f/xRpe82xlR4uclILHWMYAo4dNGScRMZe6x8Fv3Os7Pnf2UtVb";
 
@@ -52,12 +53,7 @@ const HeroVideo = () => {
       {!isVideoLoaded && (
         <div className="absolute inset-0 z-30 bg-gradient-to-b from-gray-900 to-black flex items-center justify-center">
           <div className="flex flex-col items-center space-y-4">
-            <div className="relative">
-              {/* Outer ring */}
-              <div className="w-16 h-16 border-4 border-pink-200/30 rounded-full"></div>
-              {/* Spinning ring */}
-              <div className="absolute top-0 left-0 w-16 h-16 border-4 border-transparent border-t-pink-400 border-r-pink-300 rounded-full animate-spin"></div>
-            </div>
+            <LumaSpin />
             <p className="text-pink-200/80 text-sm font-medium tracking-wide">Loading...</p>
           </div>
         </div>
