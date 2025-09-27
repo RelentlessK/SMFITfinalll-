@@ -1,10 +1,11 @@
+"use client";
+
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Check } from 'lucide-react';
 import Link from 'next/link';
 
-"use client";
 
 const iconMap = {
   Dumbbell,
