@@ -1,11 +1,14 @@
 "use client";
 
+import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import AnimatedSection from '@/components/shared/AnimatedSection';
 import { motion } from 'framer-motion';
 
 const CtaSection = () => {
+  const { t } = useTranslation('common');
+
   return (
     <section className="py-16 md:py-20 hero-gradient overflow-hidden relative">
       <div className="absolute inset-0 opacity-80 z-0" />
@@ -20,7 +23,7 @@ const CtaSection = () => {
               viewport={{ once: true }}
               className="text-3xl md:text-4xl font-bold mb-6"
             >
-              Pregătit să-ți <span className="text-primary-600">transformi</span> corpul?
+              {t('cta.title')}
             </motion.h2>
             
             <motion.p 
@@ -30,7 +33,7 @@ const CtaSection = () => {
               viewport={{ once: true }}
               className="text-muted-foreground text-lg max-w-2xl mx-auto mb-8"
             >
-              Programează acum o consultație gratuită și începe călătoria către cea mai bună versiune a ta!
+              {t('cta.subtitle')}
             </motion.p>
             
             <motion.div 
@@ -42,12 +45,12 @@ const CtaSection = () => {
             >
               <Button asChild size="lg" className="bg-primary-500 hover:bg-primary-600 text-white">
                 <Link href="/contact">
-                  Rezervă-ți prima sesiune gratuită
+                  {t('cta.primaryButton')}
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
                 <Link href="/servicii">
-                  Explorează serviciile
+                  {t('cta.secondaryButton')}
                 </Link>
               </Button>
             </motion.div>

@@ -1,11 +1,13 @@
 "use client";
 
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Component as LumaSpin } from '@/components/ui/luma-spin';
 
 const VIDEO_URL = "https://vhqd75bvbs.ufs.sh/f/xRpe82xlR4uclILHWMYAo4dNGScRMZe6x8Fv3Os7Pnf2UtVb";
 
 const HeroVideo = () => {
+  const { t } = useTranslation('common');
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
@@ -92,10 +94,10 @@ const HeroVideo = () => {
       >
         <div className="max-w-xs sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight bg-gradient-to-r from-pink-200 via-pink-300 to-rose-400 bg-clip-text text-transparent drop-shadow-lg">
-            Train Smarter. Get Stronger.
+            {t('hero.title')}
           </h1>
           <p className="text-base sm:text-lg md:text-xl font-medium bg-gradient-to-r from-pink-100 via-pink-200 to-rose-300 bg-clip-text text-transparent drop-shadow-md">
-            Personalized workouts, real motivation — results you can see in weeks.
+            {t('hero.subtitle')}
           </p>
         </div>
       </div>

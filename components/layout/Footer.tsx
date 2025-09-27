@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import { NAV_LINKS, SOCIAL_LINKS, CONTACT_INFO } from '@/lib/constants';
 import { Instagram, Facebook, Send, Mail, Phone, MapPin } from 'lucide-react';
@@ -7,6 +8,28 @@ import { Separator } from '@/components/ui/separator';
 import { Button } from '@/components/ui/button';
 
 const Footer = () => {
+  const { t } = useTranslation('common');
+
+  const NAV_LINKS = [
+    { path: '/', title: t('nav.home') },
+    { path: '/servicii', title: t('nav.services') },
+    { path: '/despre-mine', title: t('nav.about') },
+    { path: '/testimoniale', title: t('nav.testimonials') },
+    { path: '/contact', title: t('nav.contact') },
+  ];
+
+  const SOCIAL_LINKS = {
+    instagram: 'https://www.instagram.com/sabina.meruta/',
+    facebook: 'https://www.facebook.com/sabina.meruta?locale=ro_RO',
+    tiktok: 'https://www.tiktok.com/@sabinameruta',
+  };
+
+  const CONTACT_INFO = {
+    email: 'sabinaantrenor@gmail.com',
+    phone: '0787 333 500',
+    address: 'B-dul 1 Decembrie 1918, nr. 291, Centrul Comercial Auchan, Tîrgu Mureș, România',
+  };
+
   return (
     <footer className="bg-accent-100 dark:bg-accent-900 pt-12 pb-6">
       <div className="container mx-auto px-4 md:px-6">
@@ -26,8 +49,7 @@ const Footer = () => {
               </div>
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs">
-              Transformă-ți corpul și obiceiurile cu ajutorul antrenamentelor personalizate și 
-              planurilor nutriționale adaptate nevoilor tale specifice.
+              {t('footer.description')}
             </p>
             <div className="flex space-x-4 mt-4">
               <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-muted-foreground hover:text-primary-600 transition">
@@ -44,7 +66,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-medium mb-4">Link-uri rapide</h3>
+            <h3 className="text-lg font-medium mb-4">{t('footer.quickLinks')}</h3>
             <ul className="space-y-3">
               {NAV_LINKS.map((link) => (
                 <li key={link.path}>
@@ -58,7 +80,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-medium mb-4">Contact</h3>
+            <h3 className="text-lg font-medium mb-4">{t('footer.contact')}</h3>
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <Mail className="h-5 w-5 text-primary-600 shrink-0" />
@@ -91,7 +113,7 @@ const Footer = () => {
 
         <div className="flex justify-center">
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} SMfit. Toate drepturile rezervate.
+            &copy; {new Date().getFullYear()} SMfit. {t('footer.copyright')}
           </p>
         </div>
       </div>
@@ -99,4 +121,5 @@ const Footer = () => {
   );
 };
 
+"use client";
 export default Footer;
