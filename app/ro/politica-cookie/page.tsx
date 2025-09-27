@@ -187,7 +187,7 @@ export default function PoliticaCookiePage() {
                 {sections.map((section) => (
                   <li key={section.id}>
                     <Link
-                      href={`#${section.id}`}
+                      href={\`#${section.id}`}
                       className="text-muted-foreground hover:text-primary-600 transition-colors text-base"
                     >
                       {section.title}
@@ -222,7 +222,7 @@ export default function PoliticaCookiePage() {
               </div>
               <Accordion type="single" collapsible className="w-full bg-accent-100/50 dark:bg-accent-900/20 p-6 rounded-lg">
                 {faqItems.map((item, index) => (
-                  <AccordionItem key={index} value={`item-${index}`}>
+                  <AccordionItem key={index} value={\`item-${index}`}>
                     <AccordionTrigger className="text-left text-lg font-medium hover:no-underline">
                       {item.question}
                     </AccordionTrigger>
