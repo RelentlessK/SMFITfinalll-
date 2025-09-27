@@ -123,7 +123,7 @@ export default function DespreMine() {
             {/* Partners Section */}
             <section id="partners" className="py-12 px-6 lg:px-12 mb-12">
               <h2 className="text-3xl font-bold mb-6 text-center">Partenerii Mei</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
                 <Link 
                   href="https://18gym.ro" 
                   target="_blank" 
@@ -187,7 +187,7 @@ export default function DespreMine() {
                     </div>
                   </div>
                 </Link>
-              </div>
+
                 <Link 
                   href="https://cocosolis.com/ro/" 
                   target="_blank" 
@@ -207,6 +207,7 @@ export default function DespreMine() {
                     </div>
                   </div>
                 </Link>
+              </div>
             </section>
 
             <div className="text-center">
