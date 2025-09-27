@@ -133,7 +133,7 @@ export default function TermsAndConditionsPage() {
                 {sections.map((section) => (
                   <li key={section.id}>
                     <Link
-                      href={\`#${section.id}`}
+                      href={`#${section.id}`}
                       className="text-muted-foreground hover:text-primary-600 transition-colors text-base"
                     >
                       {section.title}
