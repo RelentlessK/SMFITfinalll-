@@ -136,7 +136,8 @@
     "title": "Contact",
     "titleAccent": "Me",
     "subtitle": "Have questions or ready to start? Fill out the form below or use the contact information to reach me directly.",
-    "formTitle": "Let's get in touch!",
+    "formTitle": "Let's get in",
+    "formTitleAccent": "touch!",
     "form": {
       "name": "Full Name",
       "namePlaceholder": "First and last name",

@@ -134,7 +134,9 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-2xl font-bold mb-6">{t('common:contact.formTitle')}</h2>
+              <h2 className="text-2xl font-bold mb-6">
+                {t('common:contact.formTitle')} <span className="text-primary-600">{t('common:contact.formTitleAccent')}</span>
+              </h2>
               
               {showSuccess && (
                 <div className="success-message mb-6">
@@ -156,6 +158,7 @@ export default function ContactPage() {
                             placeholder={t('common:contact.form.namePlaceholder')}
                             {...field}
                             className={cn(
+                              "transition-all duration-200 border-2 focus:border-primary-400 hover:border-primary-300",
                               form.formState.errors.name && "form-field-error"
                             )}
                             aria-invalid={!!form.formState.errors.name}
@@ -184,6 +187,7 @@ export default function ContactPage() {
                               placeholder={t('common:contact.form.emailPlaceholder')}
                               {...field}
                               className={cn(
+                                "transition-all duration-200 border-2 focus:border-primary-400 hover:border-primary-300",
                                 form.formState.errors.email && "form-field-error"
                               )}
                               aria-invalid={!!form.formState.errors.email}
@@ -210,6 +214,7 @@ export default function ContactPage() {
                               placeholder={t('common:contact.form.phonePlaceholder')}
                               {...field}
                               className={cn(
+                                "transition-all duration-200 border-2 focus:border-primary-400 hover:border-primary-300",
                                 form.formState.errors.phone && "form-field-error"
                               )}
                               aria-invalid={!!form.formState.errors.phone}
@@ -236,6 +241,7 @@ export default function ContactPage() {
                           <FormControl>
                             <SelectTrigger
                               className={cn(
+                                "transition-all duration-200 border-2 focus:border-primary-400 hover:border-primary-300",
                                 form.formState.errors.service && "form-field-error"
                               )}
                               aria-invalid={!!form.formState.errors.service}
@@ -267,7 +273,7 @@ export default function ContactPage() {
                           <Textarea 
                             placeholder={t('common:contact.form.messagePlaceholder')}
                             className={cn(
-                              "min-h-[120px]",
+                              "min-h-[120px] transition-all duration-200 border-2 focus:border-primary-400 hover:border-primary-300 resize-none",
                               form.formState.errors.message && "form-field-error"
                             )}
                             aria-invalid={!!form.formState.errors.message}
