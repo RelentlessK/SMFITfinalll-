@@ -113,5 +113,20 @@
       "phoneInvalid": "Numărul de telefon trebuie să înceapă cu 07 și să aibă 10 cifre",
       "messageRequired": "Mesajul trebuie să aibă cel puțin 10 caractere"
     }
+  },
+  "terms": {
+    "hero": {
+      "subtitle": "Regulile care guvernează utilizarea site-ului nostru web."
+    }
+  },
+  "cookie": {
+    "hero": {
+      "subtitle": "Informații detaliate despre utilizarea cookie-urilor pe site-ul nostru."
+    },
+    "faq": {
+      "whatIsCookie": "Ce este un cookie?",
+      "disableCookies": "Pot dezactiva cookie-urile?",
+      "privacyImpact": "Cum îmi afectează cookie-urile confidențialitatea?"
+    }
   }
 }

@@ -23,3 +23,22 @@ export const resources = {
     faq: faqRo,
   },
 };
+
+i18n
+  .use(initReactI18next)
+  .init({
+    resources,
+    fallbackLng: 'ro', // Changed default to Romanian as per project context
+    defaultNS: 'common',
+    ns: ['common', 'pages', 'faq'],
+    
+    interpolation: {
+      escapeValue: false,
+    },
+    
+    react: {
+      useSuspense: false,
+    },
+  });
+
+export default i18n;

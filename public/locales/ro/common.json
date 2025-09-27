@@ -171,5 +171,14 @@
     "homeTitle": "SMfit - Antrenamente Personalizate & Nutriție",
     "homeDescription": "Transformă-ți corpul cu SMfit: antrenamente personalizate online sau live și planuri nutriționale adaptate nevoilor tale.",
     "pageTitleTemplate": "%s | SMfit"
+  },
+  "footer": {
+    "description": "Transformă-ți corpul și obiceiurile cu SMfit: antrenamente personalizate și planuri nutriționale adaptate nevoilor tale specifice.",
+    "quickLinks": "Link-uri rapide",
+    "contact": "Contact",
+    "copyright": "Toate drepturile rezervate.",
+    "legalPolicies": "Legal & Politici",
+    "termsAndConditions": "Termeni și Condiții",
+    "cookiePolicy": "Politica de Cookie-uri"
   }
 }

@@ -35,7 +35,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-accent-100 dark:bg-accent-900 pt-12 pb-6">
+    <footer className="bg-accent-100 dark:bg-accent-900 pt-12 pb-6 text-sm">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           {/* Logo & Description */}
@@ -82,6 +82,22 @@ const Footer = () => {
             </ul>
           </div>
 
+          {/* Legal & Policies */}
+          <div>
+            <h3 className="text-lg font-medium mb-4">{t('footer.legalPolicies')}</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link href="/terms-and-conditions" className="text-sm text-muted-foreground hover:text-primary-600 transition">
+                  {t('footer.termsAndConditions')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/cookie-policy" className="text-sm text-muted-foreground hover:text-primary-600 transition">
+                  {t('footer.cookiePolicy')}
+                </Link>
+              </li>
+            </ul>
+          </div>
           {/* Contact Info */}
           <div>
             <h3 className="text-lg font-medium mb-4">{t('footer.contact')}</h3>

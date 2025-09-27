@@ -113,5 +113,20 @@
       "phoneInvalid": "Phone number must start with 07 and have 10 digits",
       "messageRequired": "Message must be at least 10 characters"
     }
+  },
+  "terms": {
+    "hero": {
+      "subtitle": "The rules governing the use of our website."
+    }
+  },
+  "cookie": {
+    "hero": {
+      "subtitle": "Detailed information about the use of cookies on our website."
+    },
+    "faq": {
+      "whatIsCookie": "What is a cookie?",
+      "disableCookies": "Can I disable cookies?",
+      "privacyImpact": "How do cookies affect my privacy?"
+    }
   }
 }
