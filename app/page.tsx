@@ -1,4 +1,4 @@
-import HeroVideo from '@/components/home/HeroVideo';
+import HeroSection from '@/components/home/HeroSection';
 import ServicesOverview from '@/components/home/ServicesOverview';
 import AboutPreview from '@/components/home/AboutPreview';
 import TestimonialsSlider from '@/components/home/TestimonialsSlider';
@@ -8,7 +8,7 @@ import CtaSection from '@/components/home/CtaSection';
 export default function Home() {
   return (
     <>
-      <HeroVideo />
+      <HeroSection />
       <ServicesOverview />
       <AboutPreview />
       <TestimonialsSlider />

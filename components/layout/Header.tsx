@@ -14,12 +14,9 @@ import { cn } from '@/lib/utils';
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [isHomepage, setIsHomepage] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
-    setIsHomepage(pathname === '/');
-    
     const handleScroll = () => {
       const isScrolled = window.scrollY > 20;
       setScrolled(isScrolled);
@@ -60,8 +57,8 @@ const Header = () => {
 
   return (
     <header className={cn(
-      'fixed top-0 w-full z-50 transition-all duration-300 py-2',
-      scrolled || !isHomepage ? 'bg-white shadow-sm' : 'bg-transparent'
+      'fixed top-0 w-full z-50 transition-all duration-300 bg-white py-2',
+      scrolled ? 'shadow-sm' : ''
     )}>
       <div className="container mx-auto px-0 md:px-2 flex items-center justify-between">
         <Link href="/" className="flex items-center z-50 ml-0 mr-auto">
@@ -94,9 +91,7 @@ const Header = () => {
                     'text-base font-medium transition-all duration-300 font-heading',
                     isActive(link.path) 
                       ? 'text-primary-300 border-b-2 border-primary-400' 
-                      : scrolled || !isHomepage 
-                        ? 'text-foreground/80 hover:text-primary-300'
-                        : 'text-white hover:text-primary-300'
+                      : 'text-foreground/80 hover:text-primary-300'
                   )}
                 >
                   {link.title}
@@ -115,10 +110,7 @@ const Header = () => {
         <div className="flex items-center space-x-4 md:hidden">
           <button 
             onClick={() => setIsOpen(!isOpen)}
-            className={cn(
-              "z-50 focus:outline-none p-2 transition-colors duration-300",
-              scrolled || !isHomepage ? 'text-foreground' : 'text-white'
-            )}
+            className="z-50 focus:outline-none p-2"
             aria-label={isOpen ? 'Închide meniul' : 'Deschide meniul'}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
