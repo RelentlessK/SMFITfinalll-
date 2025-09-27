@@ -1,3 +1,5 @@
+"use client";
+
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
@@ -121,5 +123,4 @@ const Footer = () => {
   );
 };
 
-"use client";
 export default Footer;

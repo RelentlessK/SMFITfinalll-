@@ -11,33 +11,6 @@ import AnimatedSection from '@/components/shared/AnimatedSection';
 const TestimonialsSlider = () => {
   const { t } = useTranslation('common');
 
-  const TESTIMONIALS = [
-    {
-      id: 1,
-      name: 'Andreea F.',
-      image: 'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfw9lCUqr6eJZDoIyBpajOLVq5G2cHlntQF41NM',
-      content: 'Am slăbit 10 kg în două luni datorită programului de antrenament personalizat și susținerii necondiționate oferite de Sabina Meruță. Planul ei nutrițional echilibrat mi-a transformat complet relația cu mâncarea și a facilitat rezultate rapide.',
-    },
-    {
-      id: 2,
-      name: 'Roxana M.',
-      image: 'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwafiexWCsM9I5dUvLTAtnz7wjgeiJGZhmqlV8',
-      content: 'Am slăbit 6 kg și am redus 3 cm în zona șoldurilor în 6 săptămâni datorită antrenamentelor și nutriției personalizate ale Sabinei Meruță. Profesionalismul și motivația ei m-au ajutat să obțin rezultate rapide.',
-    },
-    {
-      id: 3,
-      name: 'Liliana C.',
-      image: 'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwngapDIcMtQSC20egfBFD5VGqbd37wHUlruxm',
-      content: 'Sabina, cu energia ei debordantă, mi-a explicat fiecare exercițiu cu răbdare și m-a motivat să depășesc limitele. În doar două luni, am câștigat 4 cm în zona fesierilor datorită antrenamentelor ei eficiente și planului nutrițional personalizat.',
-    },
-    {
-      id: 4,
-      name: 'Brigitta B.',
-      image: 'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwONxleCAzhb4fn0ZjJoa7HyuY6Bmk9SKOFx2g',
-      content: 'Îți mulțumesc din suflet pentru sprijinul și îndrumarea constantă. Fiecare antrenament alături de tine a fost o experiență valoroasă, iar dedicarea ta m-a inspirat cu adevărat. Îți sunt recunoscătoare pentru tot efortul depus!',
-    },
-  ];
-
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(0);
   const [isAutoplay, setIsAutoplay] = useState(true);

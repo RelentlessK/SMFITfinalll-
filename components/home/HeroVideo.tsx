@@ -1,7 +1,9 @@
 "use client";
 
-import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Button } from '@/components/ui/button';
+import { Play, Pause } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
 import { Component as LumaSpin } from '@/components/ui/luma-spin';
 
 const VIDEO_URL = "https://vhqd75bvbs.ufs.sh/f/xRpe82xlR4uclILHWMYAo4dNGScRMZe6x8Fv3Os7Pnf2UtVb";
