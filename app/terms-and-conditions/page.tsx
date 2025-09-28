@@ -10,7 +10,7 @@ import { motion } from 'framer-motion';
 export default function TermsAndConditionsPage() {
   const { t } = useTranslation(['common', 'pages']);
 
-  const lastUpdatedDate = new Date().toLocaleDateString(t('common:seo.locale', 'en-US'), {
+  const lastUpdatedDate = new Date().toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -18,73 +18,73 @@ export default function TermsAndConditionsPage() {
 
   const sections = [
     {
-      id: 'acceptance-of-terms', 
-      title: t('pages:content.acceptanceOfTerms.title'),
-      label: t('pages:content.acceptanceOfTerms.label'),
+      id: 'acceptance-of-terms',
+      title: 'Acceptance of Terms',
+      label: 'Introduction',
       content: (
         <>
           <p className="text-muted-foreground mb-4">
-            {t('pages:content.acceptanceOfTerms.content')}
+            By accessing and using this website, you accept and agree to be bound by the terms and provisions of this agreement. If you do not agree to abide by the above, please do not use this service.
           </p>
         </>
       ),
     },
     {
       id: 'use-of-the-website',
-      title: t('pages:content.useOfWebsite.title'),
-      label: t('pages:content.useOfWebsite.label'),
+      title: 'Use of the Website',
+      label: 'Guidelines',
       content: (
         <>
           <p className="text-muted-foreground mb-4">
-            {t('pages:content.useOfWebsite.content1')}
+            This website is intended for use for informational and legitimate business purposes. You may not use the website for illegal or unauthorized activities.
           </p>
           <p className="text-muted-foreground mb-4">
-            {t('pages:content.useOfWebsite.content2')}
+            All information presented on this website is provided in good faith and for general informational purposes only. We make no warranties about the accuracy, reliability, or completeness of this information.
           </p>
         </>
       ),
     },
     {
       id: 'intellectual-property',
-      title: t('pages:content.intellectualProperty.title'),
-      label: t('pages:content.intellectualProperty.label'),
+      title: 'Intellectual Property',
+      label: 'Rights',
       content: (
         <>
           <p className="text-muted-foreground mb-4">
-            {t('pages:content.intellectualProperty.content')}
+            The content of this website, including texts, images, logos, and design, is protected by copyright and other intellectual property rights. You may not reproduce, distribute, or use this content without our express permission.
           </p>
         </>
       ),
     },
     {
       id: 'limitation-of-liability',
-      title: t('pages:content.limitationOfLiability.title'),
-      label: t('pages:content.limitationOfLiability.label'),
+      title: 'Limitation of Liability',
+      label: 'Important',
       content: (
         <>
           <div className="bg-primary-100/20 dark:bg-primary-900/20 border border-primary-200 dark:border-primary-700/30 rounded-lg p-4 mb-6 flex items-start space-x-3">
             <Info className="h-6 w-6 text-primary-600 shrink-0 mt-1" />
             <div>
-              <h3 className="text-lg font-semibold text-primary-600 mb-2">{t('pages:content.limitationOfLiability.noticeTitle')}</h3>
+              <h3 className="text-lg font-semibold text-primary-600 mb-2">Important Legal Notice</h3>
               <p className="text-muted-foreground text-sm">
-                {t('pages:content.limitationOfLiability.noticeContent')}
+                SMfit shall not be liable for any direct, indirect, incidental, or consequential damages resulting from the use or inability to use this website. This includes, but is not limited to, loss of profits, data, or other intangible assets.
               </p>
             </div>
           </div>
           <p className="text-muted-foreground mb-4">
-            {t('pages:content.limitationOfLiability.content')}
+            Your use of the services and information on this site is at your own risk. We recommend consulting a specialist before making decisions based on the information presented here.
           </p>
         </>
       ),
     },
     {
       id: 'contact',
-      title: t('pages:content.contact.title'),
-      label: t('pages:content.contact.label'),
+      title: 'Contact',
+      label: 'Inquiries',
       content: (
         <>
           <p className="text-muted-foreground mb-4">
-            {t('pages:content.contact.content1')}
+            For questions regarding these terms and conditions, you can contact us at:
           </p>
           <div className="flex items-center space-x-3 mb-4">
             <Mail className="h-5 w-5 text-primary-600 shrink-0" />
@@ -93,7 +93,7 @@ export default function TermsAndConditionsPage() {
             </a>
           </div>
           <p className="text-muted-foreground text-sm">
-            {t('pages:content.contact.content2')}
+            We will respond to your inquiry as soon as possible.
           </p>
         </>
       ),
@@ -107,13 +107,13 @@ export default function TermsAndConditionsPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              {t('pages:content.acceptanceOfTerms.title').split(' ')[0]} <span className="text-primary-600">{t('pages:content.acceptanceOfTerms.title').split(' ').slice(1).join(' ')}</span>
+              Terms and <span className="text-primary-600">Conditions</span>
             </h1>
             <p className="text-lg text-muted-foreground mb-2">
               {t('pages:terms.hero.subtitle')}
             </p>
             <p className="text-sm text-muted-foreground">
-              {t('pages:content.lastUpdated')} {lastUpdatedDate}
+              Last updated: {lastUpdatedDate}
             </p>
           </div>
         </div>
@@ -129,7 +129,7 @@ export default function TermsAndConditionsPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="bg-card border border-border rounded-lg p-6 mb-12 shadow-sm"
             >
-              <h2 className="text-xl font-bold mb-4">{t('pages:content.tableOfContents')}</h2>
+              <h2 className="text-xl font-bold mb-4">Table of Contents</h2>
               <ul className="list-none space-y-2">
                 {sections.map((section) => (
                   <li key={section.id}>

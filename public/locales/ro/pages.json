@@ -115,161 +115,18 @@
     }
   },
   "terms": {
-    "pageTitle": "Termeni și Condiții | SMfit",
-    "pageDescription": "Termenii și condițiile de utilizare a site-ului SMfit. Citește regulile care guvernează utilizarea serviciilor noastre online.",
     "hero": {
-      "title": "Termeni și",
-      "titleAccent": "Condiții",
       "subtitle": "Regulile care guvernează utilizarea site-ului nostru web."
-    },
-    "tableOfContents": "Cuprins",
-    "lastUpdated": "Ultima actualizare:",
-    "content": {
-      "acceptanceOfTerms": {
-        "title": "Acceptarea Termenilor",
-        "label": "Introducere",
-        "content": "Prin accesarea și utilizarea acestui site web, acceptați și sunteți de acord să fiți legat de termenii și prevederile acestui acord. Dacă nu sunteți de acord să respectați cele de mai sus, vă rugăm să nu utilizați acest serviciu."
-      },
-      "useOfWebsite": {
-        "title": "Utilizarea Site-ului",
-        "label": "Reguli",
-        "content1": "Acest site web este destinat utilizării în scopuri informaționale și de afaceri legitime. Nu aveți voie să utilizați site-ul pentru activități ilegale sau neautorizate.",
-        "content2": "Toate informațiile prezentate pe acest site web sunt furnizate cu bună credință și doar în scopuri generale de informare. Nu oferim garanții cu privire la acuratețea, fiabilitatea sau caracterul complet al acestor informații."
-      },
-      "intellectualProperty": {
-        "title": "Proprietate Intelectuală",
-        "label": "Drepturi",
-        "content": "Conținutul acestui site web, inclusiv texte, imagini, logo-uri și design, este protejat de drepturi de autor și alte drepturi de proprietate intelectuală. Nu aveți voie să reproduceți, distribuiți sau utilizați acest conținut fără permisiunea noastră expresă."
-      },
-      "limitationOfLiability": {
-        "title": "Limitarea Răspunderii",
-        "label": "Important",
-        "noticeTitle": "Notă Legală Importantă",
-        "noticeContent": "SMfit nu va fi răspunzător pentru orice daune directe, indirecte, incidentale sau consecutive rezultate din utilizarea sau incapacitatea de a utiliza acest site web. Aceasta include, dar nu se limitează la, pierderea profiturilor, datelor sau altor bunuri intangibile.",
-        "content": "Utilizarea serviciilor și informațiilor de pe acest site se face pe propriul risc. Recomandăm consultarea unui specialist înainte de a lua decizii bazate pe informațiile prezentate aici."
-      },
-      "contact": {
-        "title": "Contact",
-        "label": "Întrebări",
-        "content1": "Pentru întrebări legate de acești termeni și condiții, ne puteți contacta la:",
-        "content2": "Vă vom răspunde la întrebare în cel mai scurt timp posibil."
-      }
     }
   },
   "cookie": {
-    "pageTitle": "Politica de Cookie-uri | SMfit",
-    "pageDescription": "Informații despre cookie-urile utilizate pe site-ul SMfit. Aflați cum folosim cookie-urile pentru a îmbunătăți experiența dumneavoastră.",
     "hero": {
-      "title": "Politica de",
-      "titleAccent": "Cookie-uri",
       "subtitle": "Informații detaliate despre utilizarea cookie-urilor pe site-ul nostru."
     },
     "faq": {
       "whatIsCookie": "Ce este un cookie?",
       "disableCookies": "Pot dezactiva cookie-urile?",
       "privacyImpact": "Cum îmi afectează cookie-urile confidențialitatea?"
-    },
-    "tableOfContents": "Cuprins",
-    "lastUpdated": "Ultima actualizare:",
-    "content": {
-      "acceptanceOfTerms": {
-        "title": "Acceptarea Termenilor",
-        "label": "Introducere",
-        "content": "Prin accesarea și utilizarea acestui site web, acceptați și sunteți de acord să fiți legat de termenii și prevederile acestui acord. Dacă nu sunteți de acord să respectați cele de mai sus, vă rugăm să nu utilizați acest serviciu."
-      },
-      "useOfWebsite": {
-        "title": "Utilizarea Site-ului",
-        "label": "Reguli",
-        "content1": "Acest site web este destinat utilizării în scopuri informaționale și de afaceri legitime. Nu aveți voie să utilizați site-ul pentru activități ilegale sau neautorizate.",
-        "content2": "Toate informațiile prezentate pe acest site web sunt furnizate cu bună credință și doar în scopuri generale de informare. Nu oferim garanții cu privire la acuratețea, fiabilitatea sau caracterul complet al acestor informații."
-      },
-      "intellectualProperty": {
-        "title": "Proprietate Intelectuală",
-        "label": "Drepturi",
-        "content": "Conținutul acestui site web, inclusiv texte, imagini, logo-uri și design, este protejat de drepturi de autor și alte drepturi de proprietate intelectuală. Nu aveți voie să reproduceți, distribuiți sau utilizați acest conținut fără permisiunea noastră expresă."
-      },
-      "limitationOfLiability": {
-        "title": "Limitarea Răspunderii",
-        "label": "Important",
-        "noticeTitle": "Notă Legală Importantă",
-        "noticeContent": "SMfit nu va fi răspunzător pentru orice daune directe, indirecte, incidentale sau consecutive rezultate din utilizarea sau incapacitatea de a utiliza acest site web. Aceasta include, dar nu se limitează la, pierderea profiturilor, datelor sau altor bunuri intangibile.",
-        "content": "Utilizarea serviciilor și informațiilor de pe acest site se face pe propriul risc. Recomandăm consultarea unui specialist înainte de a lua decizii bazate pe informațiile prezentate aici."
-      },
-      "contact": {
-        "title": "Contact",
-        "label": "Întrebări",
-        "content1": "Pentru întrebări legate de acești termeni și condiții, ne puteți contacta la:",
-        "content2": "Vă vom răspunde la întrebare în cel mai scurt timp posibil."
-      },
-      "cookieControl": {
-        "title": "Controlul Cookie-urilor",
-        "content1": "Puteți gestiona preferințele cookie-urilor direct din setările browserului dumneavoastră. Pentru informații detaliate despre cum să ștergeți sau să blocați cookie-urile, vizitați",
-        "content2": "Rețineți că restricționarea cookie-urilor poate afecta funcționalitatea anumitor părți ale site-ului."
-      },
-      "whatIsCookie": {
-        "title": "Ce este un Cookie?",
-        "label": "Definiție",
-        "content": "Un cookie este un fișier text de mici dimensiuni, format din litere și numere, care va fi stocat pe computerul, terminalul mobil sau alte echipamente ale unui utilizator de pe care se accesează internetul. Cookie-ul este „pasiv" (nu conține programe software, viruși sau spyware și nu poate accesa informațiile de pe hard disk-ul utilizatorului)."
-      },
-      "cookieFunctionality": {
-        "title": "Funcționalitatea Cookie-urilor",
-        "label": "Beneficii",
-        "content1": "Activarea cookie-urilor nu este strict necesară pentru funcționarea site-ului web, dar poate îmbunătăți semnificativ experiența dumneavoastră de navigare. Puteți șterge sau bloca cookie-urile, însă, dacă faceți acest lucru, este posibil ca unele funcționalități ale site-ului să nu funcționeze corect.",
-        "content2": "Informațiile asociate cookie-urilor nu sunt utilizate pentru a vă identifica personal. În plus, noi controlăm datele referitoare la preferințele dumneavoastră de navigare. Cookie-urile nu sunt utilizate în alte scopuri decât cele descrise aici."
-      },
-      "additionalCookies": {
-        "title": "Notificare Cookie-uri Suplimentare",
-        "label": "Atenție",
-        "content": "Unele dintre paginile sau sub-site-urile noastre pot utiliza cookie-uri suplimentare sau diferite față de cele descrise mai sus. În acest caz, veți găsi detalii despre cookie-uri pe paginile specifice. De asemenea, vi se poate cere consimțământul pentru stocarea acestora."
-      },
-      "howCookiesWork": {
-        "title": "Cum funcționează Cookie-urile?",
-        "label": "Mecanism",
-        "content1": "Aceste fișiere fac posibilă recunoașterea terminalului utilizatorului și prezentarea conținutului într-un mod relevant, adaptat preferințelor acestuia. Cookie-urile oferă servicii confortabile utilizatorilor, cum ar fi:",
-        "features": [
-          "Preferințe de confidențialitate online",
-          "Coș de cumpărături și funcționalități conexe",
-          "Publicitate relevantă și experiență personalizată"
-        ],
-        "content2": "De asemenea, sunt utilizate în pregătirea statisticilor agregate anonime, care ne ajută să înțelegem modul în care un utilizator beneficiază de paginile noastre web, permițându-ne să îmbunătățim structura și conținutul acestora, excluzând identificarea dumneavoastră personală."
-      },
-      "personalDataSecurity": {
-        "title": "Date Personale și Securitate",
-        "label": "Confidențialitate",
-        "content": "Cookie-urile în sine nu necesită informații personale pentru a fi utilizate și, în majoritatea cazurilor, nu identifică personal utilizatorii de internet. Datele personale colectate prin utilizarea cookie-urilor pot fi colectate doar pentru a facilita anumite funcționalități pentru utilizator. Astfel de date sunt criptate într-un mod care face imposibilă accesarea lor de către persoane neautorizate."
-      },
-      "cookieControlSection": {
-        "title": "Controlul Cookie-urilor",
-        "label": "Gestionare",
-        "content": "Puteți controla și/sau șterge cookie-urile după cum doriți – pentru detalii, consultați site-ul aboutcookies.org. Puteți șterge toate cookie-urile din computerul dumneavoastră și puteți seta majoritatea browserelor să blocheze plasarea acestora. Dacă faceți acest lucru, este posibil să fie necesar să setați manual unele preferințe de fiecare dată când vizitați site-ul web. De asemenea, unele servicii sau opțiuni ar putea să nu funcționeze."
-      },
-      "faqSection": {
-        "title": "Întrebări Frecvente despre Cookie-uri",
-        "items": [
-          {
-            "question": "Ce este un cookie?",
-            "answer": "Un cookie este un fișier text mic stocat pe dispozitivul dumneavoastră, care ajută site-ul să funcționeze mai bine și să rețină preferințele dumneavoastră. Nu conține informații personale. Pentru mai multe detalii, consultați secțiunea \"Ce este un Cookie?\".",
-            "link": "#ce-este-un-cookie"
-          },
-          {
-            "question": "Pot dezactiva cookie-urile?",
-            "answer": "Da, puteți dezactiva cookie-urile din setările browserului dumneavoastră. Rețineți însă că acest lucru poate afecta funcționalitatea site-ului. Pentru instrucțiuni, consultați secțiunea \"Controlul Cookie-urilor\".",
-            "link": "#controlul-cookie-urilor"
-          },
-          {
-            "question": "Cum îmi afectează cookie-urile confidențialitatea?",
-            "answer": "Cookie-urile în sine nu vă identifică personal. Ele ajută la personalizarea experienței dumneavoastră online și la colectarea de statistici anonime. Datele personale colectate prin cookie-uri sunt criptate. Mai multe informații găsiți în secțiunea \"Date Personale și Securitate\".",
-            "link": "#date-personale-si-securitate"
-          }
-        ]
-      },
-      "usefulResources": {
-        "title": "Resurse Utile",
-        "allAboutCookies": "Toate despre Cookie-uri",
-        "yourOnlineChoices": "Alegerile Tale Online"
-      }
     }
-      },
-      "usefulResources": {
   }
 }
