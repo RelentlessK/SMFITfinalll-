@@ -216,8 +216,7 @@
       "disableCookies": "Can I disable cookies?",
       "disableCookiesAnswer": "Yes, you can disable cookies through your browser settings. However, please note that this may affect the website's functionality. For instructions, refer to the \"Cookie Control\" section.",
       "disableCookiesLink": "#cookie-control",
-      "privacyImpact": "How do cookies affect my privacy?"
-      "privacyImpactAnswer": "Cookies themselves do not personally identify you. They help personalize your online experience and collect anonymous statistics. Personal data collected via cookies is encrypted. Find more information in the \"Personal Data & Security\" section.",
+      "privacyImpact": "How do cookies affect my privacy?",
       "privacyImpactAnswer": "Cookies themselves do not personally identify you. They help personalize your online experience and collect anonymous statistics. Personal data collected via cookies is encrypted. Find more information in the \"Personal Data & Security\" section.",
       "privacyImpactLink": "#personal-data-security"
     },
