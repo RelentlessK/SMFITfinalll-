@@ -183,5 +183,29 @@
   },
   "instagram": {
     "followMe": "Follow me on Instagram!"
+  },
+  "testimonials": {
+    "title": "What Our",
+    "titleAccent": "Clients",
+    "titleSuffix": "Say",
+    "subtitle": "Real results and experiences from people who have transformed their lives with SMfit.",
+    "items": [
+      {
+        "name": "Andreea F.",
+        "content": "I lost 10 kg in two months thanks to the personalized training program and unconditional support offered by Sabina Meruță. Her balanced nutritional plan completely transformed my relationship with food and facilitated rapid results."
+      },
+      {
+        "name": "Roxana M.",
+        "content": "I lost 6 kg and reduced 3 cm in the hip area in 6 weeks thanks to Sabina Meruță's personalized training and nutrition. Her professionalism and motivation helped me achieve rapid results."
+      },
+      {
+        "name": "Liliana C.",
+        "content": "Sabina, with her overflowing energy, explained each exercise to me with patience and motivated me to exceed my limits. In just two months, I gained 4 cm in the glute area thanks to her efficient training and personalized nutrition plan."
+      },
+      {
+        "name": "Brigitta B.",
+        "content": "Thank you from the bottom of my heart for your constant support and guidance. Every training session with you was a valuable experience, and your dedication truly inspired me. I am grateful for all the effort you put in!"
+      }
+    ]
   }
 }

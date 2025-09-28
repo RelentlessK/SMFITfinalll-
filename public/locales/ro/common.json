@@ -183,5 +183,29 @@
   },
   "instagram": {
     "followMe": "Urmărește-mă pe Instagram!"
+  },
+  "testimonials": {
+    "title": "Ce Spun",
+    "titleAccent": "Clienții",
+    "titleSuffix": "Noștri",
+    "subtitle": "Rezultatele și experiențele reale ale persoanelor care și-au transformat viața cu SMfit.",
+    "items": [
+      {
+        "name": "Andreea F.",
+        "content": "Am slăbit 10 kg în două luni datorită programului de antrenament personalizat și susținerii necondiționate oferite de Sabina Meruță. Planul ei nutrițional echilibrat mi-a transformat complet relația cu mâncarea și a facilitat rezultate rapide."
+      },
+      {
+        "name": "Roxana M.",
+        "content": "Am slăbit 6 kg și am redus 3 cm în zona șoldurilor în 6 săptămâni datorită antrenamentelor și nutriției personalizate ale Sabinei Meruță. Profesionalismul și motivația ei m-au ajutat să obțin rezultate rapide."
+      },
+      {
+        "name": "Liliana C.",
+        "content": "Sabina, cu energia ei debordantă, mi-a explicat fiecare exercițiu cu răbdare și m-a motivat să depășesc limitele. În doar două luni, am câștigat 4 cm în zona fesierilor datorită antrenamentelor ei eficiente și planului nutrițional personalizat."
+      },
+      {
+        "name": "Brigitta B.",
+        "content": "Îți mulțumesc din suflet pentru sprijinul și îndrumarea constantă. Fiecare antrenament alături de tine a fost o experiență valoroasă, iar dedicarea ta m-a inspirat cu adevărat. Îți sunt recunoscătoare pentru tot efortul depus!"
+      }
+    ]
   }
 }

@@ -1,7 +1,6 @@
 "use client";
 
 import { useTranslation } from 'react-i18next';
-import { TESTIMONIALS } from '@/lib/constants';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -11,6 +10,20 @@ import AnimatedSection from '@/components/shared/AnimatedSection';
 
 const TestimonialsSlider = () => {
   const { t } = useTranslation('common');
+
+  // Get testimonials from translations with fallback images
+  const TESTIMONIALS = (t('testimonials.items', { returnObjects: true }) as Array<{
+    name: string;
+    content: string;
+  }>).map((item, index) => ({
+    ...item,
+    image: [
+      'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfw9lCUqr6eJZDoIyBpajOLVq5G2cHlntQF41NM',
+      'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwafiexWCsM9I5dUvLTAtnz7wjgeiJGZhmqlV8',
+      'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwngapDIcMtQSC20egfBFD5VGqbd37wHUlruxm',
+      'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwONxleCAzhb4fn0ZjJoa7HyuY6Bmk9SKOFx2g'
+    ][index]
+  }));
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(0);
