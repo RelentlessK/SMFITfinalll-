@@ -243,7 +243,7 @@
         "label": "Gestionare",
         "content": "Puteți controla și/sau șterge cookie-urile după cum doriți – pentru detalii, consultați site-ul aboutcookies.org. Puteți șterge toate cookie-urile din computerul dumneavoastră și puteți seta majoritatea browserelor să blocheze plasarea acestora. Dacă faceți acest lucru, este posibil să fie necesar să setați manual unele preferințe de fiecare dată când vizitați site-ul web. De asemenea, unele servicii sau opțiuni ar putea să nu funcționeze."
       },
-    },
+      "faqSection": {
         "title": "Întrebări Frecvente despre Cookie-uri",
         "items": [
           {
@@ -262,6 +262,13 @@
             "link": "#date-personale-si-securitate"
           }
         ]
+      },
+      "usefulResources": {
+        "title": "Resurse Utile",
+        "allAboutCookies": "Toate despre Cookie-uri",
+        "yourOnlineChoices": "Alegerile Tale Online"
+      }
+    }
       },
       "usefulResources": {
         "title": "Resurse Utile",
