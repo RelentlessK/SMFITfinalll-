@@ -115,12 +115,53 @@
     }
   },
   "terms": {
+    "pageTitle": "Termeni și Condiții | SMfit",
+    "pageDescription": "Termenii și condițiile de utilizare a site-ului SMfit. Citește regulile care guvernează utilizarea serviciilor noastre online.",
     "hero": {
+      "title": "Termeni și",
+      "titleAccent": "Condiții",
       "subtitle": "Regulile care guvernează utilizarea site-ului nostru web."
+    },
+    "tableOfContents": "Cuprins",
+    "lastUpdated": "Ultima actualizare:",
+    "content": {
+      "acceptanceOfTerms": {
+        "title": "Acceptarea Termenilor",
+        "label": "Introducere",
+        "content": "Prin accesarea și utilizarea acestui site web, acceptați și sunteți de acord să fiți legat de termenii și prevederile acestui acord. Dacă nu sunteți de acord să respectați cele de mai sus, vă rugăm să nu utilizați acest serviciu."
+      },
+      "useOfWebsite": {
+        "title": "Utilizarea Site-ului",
+        "label": "Reguli",
+        "content1": "Acest site web este destinat utilizării în scopuri informaționale și de afaceri legitime. Nu aveți voie să utilizați site-ul pentru activități ilegale sau neautorizate.",
+        "content2": "Toate informațiile prezentate pe acest site web sunt furnizate cu bună credință și doar în scopuri generale de informare. Nu oferim garanții cu privire la acuratețea, fiabilitatea sau caracterul complet al acestor informații."
+      },
+      "intellectualProperty": {
+        "title": "Proprietate Intelectuală",
+        "label": "Drepturi",
+        "content": "Conținutul acestui site web, inclusiv texte, imagini, logo-uri și design, este protejat de drepturi de autor și alte drepturi de proprietate intelectuală. Nu aveți voie să reproduceți, distribuiți sau utilizați acest conținut fără permisiunea noastră expresă."
+      },
+      "limitationOfLiability": {
+        "title": "Limitarea Răspunderii",
+        "label": "Important",
+        "noticeTitle": "Notă Legală Importantă",
+        "noticeContent": "SMfit nu va fi răspunzător pentru orice daune directe, indirecte, incidentale sau consecutive rezultate din utilizarea sau incapacitatea de a utiliza acest site web. Aceasta include, dar nu se limitează la, pierderea profiturilor, datelor sau altor bunuri intangibile.",
+        "content": "Utilizarea serviciilor și informațiilor de pe acest site se face pe propriul risc. Recomandăm consultarea unui specialist înainte de a lua decizii bazate pe informațiile prezentate aici."
+      },
+      "contact": {
+        "title": "Contact",
+        "label": "Întrebări",
+        "content1": "Pentru întrebări legate de acești termeni și condiții, ne puteți contacta la:",
+        "content2": "Vă vom răspunde la întrebare în cel mai scurt timp posibil."
+      }
     }
   },
   "cookie": {
+    "pageTitle": "Politica de Cookie-uri | SMfit",
+    "pageDescription": "Informații despre cookie-urile utilizate pe site-ul SMfit. Aflați cum folosim cookie-urile pentru a îmbunătăți experiența dumneavoastră.",
     "hero": {
+      "title": "Politica de",
+      "titleAccent": "Cookie-uri",
       "subtitle": "Informații detaliate despre utilizarea cookie-urilor pe site-ul nostru."
     },
     "faq": {
@@ -128,6 +169,8 @@
       "disableCookies": "Pot dezactiva cookie-urile?",
       "privacyImpact": "Cum îmi afectează cookie-urile confidențialitatea?"
     },
+    "tableOfContents": "Cuprins",
+    "lastUpdated": "Ultima actualizare:",
     "content": {
       "acceptanceOfTerms": {
         "title": "Acceptarea Termenilor",
@@ -158,8 +201,6 @@
         "content1": "Pentru întrebări legate de acești termeni și condiții, ne puteți contacta la:",
         "content2": "Vă vom răspunde la întrebare în cel mai scurt timp posibil."
       },
-      "tableOfContents": "Cuprins",
-      "lastUpdated": "Ultima actualizare:",
       "cookieControl": {
         "title": "Controlul Cookie-urilor",
         "content1": "Puteți gestiona preferințele cookie-urilor direct din setările browserului dumneavoastră. Pentru informații detaliate despre cum să ștergeți sau să blocați cookie-urile, vizitați",
@@ -228,3 +269,5 @@
         "yourOnlineChoices": "Alegerile Tale Online"
       }
     }
+  }
+}
