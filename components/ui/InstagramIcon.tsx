@@ -26,7 +26,7 @@ const InstagramIcon = () => {
         title={t('instagram.followMe')}
         aria-label={t('instagram.followMe')}
       >
-        <Instagram size={24} />
+        <Instagram size={24} className="text-primary-600" />
         
         <AnimatePresence>
           {isHovered && (
@@ -35,9 +35,10 @@ const InstagramIcon = () => {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 10, scale: 0.8 }}
               transition={{ duration: 0.2 }}
-              className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-2 bg-gray-800 text-white text-sm rounded-lg shadow-lg whitespace-nowrap pointer-events-none"
+              className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 px-3 py-1.5 bg-gray-800 text-white text-xs rounded-md whitespace-nowrap shadow-sm relative"
             >
               {t('instagram.followMe')}
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-[-6px] w-0 h-0 border-l-4 border-l-transparent border-r-4 border-r-transparent border-t-4 border-t-gray-800"></div>
               <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-gray-800" />
             </motion.div>
           )}
