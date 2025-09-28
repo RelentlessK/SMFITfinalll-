@@ -19,81 +19,81 @@ export default function TermsAndConditionsPage() {
   const sections = [
     {
       id: 'acceptance-of-terms',
-      title: 'Acceptance of Terms',
-      label: 'Introduction',
+      title: t('pages:terms.sections.acceptanceOfTerms.title'),
+      label: t('pages:terms.sections.acceptanceOfTerms.label'),
       content: (
         <>
           <p className="text-muted-foreground mb-4">
-            By accessing and using this website, you accept and agree to be bound by the terms and provisions of this agreement. If you do not agree to abide by the above, please do not use this service.
+            {t('pages:terms.sections.acceptanceOfTerms.content')}
           </p>
         </>
       ),
     },
     {
       id: 'use-of-the-website',
-      title: 'Use of the Website',
-      label: 'Guidelines',
+      title: t('pages:terms.sections.useOfWebsite.title'),
+      label: t('pages:terms.sections.useOfWebsite.label'),
       content: (
         <>
           <p className="text-muted-foreground mb-4">
-            This website is intended for use for informational and legitimate business purposes. You may not use the website for illegal or unauthorized activities.
+            {t('pages:terms.sections.useOfWebsite.content1')}
           </p>
           <p className="text-muted-foreground mb-4">
-            All information presented on this website is provided in good faith and for general informational purposes only. We make no warranties about the accuracy, reliability, or completeness of this information.
+            {t('pages:terms.sections.useOfWebsite.content2')}
           </p>
         </>
       ),
     },
     {
       id: 'intellectual-property',
-      title: 'Intellectual Property',
-      label: 'Rights',
+      title: t('pages:terms.sections.intellectualProperty.title'),
+      label: t('pages:terms.sections.intellectualProperty.label'),
       content: (
         <>
           <p className="text-muted-foreground mb-4">
-            The content of this website, including texts, images, logos, and design, is protected by copyright and other intellectual property rights. You may not reproduce, distribute, or use this content without our express permission.
+            {t('pages:terms.sections.intellectualProperty.content')}
           </p>
         </>
       ),
     },
     {
       id: 'limitation-of-liability',
-      title: 'Limitation of Liability',
-      label: 'Important',
+      title: t('pages:terms.sections.limitationOfLiability.title'),
+      label: t('pages:terms.sections.limitationOfLiability.label'),
       content: (
         <>
           <div className="bg-primary-100/20 dark:bg-primary-900/20 border border-primary-200 dark:border-primary-700/30 rounded-lg p-4 mb-6 flex items-start space-x-3">
             <Info className="h-6 w-6 text-primary-600 shrink-0 mt-1" />
             <div>
-              <h3 className="text-lg font-semibold text-primary-600 mb-2">Important Legal Notice</h3>
+              <h3 className="text-lg font-semibold text-primary-600 mb-2">{t('pages:terms.sections.limitationOfLiability.legalNotice.title')}</h3>
               <p className="text-muted-foreground text-sm">
-                SMfit shall not be liable for any direct, indirect, incidental, or consequential damages resulting from the use or inability to use this website. This includes, but is not limited to, loss of profits, data, or other intangible assets.
+                {t('pages:terms.sections.limitationOfLiability.legalNotice.content')}
               </p>
             </div>
           </div>
           <p className="text-muted-foreground mb-4">
-            Your use of the services and information on this site is at your own risk. We recommend consulting a specialist before making decisions based on the information presented here.
+            {t('pages:terms.sections.limitationOfLiability.content')}
           </p>
         </>
       ),
     },
     {
       id: 'contact',
-      title: 'Contact',
-      label: 'Inquiries',
+      title: t('pages:terms.sections.contact.title'),
+      label: t('pages:terms.sections.contact.label'),
       content: (
         <>
           <p className="text-muted-foreground mb-4">
-            For questions regarding these terms and conditions, you can contact us at:
+            {t('pages:terms.sections.contact.content1')}
           </p>
           <div className="flex items-center space-x-3 mb-4">
             <Mail className="h-5 w-5 text-primary-600 shrink-0" />
-            <a href="mailto:sabinaantrenor@gmail.com" className="text-muted-foreground hover:text-primary-600 transition">
-              sabinaantrenor@gmail.com
+            <a href={`mailto:${t('pages:terms.sections.contact.email')}`} className="text-muted-foreground hover:text-primary-600 transition">
+              {t('pages:terms.sections.contact.email')}
             </a>
           </div>
           <p className="text-muted-foreground text-sm">
-            We will respond to your inquiry as soon as possible.
+            {t('pages:terms.sections.contact.content2')}
           </p>
         </>
       ),
@@ -113,7 +113,7 @@ export default function TermsAndConditionsPage() {
               {t('pages:terms.hero.subtitle')}
             </p>
             <p className="text-sm text-muted-foreground">
-              Last updated: {lastUpdatedDate}
+              {t('pages:terms.lastUpdated')}: {lastUpdatedDate}
             </p>
           </div>
         </div>
@@ -129,7 +129,7 @@ export default function TermsAndConditionsPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="bg-card border border-border rounded-lg p-6 mb-12 shadow-sm"
             >
-              <h2 className="text-xl font-bold mb-4">Table of Contents</h2>
+              <h2 className="text-xl font-bold mb-4">{t('pages:terms.tableOfContents')}</h2>
               <ul className="list-none space-y-2">
                 {sections.map((section) => (
                   <li key={section.id}>

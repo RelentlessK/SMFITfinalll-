@@ -12,7 +12,7 @@ import { Separator } from '@/components/ui/separator';
 import { Button } from '@/components/ui/button';
 
 const Footer = () => {
-  const { t } = useTranslation('common');
+  const { t, i18n } = useTranslation('common');
 
   const NAV_LINKS = [
     { path: '/', title: t('nav.home') },
@@ -34,6 +34,14 @@ const Footer = () => {
     address: 'B-dul 1 Decembrie 1918, nr. 291, Centrul Comercial Auchan, Tîrgu Mureș, România',
   };
 
+  // Helper function to get localized legal page paths
+  const getLegalPagePath = (page: 'terms' | 'cookie') => {
+    const isRomanian = i18n.language === 'ro';
+    if (page === 'terms') {
+      return isRomanian ? '/ro/termeni-si-conditii' : '/terms-and-conditions';
+    }
+    return isRomanian ? '/ro/politica-cookie' : '/cookie-policy';
+  };
   return (
     <footer className="bg-accent-100 dark:bg-accent-900 pt-12 pb-6 text-sm">
       <div className="container mx-auto px-4 md:px-6">
@@ -87,12 +95,12 @@ const Footer = () => {
             <h3 className="text-lg font-medium mb-4">{t('footer.legalPolicies')}</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/terms-and-conditions" className="text-sm text-muted-foreground hover:text-primary-600 transition">
+                <Link href={getLegalPagePath('terms')} className="text-sm text-muted-foreground hover:text-primary-600 transition">
                   {t('footer.termsAndConditions')}
                 </Link>
               </li>
               <li>
-                <Link href="/cookie-policy" className="text-sm text-muted-foreground hover:text-primary-600 transition">
+                <Link href={getLegalPagePath('cookie')} className="text-sm text-muted-foreground hover:text-primary-600 transition">
                   {t('footer.cookiePolicy')}
                 </Link>
               </li>

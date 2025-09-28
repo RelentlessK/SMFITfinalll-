@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Termeni și Condiții — SMfit',
-  description: 'Termenii și condițiile de utilizare a site-ului SMfit. Citiți regulile noastre privind utilizarea site-ului, proprietatea intelectuală și limitarea răspunderii.',
+  title: 'Termeni Condiții — SMfit',
+  description: 'Termeni utilizare site SMfit: reguli, drepturi, limitări răspundere. Ghid legal complet pentru utilizatori.',
   alternates: {
     canonical: 'https://smfit.ro/ro/termeni-si-conditii',
     languages: {
@@ -11,8 +11,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Termeni și Condiții — SMfit',
-    description: 'Termenii și condițiile de utilizare a site-ului SMfit. Citiți regulile noastre privind utilizarea site-ului, proprietatea intelectuală și limitarea răspunderii.',
+    title: 'Termeni Condiții — SMfit',
+    description: 'Termeni utilizare site SMfit: reguli, drepturi, limitări răspundere. Ghid legal complet pentru utilizatori.',
     url: 'https://smfit.ro/ro/termeni-si-conditii',
   },
 };

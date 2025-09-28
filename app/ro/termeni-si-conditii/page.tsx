@@ -19,81 +19,81 @@ export default function TermeniSiConditiiPage() {
   const sections = [
     {
       id: 'acceptare-termeni',
-      title: 'Acceptarea Termenilor',
-      label: 'Introducere',
+      title: t('pages:terms.sections.acceptanceOfTerms.title'),
+      label: t('pages:terms.sections.acceptanceOfTerms.label'),
       content: (
         <>
           <p className="text-muted-foreground mb-4">
-            Prin accesarea și utilizarea acestui site web, acceptați și sunteți de acord să fiți legat de termenii și prevederile acestui acord. Dacă nu sunteți de acord să respectați cele de mai sus, vă rugăm să nu utilizați acest serviciu.
+            {t('pages:terms.sections.acceptanceOfTerms.content')}
           </p>
         </>
       ),
     },
     {
       id: 'utilizarea-site-ului',
-      title: 'Utilizarea Site-ului',
-      label: 'Reguli',
+      title: t('pages:terms.sections.useOfWebsite.title'),
+      label: t('pages:terms.sections.useOfWebsite.label'),
       content: (
         <>
           <p className="text-muted-foreground mb-4">
-            Acest site web este destinat utilizării în scopuri informaționale și de afaceri legitime. Nu aveți voie să utilizați site-ul pentru activități ilegale sau neautorizate.
+            {t('pages:terms.sections.useOfWebsite.content1')}
           </p>
           <p className="text-muted-foreground mb-4">
-            Toate informațiile prezentate pe acest site web sunt furnizate cu bună credință și doar în scopuri generale de informare. Nu oferim garanții cu privire la acuratețea, fiabilitatea sau caracterul complet al acestor informații.
+            {t('pages:terms.sections.useOfWebsite.content2')}
           </p>
         </>
       ),
     },
     {
       id: 'proprietate-intelectuala',
-      title: 'Proprietate Intelectuală',
-      label: 'Drepturi',
+      title: t('pages:terms.sections.intellectualProperty.title'),
+      label: t('pages:terms.sections.intellectualProperty.label'),
       content: (
         <>
           <p className="text-muted-foreground mb-4">
-            Conținutul acestui site web, inclusiv texte, imagini, logo-uri și design, este protejat de drepturi de autor și alte drepturi de proprietate intelectuală. Nu aveți voie să reproduceți, distribuiți sau utilizați acest conținut fără permisiunea noastră expresă.
+            {t('pages:terms.sections.intellectualProperty.content')}
           </p>
         </>
       ),
     },
     {
       id: 'limitarea-raspunderii',
-      title: 'Limitarea Răspunderii',
-      label: 'Important',
+      title: t('pages:terms.sections.limitationOfLiability.title'),
+      label: t('pages:terms.sections.limitationOfLiability.label'),
       content: (
         <>
           <div className="bg-primary-100/20 dark:bg-primary-900/20 border border-primary-200 dark:border-primary-700/30 rounded-lg p-4 mb-6 flex items-start space-x-3">
             <Info className="h-6 w-6 text-primary-600 shrink-0 mt-1" />
             <div>
-              <h3 className="text-lg font-semibold text-primary-600 mb-2">Notă Legală Importantă</h3>
+              <h3 className="text-lg font-semibold text-primary-600 mb-2">{t('pages:terms.sections.limitationOfLiability.legalNotice.title')}</h3>
               <p className="text-muted-foreground text-sm">
-                SMfit nu va fi răspunzător pentru orice daune directe, indirecte, incidentale sau consecutive rezultate din utilizarea sau incapacitatea de a utiliza acest site web. Aceasta include, dar nu se limitează la, pierderea profiturilor, datelor sau altor bunuri intangibile.
+                {t('pages:terms.sections.limitationOfLiability.legalNotice.content')}
               </p>
             </div>
           </div>
           <p className="text-muted-foreground mb-4">
-            Utilizarea serviciilor și informațiilor de pe acest site se face pe propriul risc. Recomandăm consultarea unui specialist înainte de a lua decizii bazate pe informațiile prezentate aici.
+            {t('pages:terms.sections.limitationOfLiability.content')}
           </p>
         </>
       ),
     },
     {
       id: 'contact',
-      title: 'Contact',
-      label: 'Întrebări',
+      title: t('pages:terms.sections.contact.title'),
+      label: t('pages:terms.sections.contact.label'),
       content: (
         <>
           <p className="text-muted-foreground mb-4">
-            Pentru întrebări legate de acești termeni și condiții, ne puteți contacta la:
+            {t('pages:terms.sections.contact.content1')}
           </p>
           <div className="flex items-center space-x-3 mb-4">
             <Mail className="h-5 w-5 text-primary-600 shrink-0" />
-            <a href="mailto:sabinaantrenor@gmail.com" className="text-muted-foreground hover:text-primary-600 transition">
-              sabinaantrenor@gmail.com
+            <a href={`mailto:${t('pages:terms.sections.contact.email')}`} className="text-muted-foreground hover:text-primary-600 transition">
+              {t('pages:terms.sections.contact.email')}
             </a>
           </div>
           <p className="text-muted-foreground text-sm">
-            Vă vom răspunde la întrebare în cel mai scurt timp posibil.
+            {t('pages:terms.sections.contact.content2')}
           </p>
         </>
       ),
@@ -110,10 +110,10 @@ export default function TermeniSiConditiiPage() {
               Termeni și <span className="text-primary-600">Condiții</span>
             </h1>
             <p className="text-lg text-muted-foreground mb-2">
-              Regulile care guvernează utilizarea site-ului nostru web.
+              {t('pages:terms.hero.subtitle')}
             </p>
             <p className="text-sm text-muted-foreground">
-              Ultima actualizare: {lastUpdatedDate}
+              {t('pages:terms.lastUpdated')}: {lastUpdatedDate}
             </p>
           </div>
         </div>
@@ -129,7 +129,7 @@ export default function TermeniSiConditiiPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="bg-card border border-border rounded-lg p-6 mb-12 shadow-sm"
             >
-              <h2 className="text-xl font-bold mb-4">Cuprins</h2>
+              <h2 className="text-xl font-bold mb-4">{t('pages:terms.tableOfContents')}</h2>
               <ul className="list-none space-y-2">
                 {sections.map((section) => (
                   <li key={section.id}>

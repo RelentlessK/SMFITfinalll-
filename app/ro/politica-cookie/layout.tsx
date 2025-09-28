@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Politica de Cookie-uri — SMfit',
-  description: 'Informații despre cookie-urile utilizate pe site-ul SMfit, modul lor de funcționare și cum le puteți controla.',
+  title: 'Politică Cookie-uri — SMfit',
+  description: 'Informații cookie-uri site SMfit: funcționare, control și confidențialitate. Ghid complet pentru utilizatori.',
   alternates: {
     canonical: 'https://smfit.ro/ro/politica-cookie',
     languages: {
@@ -11,8 +11,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Politica de Cookie-uri — SMfit',
-    description: 'Informații despre cookie-urile utilizate pe site-ul SMfit, modul lor de funcționare și cum le puteți controla.',
+    title: 'Politică Cookie-uri — SMfit',
+    description: 'Informații cookie-uri site SMfit: funcționare, control și confidențialitate. Ghid complet pentru utilizatori.',
     url: 'https://smfit.ro/ro/politica-cookie',
   },
 };

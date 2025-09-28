@@ -20,96 +20,90 @@ export default function PoliticaCookiePage() {
   const sections = [
     {
       id: 'ce-este-un-cookie',
-      title: 'Ce este un Cookie?',
-      label: 'Definiție',
+      title: t('pages:cookie.sections.whatIsCookie.title'),
+      label: t('pages:cookie.sections.whatIsCookie.label'),
       content: (
         <>
           <p className="text-muted-foreground mb-4">
-            Un cookie este un fișier text de mici dimensiuni, format din litere și numere, care va fi stocat pe computerul, terminalul mobil sau alte echipamente ale unui utilizator de pe care se accesează internetul. Cookie-ul este „pasiv" (nu conține programe software, viruși sau spyware și nu poate accesa informațiile de pe hard disk-ul utilizatorului).
+            {t('pages:cookie.sections.whatIsCookie.content')}
           </p>
         </>
       ),
     },
     {
       id: 'functionalitatea-cookie-urilor',
-      title: 'Funcționalitatea Cookie-urilor',
-      label: 'Beneficii',
+      title: t('pages:cookie.sections.cookieFunctionality.title'),
+      label: t('pages:cookie.sections.cookieFunctionality.label'),
       content: (
         <>
           <p className="text-muted-foreground mb-4">
-            Activarea cookie-urilor nu este strict necesară pentru funcționarea site-ului web, dar poate îmbunătăți semnificativ experiența dumneavoastră de navigare. Puteți șterge sau bloca cookie-urile, însă, dacă faceți acest lucru, este posibil ca unele funcționalități ale site-ului să nu funcționeze corect.
+            {t('pages:cookie.sections.cookieFunctionality.content1')}
           </p>
           <p className="text-muted-foreground mb-4">
-            Informațiile asociate cookie-urilor nu sunt utilizate pentru a vă identifica personal. În plus, noi controlăm datele referitoare la preferințele dumneavoastră de navigare. Cookie-urile nu sunt utilizate în alte scopuri decât cele descrise aici.
+            {t('pages:cookie.sections.cookieFunctionality.content2')}
           </p>
         </>
       ),
     },
     {
       id: 'notificare-cookie-uri-suplimentare',
-      title: 'Notificare Cookie-uri Suplimentare',
-      label: 'Atenție',
+      title: t('pages:cookie.sections.additionalCookies.title'),
+      label: t('pages:cookie.sections.additionalCookies.label'),
       content: (
         <>
           <p className="text-muted-foreground mb-4">
-            Unele dintre paginile sau sub-site-urile noastre pot utiliza cookie-uri suplimentare sau diferite față de cele descrise mai sus. În acest caz, veți găsi detalii despre cookie-uri pe paginile specifice. De asemenea, vi se poate cere consimțământul pentru stocarea acestora.
+            {t('pages:cookie.sections.additionalCookies.content')}
           </p>
         </>
       ),
     },
     {
       id: 'cum-functioneaza-cookie-urile',
-      title: 'Cum funcționează Cookie-urile?',
-      label: 'Mecanism',
+      title: t('pages:cookie.sections.howCookiesWork.title'),
+      label: t('pages:cookie.sections.howCookiesWork.label'),
       content: (
         <>
           <p className="text-muted-foreground mb-4">
-            Aceste fișiere fac posibilă recunoașterea terminalului utilizatorului și prezentarea conținutului într-un mod relevant, adaptat preferințelor acestuia. Cookie-urile oferă servicii confortabile utilizatorilor, cum ar fi:
+            {t('pages:cookie.sections.howCookiesWork.content1')}
           </p>
           <ul className="list-none space-y-2 mb-4">
-            <li className="flex items-start">
-              <CheckCircle2 className="h-5 w-5 text-primary-600 mr-2 shrink-0 mt-0.5" />
-              <span>Preferințe de confidențialitate online</span>
-            </li>
-            <li className="flex items-start">
-              <CheckCircle2 className="h-5 w-5 text-primary-600 mr-2 shrink-0 mt-0.5" />
-              <span>Coș de cumpărături și funcționalități conexe</span>
-            </li>
-            <li className="flex items-start">
-              <CheckCircle2 className="h-5 w-5 text-primary-600 mr-2 shrink-0 mt-0.5" />
-              <span>Publicitate relevantă și experiență personalizată</span>
-            </li>
+            {(t('pages:cookie.sections.howCookiesWork.features', { returnObjects: true }) as string[]).map((feature, index) => (
+              <li key={index} className="flex items-start">
+                <CheckCircle2 className="h-5 w-5 text-primary-600 mr-2 shrink-0 mt-0.5" />
+                <span>{feature}</span>
+              </li>
+            ))}
           </ul>
           <p className="text-muted-foreground mb-4">
-            De asemenea, sunt utilizate în pregătirea statisticilor agregate anonime, care ne ajută să înțelegem modul în care un utilizator beneficiază de paginile noastre web, permițându-ne să îmbunătățim structura și conținutul acestora, excluzând identificarea dumneavoastră personală.
+            {t('pages:cookie.sections.howCookiesWork.content2')}
           </p>
         </>
       ),
     },
     {
       id: 'date-personale-si-securitate',
-      title: 'Date Personale și Securitate',
-      label: 'Confidențialitate',
+      title: t('pages:cookie.sections.personalDataSecurity.title'),
+      label: t('pages:cookie.sections.personalDataSecurity.label'),
       content: (
         <>
           <p className="text-muted-foreground mb-4">
-            Cookie-urile în sine nu necesită informații personale pentru a fi utilizate și, în majoritatea cazurilor, nu identifică personal utilizatorii de internet. Datele personale colectate prin utilizarea cookie-urilor pot fi colectate doar pentru a facilita anumite funcționalități pentru utilizator. Astfel de date sunt criptate într-un mod care face imposibilă accesarea lor de către persoane neautorizate.
+            {t('pages:cookie.sections.personalDataSecurity.content')}
           </p>
         </>
       ),
     },
     {
       id: 'controlul-cookie-urilor',
-      title: 'Controlul Cookie-urilor',
-      label: 'Gestionare',
+      title: t('pages:cookie.sections.cookieControl.title'),
+      label: t('pages:cookie.sections.cookieControl.label'),
       content: (
         <>
           <p className="text-muted-foreground mb-4">
-            Puteți controla și/sau șterge cookie-urile după cum doriți – pentru detalii, consultați site-ul{' '}
+            {t('pages:cookie.sections.cookieControl.content1')}{' '}
             <a href="https://www.aboutcookies.org/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">
-              aboutcookies.org
+              {t('pages:cookie.sections.cookieControl.aboutCookiesLink')}
             </a>
-            . Puteți șterge toate cookie-urile din computerul dumneavoastră și puteți seta majoritatea browserelor să blocheze plasarea acestora. Dacă faceți acest lucru, este posibil să fie necesar să setați manual unele preferințe de fiecare dată când vizitați site-ul web. De asemenea, unele servicii sau opțiuni ar putea să nu funcționeze.
+            {t('pages:cookie.sections.cookieControl.content2')}
           </p>
         </>
       ),
@@ -118,19 +112,19 @@ export default function PoliticaCookiePage() {
 
   const faqItems = [
     {
-      question: 'Ce este un cookie?',
-      answer: 'Un cookie este un fișier text mic stocat pe dispozitivul dumneavoastră, care ajută site-ul să funcționeze mai bine și să rețină preferințele dumneavoastră. Nu conține informații personale. Pentru mai multe detalii, consultați secțiunea "Ce este un Cookie?".',
-      link: '#ce-este-un-cookie',
+      question: t('pages:cookie.faq.whatIsCookie'),
+      answer: t('pages:cookie.faq.whatIsCookieAnswer'),
+      link: t('pages:cookie.faq.whatIsCookieLink'),
     },
     {
-      question: 'Pot dezactiva cookie-urile?',
-      answer: 'Da, puteți dezactiva cookie-urile din setările browserului dumneavoastră. Rețineți însă că acest lucru poate afecta funcționalitatea site-ului. Pentru instrucțiuni, consultați secțiunea "Controlul Cookie-urilor".',
-      link: '#controlul-cookie-urilor',
+      question: t('pages:cookie.faq.disableCookies'),
+      answer: t('pages:cookie.faq.disableCookiesAnswer'),
+      link: t('pages:cookie.faq.disableCookiesLink'),
     },
     {
-      question: 'Cum îmi afectează cookie-urile confidențialitatea?',
-      answer: 'Cookie-urile în sine nu vă identifică personal. Ele ajută la personalizarea experienței dumneavoastră online și la colectarea de statistici anonime. Datele personale colectate prin cookie-uri sunt criptate. Mai multe informații găsiți în secțiunea "Date Personale și Securitate".',
-      link: '#date-personale-si-securitate',
+      question: t('pages:cookie.faq.privacyImpact'),
+      answer: t('pages:cookie.faq.privacyImpactAnswer'),
+      link: t('pages:cookie.faq.privacyImpactLink'),
     },
   ];
 
@@ -144,7 +138,7 @@ export default function PoliticaCookiePage() {
               Politica de <span className="text-primary-600">Cookie-uri</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              Informații detaliate despre utilizarea cookie-urilor pe site-ul nostru.
+              {t('pages:cookie.hero.subtitle')}
             </p>
           </div>
         </div>
@@ -162,16 +156,16 @@ export default function PoliticaCookiePage() {
             >
               <Cookie className="h-8 w-8 text-primary-600 shrink-0 mt-1" />
               <div>
-                <h2 className="text-xl font-bold text-primary-600 mb-2">Controlul Cookie-urilor</h2>
+                <h2 className="text-xl font-bold text-primary-600 mb-2">{t('pages:cookie.cookieControl.title')}</h2>
                 <p className="text-muted-foreground mb-3">
-                  Puteți gestiona preferințele cookie-urilor direct din setările browserului dumneavoastră. Pentru informații detaliate despre cum să ștergeți sau să blocați cookie-urile, vizitați{' '}
+                  {t('pages:cookie.cookieControl.description')}{' '}
                   <a href="https://www.aboutcookies.org/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-medium">
-                    aboutcookies.org
+                    {t('pages:cookie.cookieControl.aboutCookiesLink')}
                   </a>
                   .
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  Rețineți că restricționarea cookie-urilor poate afecta funcționalitatea anumitor părți ale site-ului.
+                  {t('pages:cookie.cookieControl.note')}
                 </p>
               </div>
             </motion.div>
@@ -183,7 +177,7 @@ export default function PoliticaCookiePage() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="bg-card border border-border rounded-lg p-6 mb-12 shadow-sm"
             >
-              <h2 className="text-xl font-bold mb-4">Cuprins</h2>
+              <h2 className="text-xl font-bold mb-4">{t('pages:cookie.tableOfContents')}</h2>
               <ul className="list-none space-y-2">
                 {sections.map((section) => (
                   <li key={section.id}>
@@ -217,9 +211,9 @@ export default function PoliticaCookiePage() {
             <div className="mb-12">
               <div className="flex items-center mb-4">
                 <span className="bg-primary-600 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase mr-3">
-                  FAQ
+                  {t('pages:cookie.faq.label')}
                 </span>
-                <h2 className="text-3xl font-bold">Întrebări Frecvente despre Cookie-uri</h2>
+                <h2 className="text-3xl font-bold">{t('pages:cookie.faq.title')}</h2>
               </div>
               <Accordion type="single" collapsible className="w-full bg-accent-100/50 dark:bg-accent-900/20 p-6 rounded-lg">
                 {faqItems.map((item, index) => (
@@ -242,9 +236,9 @@ export default function PoliticaCookiePage() {
             <div className="mb-12">
               <div className="flex items-center mb-4">
                 <span className="bg-primary-600 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase mr-3">
-                  Resurse
+                  {t('pages:cookie.usefulResources.label')}
                 </span>
-                <h2 className="text-3xl font-bold">Resurse Utile</h2>
+                <h2 className="text-3xl font-bold">{t('pages:cookie.usefulResources.title')}</h2>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 bg-accent-100/50 dark:bg-accent-900/20 p-6 rounded-lg">
                 <Button asChild size="lg" className="w-full sm:w-auto">
@@ -254,7 +248,7 @@ export default function PoliticaCookiePage() {
                     rel="noopener noreferrer"
                     className="flex items-center justify-center"
                   >
-                    Toate despre Cookie-uri <ExternalLink className="ml-2 h-4 w-4" />
+                    {t('pages:cookie.usefulResources.allAboutCookies')} <ExternalLink className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="w-full sm:w-auto">
@@ -264,7 +258,7 @@ export default function PoliticaCookiePage() {
                     rel="noopener noreferrer"
                     className="flex items-center justify-center"
                   >
-                    Alegerile Tale Online <ExternalLink className="ml-2 h-4 w-4" />
+                    {t('pages:cookie.usefulResources.yourOnlineChoices')} <ExternalLink className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
               </div>
