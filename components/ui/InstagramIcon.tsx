@@ -1,5 +1,6 @@
-"use client"
+"use client";
 
+import { useTranslation } from 'react-i18next';
 import { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import { Instagram } from 'lucide-react'
@@ -8,6 +9,7 @@ const InstagramIcon = () => {
   const [tooltipText, setTooltipText] = useState("")
   const [isHovered, setIsHovered] = useState(false)
   const tooltipRef = useRef(null)
+  const { t } = useTranslation('common');
   const fullText = "Urmărește-mă pe Instagram!"
   
   // Typewriter effect when hovering
@@ -64,7 +66,7 @@ const InstagramIcon = () => {
             transition: 'opacity 200ms ease-in-out, transform 200ms ease-in-out'
           }}
         >
-          {tooltipText}
+          {t('instagram.followMe')}
         </div>
       </div>
     </div>
