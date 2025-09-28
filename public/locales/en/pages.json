@@ -218,6 +218,7 @@
       "disableCookiesLink": "#cookie-control",
       "privacyImpact": "How do cookies affect my privacy?"
       "privacyImpactAnswer": "Cookies themselves do not personally identify you. They help personalize your online experience and collect anonymous statistics. Personal data collected via cookies is encrypted. Find more information in the \"Personal Data & Security\" section.",
+      "privacyImpactAnswer": "Cookies themselves do not personally identify you. They help personalize your online experience and collect anonymous statistics. Personal data collected via cookies is encrypted. Find more information in the \"Personal Data & Security\" section.",
       "privacyImpactLink": "#personal-data-security"
     },
     "usefulResources": {
