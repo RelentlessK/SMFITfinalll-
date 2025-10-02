@@ -7,10 +7,15 @@ const ChatAgent = () => {
   const { i18n } = useTranslation();
 
   useEffect(() => {
-    // Only load chat agent for English language
-    if (i18n.language !== 'en') {
+    // Only load chat agent for English or Romanian languages
+    if (i18n.language !== 'en' && i18n.language !== 'ro') {
       return;
     }
+
+    // Determine the project ID based on language
+    const projectID = i18n.language === 'en' 
+      ? '68162c046675ec5c9d94b36f'  // English chat agent
+      : '6814c851a57c5925dbee41cb'; // Romanian chat agent
 
     // Create and inject the Voiceflow chat script
     const script = document.createElement('script');
@@ -18,7 +23,7 @@ const ChatAgent = () => {
     script.onload = function() {
       if (window.voiceflow) {
         window.voiceflow.chat.load({
-          verify: { projectID: '68162c046675ec5c9d94b36f' },
+          verify: { projectID: projectID },
           url: 'https://general-runtime.voiceflow.com',
           versionID: 'production',
           voice: {
