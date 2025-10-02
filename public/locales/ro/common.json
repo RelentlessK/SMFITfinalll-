@@ -192,7 +192,9 @@
     "titleSuffix": "Noștri",
     "subtitle": "Rezultatele și experiențele reale ale persoanelor care și-au transformat viața cu SMfit.",
     "cta": {
-      "title": "Vrei să fii următoarea poveste de succes?",
+      "title": "Vrei să fii următoarea ",
+      "titleAccent": "poveste de succes",
+      "titleSuffix": "?",
       "subtitle": "Programează o consultație gratuită pentru a discuta despre obiectivele tale și pentru a afla cum te poate ajuta SMfit să le atingi.",
       "button": "Rezervă-ți prima sesiune gratuită"
     },
