@@ -1,7 +1,6 @@
 "use client";
 
 import { useTranslation } from 'react-i18next';
-import { testimonials } from '@/data/testimonials';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
@@ -11,6 +10,24 @@ import AnimatedSection from '@/components/shared/AnimatedSection';
 
 export default function TestimonialePage() {
   const { t } = useTranslation(['common', 'pages']);
+
+  const testimonials = (t('common:testimonials.items', { returnObjects: true }) as Array<{
+    name: string;
+    content: string;
+  }>).map((item, index) => ({
+    ...item,
+    image: [
+      'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwAaKQ1SZQ0b4ElInzCtrpsq9Z18PLKhYvmfWg',
+      'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwF9SYi3zSK83YtA9ksOoxrqp0w7WBayJZfEUc',
+      'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfw6JnPlg17Ftz29kBcUZr3XGmSj8gHhdwu15MD',
+      'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfw32oGuMHlvbe70hHUZR98FryBTcAa2SXfzO6D',
+      'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwExFgNGSDgqPoXvGR9JfWn2ry0j1HkNKL4eca',
+      'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwAmlBOJZQ0b4ElInzCtrpsq9Z18PLKhYvmfWg',
+      'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfw5ppDTwcEyzLAHqbon5PNrGUuYI0DFfhMR3xj',
+      'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwPEC8HDFmbvkHjeQB3FJgwOts82ypniXECucW',
+      'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwHY7JTvj83wx7T1NoIPQpdnG4mgziA5lyZcq0'
+    ][index] || 'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwAaKQ1SZQ0b4ElInzCtrpsq9Z18PLKhYvmfWg'
+  }));
 
   return (
     <div className="mt-24">
@@ -46,13 +63,13 @@ export default function TestimonialePage() {
                   </div>
                   
                   <p className="text-foreground mb-6 italic text-sm flex-grow">
-                    "{testimonial.quote}"
+                    "{testimonial.content}"
                   </p>
                   
                   <div className="flex items-center mt-auto">
                     <div className="relative h-12 w-12 rounded-full overflow-hidden mr-4">
                       <Image
-                        src={testimonial.photoUrl}
+                        src={testimonial.image}
                         alt={testimonial.name}
                         fill
                         sizes="48px"

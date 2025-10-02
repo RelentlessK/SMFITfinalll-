@@ -189,22 +189,47 @@
     "titleAccent": "Clienții",
     "titleSuffix": "Noștri",
     "subtitle": "Rezultatele și experiențele reale ale persoanelor care și-au transformat viața cu SMfit.",
+    "cta": {
+      "title": "Vrei să fii următoarea poveste de succes?",
+      "subtitle": "Programează o consultație gratuită pentru a discuta despre obiectivele tale și pentru a afla cum te poate ajuta SMfit să le atingi.",
+      "button": "Rezervă-ți prima sesiune gratuită"
+    },
     "items": [
       {
-        "name": "Andreea F.",
-        "content": "Am slăbit 10 kg în două luni datorită programului de antrenament personalizat și susținerii necondiționate oferite de Sabina Meruță. Planul ei nutrițional echilibrat mi-a transformat complet relația cu mâncarea și a facilitat rezultate rapide."
+        "name": "Ábrán Noémi",
+        "content": "După primele sesiuni cu Sabina, am fost impresionată de modul în care a transformat antrenamentele în experiențe motivante care m-au împins să îmi depășesc limitele. Profesionalismul și energia ei, combinate cu o abordare echilibrată (riguroasă, dar plină de umor), au dus la rezultate vizibile. Sabina nu este doar o antrenoare excepțională, ci și o persoană inspiratoare, esențială în progresul meu!"
       },
       {
-        "name": "Roxana M.",
-        "content": "Am slăbit 6 kg și am redus 3 cm în zona șoldurilor în 6 săptămâni datorită antrenamentelor și nutriției personalizate ale Sabinei Meruță. Profesionalismul și motivația ei m-au ajutat să obțin rezultate rapide."
+        "name": "Ban Cristina",
+        "content": "Deși tânără, Sabina a demonstrat un profesionalism și o implicare excepționale în munca cu clienții. Prin adaptarea exercițiilor la nevoile individuale (cu rezultate vizibile în zonele vizate) și un program flexibil organizat în jurul disponibilității clienților, îmbină seriozitatea cu o abordare empatică. Punctualitatea și dedicarea ei sunt exemple clare de maturitate și pasiune pentru profesia sa. Menținerea acestei abordări o va păstra cu siguranță ca model în domeniu! 💪✨"
       },
       {
-        "name": "Liliana C.",
-        "content": "Sabina, cu energia ei debordantă, mi-a explicat fiecare exercițiu cu răbdare și m-a motivat să depășesc limitele. În doar două luni, am câștigat 4 cm în zona fesierilor datorită antrenamentelor ei eficiente și planului nutrițional personalizat."
+        "name": "Pruna Maria",
+        "content": "Antrenamentele Sabinei sunt nu doar dinamice și captivante, ci și extrem de eficiente, rezultatele fiind constant vizibile. Prin adaptarea exercițiilor la obiectivele individuale și abordarea ei energică, clienții obțin progrese clare, chiar și în zone specifice. Profesionalismul și dedicarea ei transformă fiecare sesiune într-o investiție valoroasă în sănătate și fitness. 💪"
       },
       {
-        "name": "Brigitta B.",
-        "content": "Îți mulțumesc din suflet pentru sprijinul și îndrumarea constantă. Fiecare antrenament alături de tine a fost o experiență valoroasă, iar dedicarea ta m-a inspirat cu adevărat. Îți sunt recunoscătoare pentru tot efortul depus!"
+        "name": "Graur Anca",
+        "content": "Sabina este o persoană extraordinară – de când am început antrenamentele cu ea, motivația mea pentru sport a crescut vizibil și constant. A reușit să îmi transmită în mod autentic cât de importantă este mișcarea pentru sănătate și bunăstare. Abordarea ei caldă și atentă creează un mediu în care fiecare sesiune este așteptată cu nerăbdare, fără stress sau presiune. Profesionalismul ei se simte în fiecare detaliu, iar progresul nu întârzie să apară."
+      },
+      {
+        "name": "Dan Patricia", 
+        "content": "Sabina se remarcă prin abordarea pozitivă și comunicarea deschisă cu clienții, creând un mediu motivant. Antrenamentele sunt adaptate inteligent la nivelul fiecărei persoane, evitând supraîncărcarea și verificând constant confortul cu greutățile. Planurile alimentare pe care le oferă sunt personalizate, cu porții echilibrate și preparate creative, făcându-le atât eficiente, cât și plăcute. Prin atenția la detalii și flexibilitate, transformă procesul într-unul sustenabil și inspirant! 😊"
+      },
+      {
+        "name": "Alexandra Maier",
+        "content": "Sabina se distinge prin atenția și dedicarea exemplară, susținute de o expertiză solidă în domeniu. Cu răbdare și înțelegere, adaptează planurile alimentare – echilibrate și accesibile financiar – la nevoile individuale, facilitând tranziția către un stil de viață sănătos. Profesionalismul și abordarea integrată o recomandă cu încredere persoanelor hotărâte să obțină transformări fizice impresionante și durabile. 😊"
+      },
+      {
+        "name": "Bianca Moldovan",
+        "content": "Sabina se remarcă prin implicarea autentică și sprijinul oferit clienților, combinând deschiderea și atenția la nevoile individuale cu motivația necesară pentru finalizarea exercițiilor. Prin dialogul deschis și adaptarea antrenamentelor la preferințe, asigură o experiență plăcută și eficientă. Preocuparea ei constantă pentru sănătatea și dezvoltarea fizică a clienților transformă fiecare sesiune într-un pas concret spre obiective. Colaborarea cu ea este, fără îndoială, o sinergie valoroasă și motivantă! 🌟"
+      },
+      {
+        "name": "Rațiu Briana",
+        "content": "Este o adevărată sursă de inspirație. Sabina are o răbdare rar întâlnită, oferă sprijin necondiționat și crede în potențialul fiecărei persoane cu care lucrează, chiar și atunci când acestea își pierd încrederea în sine. Creează o conexiune autentică, motivând dincolo de fizic – iar antrenamentele devin nu doar eficiente, ci momente cheie ale săptămânii. Prezența și energia pozitivă transformă întregul proces într-o experiență valoroasă și plină de sens."
+      },
+      {
+        "name": "Andreea Zeceș",
+        "content": "Clienții Sabinei o apreciază pentru sprijinul și îndrumarea oferite cu devotament. Antrenamentele sunt descrise ca experiențe valoroase, iar efortul și profesionalismul ei sunt recunoscute ca stâlpi ai succesului lor. Recunoștința pentru implicarea profundă și energia pozitivă transmisă în fiecare sesiune este unanimă! ❤️🤗"
       }
     ]
   }
