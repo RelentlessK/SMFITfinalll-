@@ -216,7 +216,8 @@
       "disableCookies": "Pot dezactiva cookie-urile?",
       "disableCookiesAnswer": "Da, puteți dezactiva cookie-urile din setările browserului dumneavoastră. Rețineți însă că acest lucru poate afecta funcționalitatea site-ului. Pentru instrucțiuni, consultați secțiunea \"Controlul Cookie-urilor\".",
       "disableCookiesLink": "#controlul-cookie-urilor",
-      "privacyImpact": "Cum îmi afectează cookie-urile confidențialitatea?",
+      "privacyImpact": "Cum îmi afectează cookie-urile confidențialitatea?"
+      "privacyImpactAnswer": "Cookie-urile în sine nu vă identifică personal. Ele ajută la personalizarea experienței dumneavoastră online și la colectarea de statistici anonime. Datele personale colectate prin cookie-uri sunt criptate. Mai multe informații găsiți în secțiunea \"Date Personale și Securitate\".",
       "privacyImpactAnswer": "Cookie-urile în sine nu vă identifică personal. Ele ajută la personalizarea experienței dumneavoastră online și la colectarea de statistici anonime. Datele personale colectate prin cookie-uri sunt criptate. Mai multe informații găsiți în secțiunea \"Date Personale și Securitate\".",
       "privacyImpactLink": "#date-personale-si-securitate"
     },
