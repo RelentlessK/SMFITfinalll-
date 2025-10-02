@@ -94,9 +94,9 @@
       },
       "sustainability": {
         "title": "Sustenabilitate", 
-        "description": "Cred în schimbări sustenabile, nu în soluții temporare. Scopul meu este să te ajut să dezvolți obiceiuri sănătoase pe termen lung, nu doar să obții rezultate rapide care nu durează."
-      },
-      "education": {
+        "title": "Vrei să fii următoarea",
+        "titleAccent": "poveste de succes",
+        "titleSuffix": "?",
         "title": "Educație",
         "description": "Dincolo de antrenamente și planuri nutriționale, îmi propun să te educ despre corpul tău și să te ajut să înțelegi de ce facem anumite exerciții sau alegeri alimentare."
       }
