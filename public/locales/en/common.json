@@ -227,6 +227,11 @@
     "titleAccent": "Clients",
     "titleSuffix": "Say",
     "subtitle": "Real results and experiences from people who have transformed their lives with SMfit.",
+    "cta": {
+      "title": "Want to be the next success story?",
+      "subtitle": "Schedule a free consultation to discuss your goals and find out how SMfit can help you achieve them.",
+      "button": "Book your first free session"
+    },
     "items": [
       {
         "name": "Andreea F.",
