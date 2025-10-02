@@ -108,129 +108,7 @@
     "titleSuffix": "Say",
     "subtitle": "Real results and experiences from people who have transformed their lives with SMfit.",
     "cta": {
-      "title": "Want to be the next",
-      "titleAccent": "success story",
-      "titleSuffix": "?",
-      "subtitle": "Schedule a free consultation to discuss your goals and find out how SMfit can help you achieve them.",
-      "button": "Book your first free session"
-    },
-    "items": [
-      {
-        "name": "Ábrán Noémi",
-        "content": "After the first sessions with Sabina, I was impressed by how she transformed workouts into motivating experiences that pushed me to exceed my limits. Her professionalism and energy, combined with a balanced approach (rigorous yet full of humor), led to visible results. Sabina is not just an exceptional trainer, but also an inspiring person, essential to my progress!"
-      },
-      {
-        "name": "Ban Cristina",
-        "content": "Despite being young, Sabina has demonstrated exceptional professionalism and commitment in working with clients. By adapting exercises to individual needs (with visible results in targeted areas) and a flexible program organized around clients' availability, she combines seriousness with an empathetic approach. Her punctuality and dedication are clear examples of maturity and passion for her profession. Maintaining this approach will undoubtedly keep her as a role model in the field! 💪✨"
-      },
-      {
-        "name": "Pruna Maria",
-        "content": "Sabina's workouts are not only dynamic and engaging, but also extremely effective, with results being consistently visible. Through adapting exercises to individual goals and her energetic approach, clients achieve clear progress, even in specific areas. Her professionalism and dedication transform each session into a valuable investment in health and fitness. 💪"
-      },
-      {
-        "name": "Graur Anca",
-        "content": "Sabina is an extraordinary person – since starting workouts with her, my motivation for sports has grown visibly and consistently. She managed to genuinely convey how important movement is for health and well-being. Her warm and attentive approach creates an environment where each session is eagerly anticipated, without stress or pressure. Her professionalism is felt in every detail, and progress doesn't take long to appear."
-      },
-      {
-        "name": "Dan Patricia",
-        "content": "Sabina stands out through her positive approach and open communication with clients, creating a motivating environment. The workouts are intelligently adapted to each person's level, avoiding overload and constantly checking comfort with weights. The meal plans she offers are personalized, with balanced portions and creative preparations, making them both effective and enjoyable. Through attention to detail and flexibility, she transforms the process into one that is sustainable and inspiring! 😊"
-      },
-      {
-        "name": "Alexandra Maier",
-        "content": "Sabina distinguishes herself through her exemplary attention and dedication, supported by solid expertise in the field. With patience and understanding, she adapts meal plans – balanced and financially accessible – to individual needs, facilitating the transition to a healthy lifestyle. Her professionalism and integrated approach confidently recommend her to people determined to achieve impressive and lasting physical transformations. 😊"
-      },
-      {
-        "name": "Bianca Moldovan",
-        "content": "Sabina stands out through her authentic involvement and support offered to clients, combining openness and attention to individual needs with the necessary motivation to complete exercises. Through open dialogue and adapting workouts to preferences, she ensures a pleasant and efficient experience. Her constant concern for clients' health and physical development transforms each session into a concrete step towards goals. Collaborating with her is undoubtedly a valuable and motivating synergy! 🌟"
-      },
-      {
-        "name": "Rațiu Briana",
-        "content": "She is a true source of inspiration. Sabina has a rarely found patience, provides unconditional support and believes in the potential of every person she works with, even when they lose confidence in themselves. She creates an authentic connection, motivating beyond the physical – and workouts become not just efficient, but key moments of the week. Her presence and positive energy transform the entire process into a valuable and meaningful experience."
-      },
-      {
-        "name": "Andreea Zeceș",
-        "content": "Sabina's clients appreciate her for the support and guidance offered with devotion. The workouts are described as valuable experiences, and her effort and professionalism are recognized as pillars of their success. The gratitude for her deep involvement and positive energy transmitted in each session is unanimous! ❤️🤗"
-      }
-    ]
-  },
-  "faq": {
-    "title": "Frequently Asked",
-    "titleAccent": "Questions",
-    "subtitle": "Answers to the most common questions about our workouts and programs."
-  },
-  "cta": {
-    "title": "Ready to",
-    "titleAccent": "transform",
-    "titleSuffix": "your body?",
-    "subtitle": "Schedule a free consultation now and start your journey to the best version of yourself!",
-    "primaryButton": "Book your first free session",
-    "secondaryButton": "Explore services"
-  },
-  "footer": {
-    "description": "Transform your body and habits with SMfit: personalized workouts and nutrition plans adapted to your specific needs.",
-    "quickLinks": "Quick Links",
-    "contact": "Contact",
-    "copyright": "All rights reserved."
-  },
-  "contact": {
-    "title": "Contact",
-    "titleAccent": "Me",
-    "subtitle": "Have questions or ready to start? Fill out the form below or use the contact information to reach me directly.",
-    "formTitle": "Let's get in",
-    "formTitleAccent": "touch!",
-    "form": {
-      "name": "Full Name",
-      "namePlaceholder": "First and last name",
-      "email": "Email",
-      "emailPlaceholder": "email@example.com", 
-      "phone": "Phone",
-      "phonePlaceholder": "07XX XXX XXX",
-      "service": "Service of Interest",
-      "servicePlaceholder": "Select a service (optional)",
-      "message": "Message",
-      "messagePlaceholder": "Details about your fitness goals, questions or preferences",
-      "submit": "Send Message",
-      "submitting": "Sending..."
-    },
-    "info": {
-      "title": "Contact Information",
-      "schedule": "Working Hours & Services",
-      "hours": {
-        "weekdays": "Monday–Friday: 08:00–20:00",
-        "saturday": "Saturday: 10:00–18:00", 
-        "sunday": "Sunday: 12:00–18:00",
-        "support": "24/7 support through Mira, SMfit chat agent"
-      }
-    },
-    "success": "Message sent successfully!",
-    "successDescription": "We will contact you as soon as possible.",
-    "error": "Error",
-    "errorDescription": "An error occurred. Please try again."
-  },
-  "seo": {
-    "homeTitle": "SMfit - Personalized Training & Nutrition",
-    "homeDescription": "Transform your body with SMfit: personalized online or live workouts and nutrition plans adapted to your needs.",
-    "pageTitleTemplate": "%s | SMfit"
-  },
-  "footer": {
-    "description": "Transform your body and habits with SMfit: personalized workouts and nutrition plans adapted to your specific needs.",
-    "quickLinks": "Quick Links",
-    "contact": "Contact",
-    "copyright": "All rights reserved.",
-    "legalPolicies": "Legal & Policies",
-    "termsAndConditions": "Terms and Conditions",
-    "cookiePolicy": "Cookie Policy"
-  },
-  "instagram": {
-    "followMe": "Follow me on Instagram!"
-  },
-  "testimonials": {
-    "title": "What Our",
-    "titleAccent": "Clients",
-    "titleSuffix": "Say",
-    "subtitle": "Real results and experiences from people who have transformed their lives with SMfit.",
-    "cta": {
-      "title": "Want to be the next",
+      "title": "Want to be the next ",
       "titleAccent": "success story",
       "titleSuffix": "?",
       "subtitle": "Schedule a free consultation to discuss your goals and find out how SMfit can help you achieve them.",
@@ -284,11 +162,68 @@
       }
     ]
   },
+  "faq": {
+    "title": "Frequently Asked",
+    "titleAccent": "Questions",
+    "subtitle": "Answers to the most common questions about our workouts and programs."
+  },
   "cta": {
-    "title": "Want to be the next",
+    "title": "Want to be the next ",
     "titleAccent": "success story",
     "titleSuffix": "?",
     "subtitle": "Schedule a free consultation to discuss your goals and find out how SMfit can help you achieve them.",
     "button": "Book your first free session"
+  },
+  "footer": {
+    "description": "Transform your body and habits with SMfit: personalized workouts and nutrition plans adapted to your specific needs.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "copyright": "All rights reserved.",
+    "legalPolicies": "Legal & Policies",
+    "termsAndConditions": "Terms and Conditions",
+    "cookiePolicy": "Cookie Policy"
+  },
+  "contact": {
+    "title": "Contact",
+    "titleAccent": "Me",
+    "subtitle": "Have questions or ready to start? Fill out the form below or use the contact information to reach me directly.",
+    "formTitle": "Let's get in",
+    "formTitleAccent": "touch!",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "First and last name",
+      "email": "Email",
+      "emailPlaceholder": "email@example.com", 
+      "phone": "Phone",
+      "phonePlaceholder": "07XX XXX XXX",
+      "service": "Service of Interest",
+      "servicePlaceholder": "Select a service (optional)",
+      "message": "Message",
+      "messagePlaceholder": "Details about your fitness goals, questions or preferences",
+      "submit": "Send Message",
+      "submitting": "Sending..."
+    },
+    "info": {
+      "title": "Contact Information",
+      "schedule": "Working Hours & Services",
+      "hours": {
+        "weekdays": "Monday–Friday: 08:00–20:00",
+        "saturday": "Saturday: 10:00–18:00", 
+        "sunday": "Sunday: 12:00–18:00",
+        "support": "24/7 support through Mira, SMfit chat agent"
+      }
+    },
+    "success": "Message sent successfully!",
+    "successDescription": "We will contact you as soon as possible.",
+    "error": "Error",
+    "errorDescription": "An error occurred. Please try again."
+  },
+  "seo": {
+    "homeTitle": "SMfit - Personalized Training & Nutrition",
+    "homeDescription": "Transform your body with SMfit: personalized online or live workouts and nutrition plans adapted to your needs.",
+    "pageTitleTemplate": "%s | SMfit"
+  },
+  "instagram": {
+    "followMe": "Follow me on Instagram!"
   }
 }
