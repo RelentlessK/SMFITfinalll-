@@ -11,23 +11,11 @@ import AnimatedSection from '@/components/shared/AnimatedSection';
 export default function TestimonialePage() {
   const { t } = useTranslation(['common', 'pages']);
 
-  const testimonials = (t('common:testimonials.items', { returnObjects: true }) as Array<{
+  const testimonials = t('common:testimonials.items', { returnObjects: true }) as Array<{
     name: string;
     content: string;
-  }>).map((item, index) => ({
-    ...item,
-    image: [
-      'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwAaKQ1SZQ0b4ElInzCtrpsq9Z18PLKhYvmfWg',
-      'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwF9SYi3zSK83YtA9ksOoxrqp0w7WBayJZfEUc',
-      'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfw6JnPlg17Ftz29kBcUZr3XGmSj8gHhdwu15MD',
-      'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfw32oGuMHlvbe70hHUZR98FryBTcAa2SXfzO6D',
-      'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwExFgNGSDgqPoXvGR9JfWn2ry0j1HkNKL4eca',
-      'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwAmlBOJZQ0b4ElInzCtrpsq9Z18PLKhYvmfWg',
-      'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfw5ppDTwcEyzLAHqbon5PNrGUuYI0DFfhMR3xj',
-      'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwPEC8HDFmbvkHjeQB3FJgwOts82ypniXECucW',
-      'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwHY7JTvj83wx7T1NoIPQpdnG4mgziA5lyZcq0'
-    ][index] || 'https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwAaKQ1SZQ0b4ElInzCtrpsq9Z18PLKhYvmfWg'
-  }));
+    image: string;
+  }>;
 
   return (
     <div className="mt-24">
@@ -184,21 +172,42 @@ export default function TestimonialePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-20">
+      <section className="py-16 md:py-20 bg-primary-100/50 dark:bg-primary-900/10">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              {t('common:testimonials.cta.title')}
-            </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              {t('common:testimonials.cta.subtitle')}
-            </p>
-            <Button asChild size="lg" className="bg-primary-500 hover:bg-primary-600 text-white">
-              <Link href="/contact">
-                {t('common:testimonials.cta.button')}
-              </Link>
-            </Button>
-          </div>
+          <AnimatedSection>
+            <div className="max-w-3xl mx-auto text-center">
+              <motion.h2 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="text-3xl md:text-4xl font-bold mb-6"
+              >
+                {t('common:testimonials.cta.title')}
+              </motion.h2>
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="text-lg text-muted-foreground mb-8"
+              >
+                {t('common:testimonials.cta.subtitle')}
+              </motion.p>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+              >
+                <Button asChild size="lg" className="bg-primary-500 hover:bg-primary-600 text-white">
+                  <Link href="/contact">
+                    {t('common:testimonials.cta.button')}
+                  </Link>
+                </Button>
+              </motion.div>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
     </div>
