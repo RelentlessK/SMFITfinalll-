@@ -115,7 +115,11 @@
     }
   },
   "terms": {
+    "pageTitle": "Terms and Conditions | SMfit",
+    "pageDescription": "Read the terms and conditions governing the use of SMfit website and services.",
     "hero": {
+      "title": "Terms and",
+      "titleAccent": "Conditions",
       "subtitle": "The rules governing the use of our website."
     },
     "lastUpdated": "Last updated",
@@ -156,7 +160,11 @@
     }
   },
   "cookie": {
+    "pageTitle": "Cookie Policy | SMfit",
+    "pageDescription": "Learn about how SMfit uses cookies on our website, including functionality, privacy, and control options.",
     "hero": {
+      "title": "Cookie",
+      "titleAccent": "Policy",
       "subtitle": "Detailed information about the use of cookies on our website."
     },
     "cookieControl": {
@@ -199,7 +207,7 @@
         "label": "Privacy",
         "content": "Cookies themselves do not require personal information to be used and, in most cases, do not personally identify internet users. Personal data collected through the use of cookies may only be collected to facilitate certain functionalities for the user. Such data is encrypted in a way that makes it impossible for unauthorized persons to access it."
       },
-      "cookieControl": {
+      "cookieControlSection": {
         "title": "Cookie Control",
         "label": "Management",
         "content1": "You can control and/or delete cookies as you wish – for details, see the",
