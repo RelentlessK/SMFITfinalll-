@@ -183,7 +183,7 @@ export default function TestimonialePage() {
                 viewport={{ once: true }}
                 className="text-3xl md:text-4xl font-bold mb-6"
               >
-                {t('common:testimonials.cta.title')}
+                {t('common:testimonials.cta.title')} <span className="text-primary-600">{t('common:testimonials.cta.titleAccent')}</span>{t('common:testimonials.cta.titleSuffix')}
               </motion.h2>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
