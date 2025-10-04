@@ -27,11 +27,6 @@
     },
     "partners": {
       "title": "My Partners",
-      "18gym": {
-        "description": "18GYM is the premium fitness chain where Sabina offers personalized sessions, ensuring fast results and a top-notch workout experience.",
-        "promoCode": "Promo code: 29SABINAM",
-        "button": "See 18GYM offer"
-      },
       "scitec": {
         "description": "Scitec Nutrition provides high-quality supplements and sports equipment, optimized for performance and efficient recovery.",
         "promoCode": "Promo code: SABINAM10", 

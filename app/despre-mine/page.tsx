@@ -118,26 +118,6 @@ export default function DespreMine() {
               <h2 className="text-3xl font-bold mb-6 text-center">{t('pages:about.partners.title').split(' ')[0]} <span className="text-primary-600">{t('pages:about.partners.title').split(' ')[1]}</span></h2>
               <div className="flex flex-col gap-6 max-w-4xl mx-auto">
                 <Link 
-                  href="https://18gym.ro" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block"
-                >
-                  <div className="bg-gradient-to-br from-[#f7cfd8]/50 to-[#ffe3e8]/50 hover:from-[#f7cfd8]/60 hover:to-[#ffe3e8]/60 border border-primary-200 rounded-lg shadow-sm p-6 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-md">
-                    <h4 className="text-xl font-semibold mb-3 text-center">18GYM</h4>
-                    <p className="text-muted-foreground mb-4 text-center">
-                      {t('pages:about.partners.18gym.description')}
-                    </p>
-                    <p className="text-sm font-medium text-primary-600 mb-4 text-center">{t('pages:about.partners.18gym.promoCode')}</p>
-                    <div className="text-center">
-                      <button className="inline-block bg-primary-500 text-white rounded-full py-2 px-4 hover:bg-primary-600 transition" aria-label={t('pages:about.partners.18gym.button')}>
-                        {t('pages:about.partners.18gym.button')}
-                      </button>
-                    </div>
-                  </div>
-                </Link>
-
-                <Link 
                   href="https://scitec.ro/" 
                   target="_blank" 
                   rel="noopener noreferrer"
