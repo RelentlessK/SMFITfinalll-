@@ -157,6 +157,7 @@
       "subtitle": "Informații detaliate despre utilizarea cookie-urilor pe site-ul nostru."
     },
     "cookieControl": {
+      "label": "Administrare",
       "title": "Controlul Cookie-urilor",
       "description": "Puteți gestiona preferințele pentru cookie-uri direct prin setările browserului dumneavoastră. Pentru informații detaliate despre cum să ștergeți sau să blocați cookie-urile, vizitați",
       "aboutCookiesLink": "aboutcookies.org",
