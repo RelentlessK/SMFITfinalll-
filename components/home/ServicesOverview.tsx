@@ -91,8 +91,8 @@ const ServicesOverview = () => {
                       <div key={idx} className="flex items-start">
                         <Check className="h-5 w-5 text-primary-600 mr-2 shrink-0 mt-0.5" />
                         <span className="text-sm">{feature}</span>
-                      </div>
-                    ))}
+                           <span className="text-primary-600 mr-2 shrink-0 mt-0.5 text-lg font-semibold">✓</span>
+                           <span>{feature.replace(/^✓\s*/, '')}</span>
                   </div>
                   
                   <div className="mt-auto">
