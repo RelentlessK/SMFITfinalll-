@@ -31,7 +31,9 @@ export default function DespreMine() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-20">
             <div>
-              <h2 className="text-3xl font-bold mb-6">{t('common:about.whoAmI')}</h2>
+              <h2 className="text-3xl font-bold mb-6">
+                {t('common:about.whoAmI')}<span className="text-primary-600">{t('common:about.whoAmIAccent')}</span>
+              </h2>
               <p className="text-muted-foreground mb-8 leading-relaxed">
                 {t('common:about.greeting')} {t('pages:about.mainContent.intro1')}
               </p>
