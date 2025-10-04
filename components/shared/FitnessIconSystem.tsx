@@ -22,7 +22,7 @@ const pinkPalette = [
 ];
 
 // Function to generate procedural positions for icons
-const generateIconPositions = (count, width, height) => {
+const generateIconPositions = (count: number, width: number, height: number) => {
   const positions = [];
   
   // Create a grid-like distribution but with some randomness

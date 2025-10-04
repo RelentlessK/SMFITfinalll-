@@ -6,7 +6,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: { unoptimized: true },
-  reactStrictMode: true,
+  reactStrictMode: false,
   poweredByHeader: false,
   trailingSlash: true,
   webpack: (config, { dev, isServer }) => {
