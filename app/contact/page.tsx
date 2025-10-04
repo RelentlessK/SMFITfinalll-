@@ -30,7 +30,7 @@ import { cn } from '@/lib/utils';
 import debounce from 'lodash/debounce';
 
 export default function ContactPage() {
-  const { t } = useTranslation(['common', 'pages']);
+  const { t, i18n } = useTranslation(['common', 'pages']);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
   const { toast } = useToast();
@@ -91,8 +91,25 @@ export default function ContactPage() {
     try {
       setIsSubmitting(true);
       
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      // Send data to webhook
+      const response = await fetch('https://hook.eu2.make.com/f8vxrn3dmx4kt6ma1eg74gz4higenrgt', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: values.name,
+          email: values.email,
+          phone: values.phone,
+          service: values.service,
+          message: values.message,
+          language: i18n.language,
+        }),
+      });
+      
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
       
       setShowSuccess(true);
       toast({
