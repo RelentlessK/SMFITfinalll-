@@ -22,7 +22,7 @@ const pinkPalette = [
 ];
 
 // Function to generate procedural positions for icons
-const generateIconPositions = (count: number, width: number, height: number) => {
+const generateIconPositions = (count, width, height) => {
   const positions = [];
   
   // Create a grid-like distribution but with some randomness
@@ -93,7 +93,7 @@ const generateIconPositions = (count: number, width: number, height: number) => 
 };
 
 // Generate icon definition array with variants
-const generateIcons = (count: number) => {
+const generateIcons = (count) => {
   const result = [];
   
   // Get all icon keys
