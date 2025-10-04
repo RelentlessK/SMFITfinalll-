@@ -106,6 +106,7 @@ export default function ServiciiPage() {
                   </div>
                   
                   <div className="mb-8">
+                    <div className="text-sm text-muted-foreground mb-2">Preț</div>
                     <div className="text-2xl font-bold text-primary-600">{service.price}</div>
                   </div>
                   
