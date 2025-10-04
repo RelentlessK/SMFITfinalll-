@@ -111,7 +111,7 @@ export default function ServiciiPage() {
                   
                   <Button asChild size="lg" className="bg-primary-500 hover:bg-primary-600 text-white">
                     <Link href="/contact">
-                      Fă primul pas spre transformare
+                      {t('common:cta.takeFirstStep')}
                     </Link>
                   </Button>
                 </div>
