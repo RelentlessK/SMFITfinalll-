@@ -93,7 +93,7 @@ const generateIconPositions = (count: number, width: number, height: number) => 
 };
 
 // Generate icon definition array with variants
-const generateIcons = (count) => {
+const generateIcons = (count: number) => {
   const result = [];
   
   // Get all icon keys
