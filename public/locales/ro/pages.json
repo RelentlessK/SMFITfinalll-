@@ -158,9 +158,9 @@
     },
     "cookieControl": {
       "title": "Controlul Cookie-urilor",
-      "description": "Puteți gestiona preferințele cookie-urilor direct din setările browserului dumneavoastră. Pentru informații detaliate despre cum să ștergeți sau să blocați cookie-urile, vizitați",
+      "description": "Puteți gestiona preferințele pentru cookie-uri direct prin setările browserului dumneavoastră. Pentru informații detaliate despre cum să ștergeți sau să blocați cookie-urile, vizitați",
       "aboutCookiesLink": "aboutcookies.org",
-      "note": "Rețineți că restricționarea cookie-urilor poate afecta funcționalitatea anumitor părți ale site-ului."
+      "note": "Vă rugăm să rețineți că restricționarea cookie-urilor poate afecta funcționalitatea anumitor secțiuni ale site-ului."
     },
     "tableOfContents": "Cuprins",
     "sections": {
