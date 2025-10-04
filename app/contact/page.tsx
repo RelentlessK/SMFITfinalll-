@@ -91,23 +91,8 @@ export default function ContactPage() {
     try {
       setIsSubmitting(true);
       
-      // Send form data to webhook
-      const webhookData = {
-        ...values,
-        language: i18n.language
-      };
-      
-      const response = await fetch('https://hook.eu2.make.com/f8vxrn3dmx4kt6ma1eg74gz4higenrgt', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(webhookData),
-      });
-      
-      if (!response.ok) {
-        throw new Error('Failed to submit form');
-      }
+      // Simulate API call
+      await new Promise(resolve => setTimeout(resolve, 1500));
       
       setShowSuccess(true);
       toast({
