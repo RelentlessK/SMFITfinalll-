@@ -102,7 +102,7 @@ const generateIcons = (count: number) => {
   // Create variants for each icon type
   for (let i = 0; i < count; i++) {
     const iconKey = iconKeys[i % iconKeys.length];
-    const component = iconComponents[iconKey];
+    const component = iconComponents[iconKey as keyof typeof iconComponents];
     const colorIndex = i % pinkPalette.length;
     
     // For variants, add a suffix for differentiation when we reuse icons
