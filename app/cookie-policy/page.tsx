@@ -92,22 +92,6 @@ export default function CookiePolicyPage() {
         </>
       ),
     },
-    {
-      id: 'cookie-control-section',
-      title: t('pages:cookie.sections.cookieControlSection.title'),
-      label: t('pages:cookie.sections.cookieControlSection.label'),
-      content: (
-        <>
-          <p className="text-muted-foreground mb-4">
-            {t('pages:cookie.sections.cookieControlSection.content1')}{' '}
-            <a href="https://www.aboutcookies.org/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">
-              {t('pages:cookie.sections.cookieControlSection.aboutCookiesLink')}
-            </a>{' '}
-            {t('pages:cookie.sections.cookieControlSection.content2')}
-          </p>
-        </>
-      ),
-    },
   ];
 
   const faqItems = [
