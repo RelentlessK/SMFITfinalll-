@@ -8,15 +8,15 @@ import { Button } from '@/components/ui/button';
 import { Check, ArrowRight, Dumbbell, Apple, Laptop, BarChart } from 'lucide-react';
 import AnimatedSection from '@/components/shared/AnimatedSection';
 
-const iconMap = {
-  Dumbbell: Dumbbell,
-  Apple: Apple,
-  Laptop: Laptop,
-  BarChart: BarChart,
-};
-
 const ServicesOverview = () => {
   const { t } = useTranslation('common');
+
+  const iconMap = {
+    Dumbbell: Dumbbell,
+    Apple: Apple,
+    Laptop: Laptop,
+    BarChart: BarChart,
+  };
 
   const SERVICES = [
     {
