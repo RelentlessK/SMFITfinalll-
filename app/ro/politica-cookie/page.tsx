@@ -94,16 +94,16 @@ export default function PoliticaCookiePage() {
     },
     {
       id: 'controlul-cookie-urilor',
-      title: t('pages:cookie.sections.cookieControl.title'),
-      label: t('pages:cookie.sections.cookieControl.label'),
+      title: t('pages:cookie.sections.cookieControlSection.title'),
+      label: t('pages:cookie.sections.cookieControlSection.label'),
       content: (
         <>
           <p className="text-muted-foreground mb-4">
-            {t('pages:cookie.sections.cookieControl.content1')}{' '}
+            {t('pages:cookie.sections.cookieControlSection.content1')}{' '}
             <a href="https://www.aboutcookies.org/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">
-              {t('pages:cookie.sections.cookieControl.aboutCookiesLink')}
+              {t('pages:cookie.sections.cookieControlSection.aboutCookiesLink')}
             </a>
-            {t('pages:cookie.sections.cookieControl.content2')}
+            {t('pages:cookie.sections.cookieControlSection.content2')}
           </p>
         </>
       ),
@@ -135,7 +135,7 @@ export default function PoliticaCookiePage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Politica de <span className="text-primary-600">Cookie-uri</span>
+              {t('pages:cookie.hero.title')} <span className="text-primary-600">{t('pages:cookie.hero.titleAccent')}</span>
             </h1>
             <p className="text-lg text-muted-foreground">
               {t('pages:cookie.hero.subtitle')}
@@ -224,7 +224,7 @@ export default function PoliticaCookiePage() {
                     <AccordionContent>
                       <p className="text-muted-foreground mb-2">{item.answer}</p>
                       <Link href={item.link} className="text-primary-600 hover:underline flex items-center text-sm">
-                        Citește mai mult <ChevronRight className="h-4 w-4 ml-1" />
+                        {t('pages:cookie.faq.readMore')} <ChevronRight className="h-4 w-4 ml-1" />
                       </Link>
                     </AccordionContent>
                   </AccordionItem>
