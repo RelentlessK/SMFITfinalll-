@@ -162,13 +162,6 @@
       "aboutCookiesLink": "aboutcookies.org",
       "note": "Vă rugăm să rețineți că restricționarea cookie-urilor poate afecta funcționalitatea anumitor secțiuni ale site-ului."
     },
-    "cookieControl": {
-      "label": "Administrare",
-      "title": "Controlul Cookie-urilor",
-      "description": "Puteți gestiona preferințele pentru cookie-uri direct prin setările browserului dumneavoastră. Pentru informații detaliate despre cum să ștergeți sau să blocați cookie-urile, vizitați",
-      "aboutCookiesLink": "aboutcookies.org",
-      "note": "Vă rugăm să rețineți că restricționarea cookie-urilor poate afecta funcționalitatea anumitor secțiuni ale site-ului."
-    },
     "tableOfContents": "Cuprins",
     "sections": {
       "whatIsCookie": {
@@ -226,3 +219,4 @@
       "readMore": "Citește mai mult"
     }
   }
+}
