@@ -198,10 +198,10 @@
       },
       "cookieControl": {
         "title": "Controlul Cookie-urilor",
-        "label": "Gestionare",
-        "content1": "Puteți controla și/sau șterge cookie-urile după cum doriți – pentru detalii, consultați site-ul",
+        "label": "Administrare",
+        "content1": "Puteți controla și/sau șterge cookie-urile după cum doriți – pentru detalii, consultați",
         "aboutCookiesLink": "aboutcookies.org",
-        "content2": ". Puteți șterge toate cookie-urile din computerul dumneavoastră și puteți seta majoritatea browserelor să blocheze plasarea acestora. Dacă faceți acest lucru, este posibil să fie necesar să setați manual unele preferințe de fiecare dată când vizitați site-ul web. De asemenea, unele servicii sau opțiuni ar putea să nu funcționeze."
+        "content2": " site-ul . Puteți șterge toate cookie-urile din computerul dumneavoastră și puteți seta majoritatea browserelor să blocheze plasarea acestora. Dacă faceți acest lucru, este posibil să fie necesar să setați manual unele preferințe de fiecare dată când vizitați site-ul web. De asemenea, unele servicii sau opțiuni ar putea să nu funcționeze."
       }
     },
     "faq": {
