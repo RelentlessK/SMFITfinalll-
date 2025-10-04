@@ -178,7 +178,7 @@ const FitnessIconSystem = () => {
   if (isHomepage && scrollY < 650) return null;
   
   // Calculate opacity based on scroll position (fade in effect)
-  const getOpacity = (baseOpacity) => {
+  const getOpacity = (baseOpacity: number) => {
     if (isHomepage) {
       // For homepage, gradually increase opacity as user scrolls down
       const scrollProgress = Math.min(1, (scrollY - 650) / 300);
