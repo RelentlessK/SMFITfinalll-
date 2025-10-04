@@ -172,7 +172,9 @@
     "titleAccent": "success story",
     "titleSuffix": "?",
     "subtitle": "Schedule a free consultation to discuss your goals and find out how SMfit can help you achieve them.",
-    "button": "Book your first free session"
+    "button": "Book your first free session",
+    "primaryButton": "Book your first free session",
+    "secondaryButton": "Explore services"
   },
   "footer": {
     "description": "Transform your body and habits with SMfit: personalized workouts and nutrition plans adapted to your specific needs.",
