@@ -44,13 +44,12 @@ export default function ContactPage() {
   });
 
   // Map global services to include translated titles
-  const servicesOptions = GLOBAL_SERVICES.map(service => ({
+  const SERVICES = GLOBAL_SERVICES.map(service => ({
     id: service.id,
-    title: t(`common:services.${service.id.replace(/-/g, '_')}.title`),
+    title: t(`services.${service.id === 'antrenament-personal' ? 'personal' : service.id === 'nutritie-personalizata' ? 'nutrition' : service.id === 'antrenament-online' ? 'online' : 'transformation'}.title`),
   }));
 
   // Use global contact info
-  const CONTACT_INFO = GLOBAL_CONTACT_INFO;
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -120,10 +119,10 @@ export default function ContactPage() {
       <section className="py-16 md:py-20 bg-accent-100/50 dark:bg-accent-900/20 border-b border-border">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-page-title font-bold mb-6">
               {t('common:contact.title')} <span className="text-primary-600">{t('common:contact.titleAccent')}</span>
             </h1>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-body text-muted-foreground">
               {t('common:contact.subtitle')}
             </p>
           </div>
@@ -135,7 +134,7 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-2xl font-bold mb-6">
+              <h2 className="text-section font-bold mb-6">
                 {t('common:contact.formTitle')} <span className="text-primary-600">{t('common:contact.formTitleAccent')}</span>
               </h2>
               
@@ -316,7 +315,7 @@ export default function ContactPage() {
             </div>
             
             <div>
-              <h2 className="text-2xl font-bold mb-6">{t('common:contact.info.title')}</h2>
+              <h2 className="text-section font-bold mb-6">{t('common:contact.info.title')}</h2>
               
               <div className="space-y-8">
                 <div className="flex">
@@ -324,9 +323,9 @@ export default function ContactPage() {
                     <Mail className="h-5 w-5 text-primary-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium mb-1">{t('common:contact.form.email')}</h3>
+                    <h3 className="text-card-title font-medium mb-1">{t('common:contact.form.email')}</h3>
                     <span className="text-muted-foreground hover:text-primary-600 transition">
-                      {CONTACT_INFO.email}
+                      {GLOBAL_CONTACT_INFO.email}
                     </span>
                   </div>
                 </div>
@@ -336,9 +335,9 @@ export default function ContactPage() {
                     <Phone className="h-5 w-5 text-primary-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium mb-1">{t('common:contact.form.phone')}</h3>
+                    <h3 className="text-card-title font-medium mb-1">{t('common:contact.form.phone')}</h3>
                     <span className="text-muted-foreground hover:text-primary-600 transition">
-                      {CONTACT_INFO.phone}
+                      {GLOBAL_CONTACT_INFO.phone}
                     </span>
                   </div>
                 </div>
@@ -348,14 +347,14 @@ export default function ContactPage() {
                     <MapPin className="h-5 w-5 text-primary-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium mb-1">{t('common:footer.contact')}</h3>
+                    <h3 className="text-card-title font-medium mb-1">{t('common:footer.contact')}</h3>
                     <a 
                       href="https://www.google.com/maps/place/18+Gym+Auchan+Tudor-Targu+Mures/@46.5309835,24.5979599,17z/data=!3m1!4b1!4m6!3m5!1s0x474bb7b43baa946d:0xd452015a86f12cd7!8m2!3d46.5309835!4d24.5979599!16s%2Fg%2F11y3kdp8qy?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-primary-600 transition"
                     >
-                      {CONTACT_INFO.address}
+                      {GLOBAL_CONTACT_INFO.address}
                     </a>
                   </div>
                 </div>
@@ -365,8 +364,8 @@ export default function ContactPage() {
                     <Clock className="h-5 w-5 text-primary-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium mb-1">{t('common:contact.info.schedule')}</h3>
-                    <ul className="mt-2 space-y-1 text-muted-foreground">
+                    <h3 className="text-card-title font-medium mb-1">{t('common:contact.info.schedule')}</h3>
+                    <ul className="mt-2 space-y-1 text-muted-foreground text-body">
                       <li>{t('common:contact.info.hours.weekdays')}</li>
                       <li>{t('common:contact.info.hours.saturday')}</li>
                       <li>{t('common:contact.info.hours.sunday')}</li>

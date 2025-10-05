@@ -96,6 +96,7 @@ const PhotoCarousel = () => {
                     <img
                       src={image.src}
                       alt={image.alt} // Ensure alt text is present
+                      loading="lazy"
                       className="h-auto max-h-[600px] w-auto mx-auto"
                     />
                   </div>

@@ -34,8 +34,8 @@ const LanguageSwitcher = ({ className }: { className?: string }) => {
       onClick={toggleLanguage}
       variant="ghost"
       size="sm"
-      className={cn( // Ensure touch target size
-        "flex items-center gap-2 text-sm font-medium transition-all hover:bg-primary-100 dark:hover:bg-primary-900/30",
+      className={cn(
+        "flex items-center gap-2 text-sm font-medium transition-all hover:bg-primary-100 dark:hover:bg-primary-900/30 min-w-[44px] min-h-[44px]",
         className
       )}
       aria-label="Switch language"

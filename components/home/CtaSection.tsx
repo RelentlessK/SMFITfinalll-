@@ -21,7 +21,7 @@ const CtaSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="text-3xl md:text-4xl font-bold mb-6"
+              className="text-section font-bold mb-6"
             >
               {t('cta.title')} <span className="text-primary-600">{t('cta.titleAccent')}</span> {t('cta.titleSuffix')}
             </motion.h2>
@@ -31,7 +31,7 @@ const CtaSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
-              className="text-muted-foreground text-lg max-w-2xl mx-auto mb-8"
+              className="text-muted-foreground text-body max-w-2xl mx-auto mb-8"
             >
               {t('cta.subtitle')}
             </motion.p>

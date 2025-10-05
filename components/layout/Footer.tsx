@@ -65,13 +65,13 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4 mt-4">
               <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-muted-foreground hover:text-primary-600 transition">
-                <Instagram size={20} className="min-w-[44px] min-h-[44px] p-2" />
+                <Instagram size={20} className="min-w-[44px] min-h-[44px] p-3" />
               </a>
               <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-muted-foreground hover:text-primary-600 transition">
-                <Facebook size={20} className="min-w-[44px] min-h-[44px] p-2" />
+                <Facebook size={20} className="min-w-[44px] min-h-[44px] p-3" />
               </a>
               <a href={SOCIAL_LINKS.tiktok} target="_blank" rel="noopener noreferrer" aria-label="TikTok" className="text-muted-foreground hover:text-primary-600 transition">
-                <TikTokIcon size={20} className="min-w-[44px] min-h-[44px] p-2" />
+                <TikTokIcon size={20} className="min-w-[44px] min-h-[44px] p-3" />
               </a>
             </div>
           </div>

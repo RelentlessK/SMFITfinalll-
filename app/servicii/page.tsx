@@ -58,10 +58,10 @@ export default function ServiciiPage() {
       <section className="py-16 md:py-20 bg-accent-100/50 dark:bg-accent-900/20 border-b border-border">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-page-title font-bold mb-6">
               {t('pages:services.hero.title')} <span className="text-primary-600">{t('pages:services.hero.titleAccent')}</span>
             </h1>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-body text-muted-foreground">
               {t('pages:services.hero.subtitle')}
             </p>
           </div>
@@ -79,11 +79,11 @@ export default function ServiciiPage() {
                 className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
               >
                 <div className={index % 2 === 0 ? "order-2 lg:order-1" : "order-2"}>
-                  <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                  <h2 className="text-section font-bold mb-6">
                     {service.title}
                   </h2>
                   
-                  <p className="text-muted-foreground mb-8 leading-relaxed">
+                  <p className="text-muted-foreground text-body mb-8 leading-relaxed">
                     {service.description}
                   </p>
                   
@@ -130,8 +130,8 @@ export default function ServiciiPage() {
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"
                       className="object-cover rounded-lg"
-                      priority={index === 0} // Set priority for the first image (LCP)
                       loading={index === 0 ? "eager" : "lazy"}
+                      priority={index === 0} // Set priority for the first image (LCP)
                       placeholder="blur"
                       blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                     />
@@ -147,13 +147,13 @@ export default function ServiciiPage() {
       <section className="py-16 md:py-20 bg-primary-100/50 dark:bg-primary-900/10 border-t border-border">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-section font-bold mb-6">
               {t('pages:services.cta.title')} <span className="text-primary-600">{t('pages:services.cta.titleAccent')}</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-8">
+            <p className="text-body text-muted-foreground mb-8">
               {t('pages:services.cta.subtitle')}
             </p>
-            <Button asChild size="lg" className="bg-primary-500 hover:bg-primary-600 text-white">
+            <Button asChild size="lg" className="bg-primary-500 hover:bg-primary-600 text-white min-w-[44px] min-h-[44px]">
               <Link href="/contact">
                 {t('pages:services.cta.button')}
               </Link>

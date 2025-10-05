@@ -99,7 +99,7 @@ const MobileNav = () => {
           <LanguageSwitcher className="w-full justify-center py-3" />
         </motion.li>
         <motion.li variants={itemVariants} className="w-full pt-4">
-          <Button asChild className="bg-primary-500 hover:bg-primary-600 text-white w-full min-h-[48px] px-6">
+          <Button asChild className="bg-primary-500 hover:bg-primary-600 text-white w-full min-h-[44px] px-6">
             <Link href="/contact" onClick={() => document.dispatchEvent(new CustomEvent('close-mobile-menu'))}>
               {t('nav.contactButton')}
             </Link>

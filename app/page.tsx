@@ -7,13 +7,13 @@ import CtaSection from '@/components/home/CtaSection';
 
 export default function Home() {
   return (
-    <>
+    <main>
       <HeroVideo />
       <ServicesOverview />
       <AboutPreview />
       <TestimonialsSlider />
       <FaqSection />
       <CtaSection />
-    </>
+    </main>
   );
 }

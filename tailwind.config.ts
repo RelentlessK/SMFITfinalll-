@@ -81,13 +81,18 @@ const config: Config = {
       },
       fontSize: {
         // Fluid typography using clamp()
-        'h1': 'clamp(2.5rem, 5vw + 1rem, 4.5rem)', // ~40px to ~72px
-        'h2': 'clamp(2rem, 4vw + 1rem, 3.5rem)',   // ~32px to ~56px
-        'h3': 'clamp(1.75rem, 3vw + 1rem, 2.5rem)',// ~28px to ~40px
-        'lg': 'clamp(1.125rem, 0.5vw + 1rem, 1.25rem)', // ~18px to ~20px
-        'base': 'clamp(1rem, 0.2vw + 0.9rem, 1.125rem)', // ~16px to ~18px
-        'sm': 'clamp(0.875rem, 0.1vw + 0.8rem, 1rem)', // ~14px to ~16px
-        'xs': 'clamp(0.75rem, 0.1vw + 0.7rem, 0.875rem)', // ~12px to ~14px
+        // Hero titles (Home page)
+        'hero': 'clamp(2rem, 8vw, 4rem)', // ~32px to ~64px
+        // Page titles (Services, About Me, Testimonials, Contact)
+        'page-title': 'clamp(2.5rem, 6vw, 3.5rem)', // ~40px to ~56px
+        // Section headings (across all core pages)
+        'section': 'clamp(1.875rem, 4vw, 2.5rem)', // ~30px to ~40px
+        // Card titles and subsections
+        'card-title': 'clamp(1.25rem, 3vw, 1.5rem)', // ~20px to ~24px
+        // Body text optimized for readability
+        'body': 'clamp(1rem, 2vw, 1.125rem)', // ~16px to ~18px
+        // Small text (captions, meta info)
+        'caption': 'clamp(0.875rem, 1.5vw, 1rem)', // ~14px to ~16px
       },
       borderRadius: {
         lg: 'var(--radius)',

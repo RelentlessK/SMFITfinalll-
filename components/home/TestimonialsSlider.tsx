@@ -64,10 +64,10 @@ const TestimonialsSlider = () => {
     <section className="py-16 md:py-24 bg-primary-100/50 dark:bg-primary-900/10">
       <div className="container mx-auto px-4 md:px-6">
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-section font-bold mb-4">
             {t('testimonials.title')} <span className="text-primary-600">{t('testimonials.titleAccent')}</span> {t('testimonials.titleSuffix')}
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-body">
             {t('testimonials.subtitle')}
           </p>
         </AnimatedSection>
