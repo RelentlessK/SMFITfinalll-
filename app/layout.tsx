@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
+import dynamic from 'next/dynamic';
 import { Suspense } from 'react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -11,7 +12,12 @@ import VortexEffect from '@/components/shared/VortexEffect';
 import FitnessIconSystem from '@/components/shared/FitnessIconSystem';
 import InstagramIcon from '@/components/ui/InstagramIcon';
 import I18nProvider from '@/components/providers/I18nProvider';
-import ChatAgent from '@/components/shared/ChatAgent';
+
+// Dynamically import ChatAgent to prevent SSR issues
+const DynamicChatAgent = dynamic(() => import('@/components/shared/ChatAgent'), {
+  ssr: false,
+  loading: () => null
+});
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -92,7 +98,7 @@ export default function RootLayout({
               <VortexEffect excludeHomepageHero={true} />
               <FitnessIconSystem />
               <InstagramIcon />
-              <ChatAgent />
+              <DynamicChatAgent />
             </ThemeProvider>
           </I18nProvider>
         </Suspense>
