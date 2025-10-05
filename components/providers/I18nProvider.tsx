@@ -22,7 +22,7 @@ const I18nProvider = ({ children }: I18nProviderProps) => {
     } catch (error) {
       console.error('i18n initialization failed:', error);
       // Fallback to server instance
-      const fallbackInstance = getI18nInstance(false);
+      const fallbackInstance = getI18nInstance(false, 'ro');
       setI18nInstance(fallbackInstance);
       setIsInitialized(true);
     }
@@ -30,7 +30,7 @@ const I18nProvider = ({ children }: I18nProviderProps) => {
 
   // During SSR, render with server instance
   if (typeof window === 'undefined') {
-    const serverInstance = getI18nInstance(false);
+    const serverInstance = getI18nInstance(false, 'ro');
     return (
       <I18nextProvider i18n={serverInstance}>
         {children}

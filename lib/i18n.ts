@@ -26,11 +26,13 @@ export const resources = {
 };
 
 export const getI18nInstance = (isClient = false) => {
+export const getI18nInstance = (isClient = false, initialLng = 'en') => {
   const i18nInstance = i18n.createInstance();
   
   const config: InitOptions = {
     resources,
     fallbackLng: 'en',
+    lng: initialLng,
     defaultNS: 'common',
     ns: ['common', 'pages', 'faq'],
     
