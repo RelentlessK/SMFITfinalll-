@@ -2,61 +2,49 @@
 
 import { ReactNode, useEffect, useState } from 'react';
 import { I18nextProvider } from 'react-i18next';
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
-import { resources } from '@/lib/i18n';
+import { getI18nInstance } from '@/lib/i18n';
+import type { i18n as I18nType } from 'i18next';
 
 interface I18nProviderProps {
   children: ReactNode;
 }
 
 const I18nProvider = ({ children }: I18nProviderProps) => {
-  const [isInitialized, setIsInitialized] = useState(true);
+  const [i18nInstance, setI18nInstance] = useState<I18nType | null>(null);
+  const [isInitialized, setIsInitialized] = useState(false);
 
   useEffect(() => {
-    // Skip i18n initialization during static build
-    if (typeof window === 'undefined') {
-      return;
+    // Initialize client-side i18n instance
+    try {
+      const instance = getI18nInstance(true);
+      setI18nInstance(instance);
+      setIsInitialized(true);
+    } catch (error) {
+      console.error('i18n initialization failed:', error);
+      // Fallback to server instance
+      const fallbackInstance = getI18nInstance(false);
+      setI18nInstance(fallbackInstance);
+      setIsInitialized(true);
     }
-    
-    i18n
-      .use(LanguageDetector)
-      .use(initReactI18next)
-      .init({
-        resources,
-        fallbackLng: 'en',
-        defaultNS: 'common',
-        ns: ['common', 'pages', 'faq'],
-        
-        detection: {
-          order: ['localStorage', 'navigator'],
-          caches: ['localStorage'],
-        },
-
-        interpolation: {
-          escapeValue: false,
-        },
-
-        react: {
-          useSuspense: false,
-        },
-      })
-      .then(() => {
-        setIsInitialized(true);
-      })
-      .catch((error) => {
-        console.error('i18n initialization failed:', error);
-        setIsInitialized(true); // Still render children even if i18n fails
-      });
   }, []);
 
-  if (typeof window !== 'undefined' && !isInitialized) {
+  // During SSR, render with server instance
+  if (typeof window === 'undefined') {
+    const serverInstance = getI18nInstance(false);
+    return (
+      <I18nextProvider i18n={serverInstance}>
+        {children}
+      </I18nextProvider>
+    );
+  }
+
+  // During client-side, wait for initialization
+  if (!isInitialized || !i18nInstance) {
     return null;
   }
 
   return (
-    <I18nextProvider i18n={i18n}>
+    <I18nextProvider i18n={i18nInstance}>
       {children}
     </I18nextProvider>
   );

@@ -1,7 +1,8 @@
 'use client';
 
-import i18n from 'i18next';
+import i18n, { InitOptions } from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
 // Import translation files
 import commonEn from '../public/locales/en/common.json';
@@ -24,11 +25,12 @@ export const resources = {
   },
 };
 
-i18n
-  .use(initReactI18next)
-  .init({
+export const getI18nInstance = (isClient = false) => {
+  const i18nInstance = i18n.createInstance();
+  
+  const config: InitOptions = {
     resources,
-    fallbackLng: 'ro', // Changed default to Romanian as per project context
+    fallbackLng: 'en',
     defaultNS: 'common',
     ns: ['common', 'pages', 'faq'],
     
@@ -39,6 +41,24 @@ i18n
     react: {
       useSuspense: false,
     },
-  });
+  };
 
-export default i18n;
+  if (isClient) {
+    i18nInstance
+      .use(LanguageDetector)
+      .use(initReactI18next)
+      .init({
+        ...config,
+        detection: {
+          order: ['localStorage', 'navigator'],
+          caches: ['localStorage'],
+        },
+      });
+  } else {
+    i18nInstance
+      .use(initReactI18next)
+      .init(config);
+  }
+
+  return i18nInstance;
+};
