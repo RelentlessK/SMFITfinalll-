@@ -26,6 +26,7 @@ export const resources = {
 };
 
 export const getI18nInstance = (isClient = false) => {
+}
 export const getI18nInstance = (isClient = false, initialLng = 'en') => {
   const i18nInstance = i18n.createInstance();
   
