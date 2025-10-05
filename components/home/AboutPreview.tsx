@@ -50,11 +50,11 @@ const AboutPreview = () => {
               <Link href="/despre-mine" className="flex items-center">
                 {t('about.learnMore')}
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-          <p className="text-muted-foreground text-body mb-6 leading-relaxed">
+              </Link>
             </Button>
           </AnimatedSection>
           
-          <p className="text-muted-foreground text-body mb-6 leading-relaxed">
+          <AnimatedSection direction="left" className="order-1 lg:order-2">
             <div className="relative h-auto flex justify-center rounded-lg overflow-hidden">
               <img
                 src="https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwlpGEGOr0U4wJzZO5AosvteNcyrn6P37uxqjM"
@@ -70,5 +70,3 @@ const AboutPreview = () => {
 };
 
 export default AboutPreview;
-  )
-}
