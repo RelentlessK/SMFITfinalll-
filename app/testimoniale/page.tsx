@@ -1,12 +1,12 @@
 "use client";
 
 import { useTranslation } from 'react-i18next';
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Star } from 'lucide-react';
 import { motion } from 'framer-motion';
 import AnimatedSection from '@/components/shared/AnimatedSection';
+import ImageWithLoadingSpinner from '@/components/shared/ImageWithLoadingSpinner';
 
 export default function TestimonialePage() {
   const { t } = useTranslation(['common', 'pages']);
@@ -56,13 +56,13 @@ export default function TestimonialePage() {
                   
                   <div className="flex items-center mt-auto">
                     <div className="relative h-12 w-12 rounded-full overflow-hidden mr-4">
-                      <Image
+                      <ImageWithLoadingSpinner
                         src={testimonial.image}
                         alt={testimonial.name}
                         fill
                         sizes="48px"
                         className="object-cover"
-                        loading="lazy"
+                        minLoadingTime={600}
                       />
                     </div>
                     <div>
@@ -92,14 +92,14 @@ export default function TestimonialePage() {
             <div className="bg-card border border-primary-300 dark:border-primary-400/30 rounded-xl overflow-hidden shadow-md transition-all duration-300 hover:shadow-lg hover:border-primary-400 dark:hover:border-primary-400/50 hover:transform hover:scale-105 hover:-translate-y-1">
               <div className="grid grid-cols-1 md:grid-cols-2 h-full">
                 <div className="relative h-64 md:h-full w-full">
-                  <Image
+                  <ImageWithLoadingSpinner
                     src="https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwhEfhGSkMYUJiv0l5kDVXSaf3eBAy1wz6NTgF"
                     alt={t('pages:testimonials.successStories.madalina.name')}
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover w-full h-full"
-                    loading="lazy"
                     style={{objectPosition: "center"}}
+                    minLoadingTime={1000}
                   />
                 </div>
                 <div className="p-6">
@@ -139,8 +139,8 @@ export default function TestimonialePage() {
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover w-full h-full"
-                    loading="lazy"
                     style={{objectPosition: "center"}}
+                    minLoadingTime={1000}
                   />
                 </div>
                 <div className="p-6">

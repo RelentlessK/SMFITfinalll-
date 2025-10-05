@@ -1,11 +1,11 @@
 "use client";
 
 import { useTranslation } from 'react-i18next';
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import PhotoCarousel from '@/components/shared/PhotoCarousel';
+import ImageWithLoadingSpinner from '@/components/shared/ImageWithLoadingSpinner';
 
 export default function DespreMine() {
   const { t } = useTranslation(['common', 'pages']);
@@ -48,11 +48,15 @@ export default function DespreMine() {
               </p>
             </div>
             <div className="relative h-auto flex justify-center rounded-lg overflow-hidden">
-              <img
+              <ImageWithLoadingSpinner
                 src="https://zbm5woa3iy.ufs.sh/f/1fxqa6mYldrz1fnyBrRYldrzIivN7xYcX6jQtJ8ybZFBS9Hn"
                 alt={t('common:about.trainerImageAlt')}
-                loading="eager"
-                className="rounded-lg max-w-full h-auto max-h-[600px] object-contain"
+                width={600}
+                height={600}
+                className="rounded-lg object-contain"
+                style={{ maxHeight: '600px', width: 'auto', height: 'auto' }}
+                priority
+                minLoadingTime={1200}
               />
             </div>
           </div>
