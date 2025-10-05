@@ -3,9 +3,9 @@
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import AnimatedSection from '@/components/shared/AnimatedSection';
-import ImageWithLoadingSpinner from '@/components/shared/ImageWithLoadingSpinner';
 
 const AboutPreview = () => {
   const { t } = useTranslation('common');
@@ -56,14 +56,10 @@ const AboutPreview = () => {
           
           <AnimatedSection direction="left" className="order-1 lg:order-2">
             <div className="relative h-auto flex justify-center rounded-lg overflow-hidden">
-              <ImageWithLoadingSpinner
+              <img
                 src="https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwlpGEGOr0U4wJzZO5AosvteNcyrn6P37uxqjM"
                 alt={t('about.trainerImageAlt')}
-                width={600}
-                height={600}
-                className="rounded-lg object-contain"
-                style={{ maxHeight: '600px', width: 'auto', height: 'auto' }}
-                minLoadingTime={1000}
+                className="rounded-lg max-w-full h-auto max-h-[600px] object-contain"
               />
             </div>
           </AnimatedSection>

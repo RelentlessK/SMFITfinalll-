@@ -2,11 +2,11 @@
 
 import { useTranslation } from 'react-i18next';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import AnimatedSection from '@/components/shared/AnimatedSection';
-import ImageWithLoadingSpinner from '@/components/shared/ImageWithLoadingSpinner';
 
 const TestimonialsSlider = () => {
   const { t } = useTranslation('common');
@@ -92,13 +92,12 @@ const TestimonialsSlider = () => {
               
               <div className="flex items-center">
                 <div className="relative h-14 w-14 rounded-full overflow-hidden mr-4">
-                  <ImageWithLoadingSpinner
+                  <Image 
                     src={TESTIMONIALS[currentIndex].image} 
                     alt={TESTIMONIALS[currentIndex].name}
                     fill
                     sizes="56px"
                     className="object-cover"
-                    minLoadingTime={600}
                   />
                 </div>
                 <div>

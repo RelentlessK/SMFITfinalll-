@@ -6,7 +6,6 @@ import { useTranslation } from 'react-i18next';
 import { useState, useEffect, useCallback } from 'react';
 import AnimatedSection from '@/components/shared/AnimatedSection';
 import { cn } from '@/lib/utils';
-import ImageWithLoadingSpinner from '@/components/shared/ImageWithLoadingSpinner';
 import {
   Carousel,
   CarouselContent,
@@ -94,14 +93,11 @@ const PhotoCarousel = () => {
                   <div className="overflow-hidden rounded-lg border-4 border-primary-200 dark:border-primary-900/30 
                                 shadow-[0_0_15px_rgba(247,168,196,0.15)]
                                 transition-all duration-300 hover:shadow-[0_0_25px_rgba(247,168,196,0.3)]">
-                    <ImageWithLoadingSpinner
+                    <img
                       src={image.src}
                       alt={image.alt} // Ensure alt text is present
-                      width={600}
-                      height={600}
-                      className="object-contain mx-auto"
-                      style={{ maxHeight: '600px', width: 'auto', height: 'auto' }}
-                      minLoadingTime={800}
+                      loading="lazy"
+                      className="h-auto max-h-[600px] w-auto mx-auto"
                     />
                   </div>
                 </div>

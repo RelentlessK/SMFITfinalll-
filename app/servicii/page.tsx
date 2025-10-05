@@ -1,10 +1,10 @@
 "use client";
 
 import { useTranslation } from 'react-i18next';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Check, Dumbbell, Apple, Laptop, BarChart } from 'lucide-react';
 import Link from 'next/link';
-import ImageWithLoadingSpinner from '@/components/shared/ImageWithLoadingSpinner';
 
 
 const iconMap = {
@@ -118,7 +118,7 @@ export default function ServiciiPage() {
                 
                 <div className={index % 2 === 0 ? "order-1 lg:order-2" : "order-1"}>
                   <div className="relative h-[350px] md:h-[450px] rounded-lg overflow-hidden">
-                    <ImageWithLoadingSpinner
+                    <Image
                       src={service.id === 'antrenament-personal' 
                         ? "https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwH5T8uVj83wx7T1NoIPQpdnG4mgziA5lyZcq0"
                         : service.id === 'nutritie-personalizata' 
@@ -130,8 +130,10 @@ export default function ServiciiPage() {
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"
                       className="object-cover rounded-lg"
-                      priority={index === 0}
-                      minLoadingTime={index === 0 ? 1200 : 800}
+                      loading={index === 0 ? "eager" : "lazy"}
+                      priority={index === 0} // Set priority for the first image (LCP)
+                      placeholder="blur"
+                      blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                     />
                   </div>
                 </div>
