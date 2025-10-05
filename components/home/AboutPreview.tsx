@@ -70,3 +70,5 @@ const AboutPreview = () => {
 };
 
 export default AboutPreview;
+  )
+}
