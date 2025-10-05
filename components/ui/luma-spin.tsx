@@ -1,4 +1,10 @@
-export const Component = () => {
+import { cn } from '@/lib/utils';
+
+interface LumaSpinProps {
+  className?: string;
+}
+
+export const Component = ({ className }: LumaSpinProps = {}) => {
 return (
     <div className="relative w-[65px] aspect-square">
     <span className="absolute rounded-[50px] animate-loaderAnim shadow-[inset_0_0_0_3px] shadow-pink-300" />
