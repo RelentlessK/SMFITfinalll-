@@ -25,6 +25,10 @@ export const metadata: Metadata = {
   },
   description: 'Transformă-ți corpul cu SMfit: antrenamente personalizate online sau live și planuri nutriționale adaptate nevoilor tale.',
   metadataBase: new URL('https://smfit.ro'),
+  keywords: ['SMfit', 'antrenament personal', 'nutriție personalizată', 'fitness Târgu Mureș', 'transformare corporală', 'Sabina Meruță', 'personal trainer România'],
+  authors: [{ name: 'Sabina Meruța', url: 'https://smfit.ro/despre-mine' }],
+  creator: 'Sabina Meruța',
+  publisher: 'SMfit',
   alternates: {
     canonical: 'https://smfit.ro',
     languages: {
@@ -46,7 +50,7 @@ export const metadata: Metadata = {
     siteName: 'SMfit',
     images: [
       {
-        url: 'https://images.pexels.com/photos/1092875/pexels-photo-1092875.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', // Placeholder image
+        url: 'https://zbm5woa3iy.ufs.sh/f/1fxqa6mYldrzwIy7OUjKkTclfebZu6hvgBj5IdXUmYW2yzH8',
         width: 1200,
         height: 630,
         alt: 'SMfit - Antrenamente Personalizate & Nutriție',
@@ -55,11 +59,16 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
+    site: '@sabinameruta',
+    creator: '@sabinameruta',
     title: 'SMfit - Antrenamente Personalizate & Nutriție',
     description: 'Transformă-ți corpul cu SMfit: antrenamente personalizate online sau live și planuri nutriționale adaptate nevoilor tale.',
-    images: ['https://images.pexels.com/photos/1092875/pexels-photo-1092875.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'], // Placeholder image
+    images: ['https://zbm5woa3iy.ufs.sh/f/1fxqa6mYldrzwIy7OUjKkTclfebZu6hvgBj5IdXUmYW2yzH8'],
   },
   viewport: 'width=device-width, initial-scale=1, viewport-fit=cover',
+  verification: {
+    google: '', // Add your Google Search Console verification code here
+  },
 };
 
 export default function RootLayout({
