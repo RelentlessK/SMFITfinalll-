@@ -249,7 +249,7 @@ export default function PoliticaCookiePage() {
                 </Button>
                 <Button asChild size="lg" variant="outline" className="w-full sm:w-auto">
                   <a
-                    href="https://www.youronlinechoices.com/uk/"
+                    href="https://www.youronlinechoices.com/" // Removed /uk/ for broader applicability
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center"

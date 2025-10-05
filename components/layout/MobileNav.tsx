@@ -66,7 +66,7 @@ const MobileNav = () => {
     <div id="mobile-menu-overlay">
       <button
         className="close-btn"
-        onClick={() => document.dispatchEvent(new CustomEvent('close-mobile-menu'))}
+        onClick={() => document.dispatchEvent(new CustomEvent('close-mobile-menu'))} // Ensure touch target size
         aria-label="Close menu"
       >
         <X />

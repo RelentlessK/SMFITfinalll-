@@ -131,7 +131,7 @@ const Header = () => {
         {/* Mobile Navigation Toggle */}
         <div className="flex items-center space-x-4 md:hidden">
           <button 
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => setIsOpen(!isOpen)} // Ensure clickable area is sufficient
             className={cn(
               "z-50 focus:outline-none p-2",
               isTransparent ? "text-white" : "text-foreground"

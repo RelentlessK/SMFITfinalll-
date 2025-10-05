@@ -63,7 +63,7 @@ export default function DespreMine() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-card border border-primary-200 dark:border-primary-900/30 p-6 rounded-lg shadow-md transition-all duration-300 hover:transform hover:scale-105 hover:border-primary-400 dark:hover:border-primary-700 hover:shadow-lg">
-                <h3 className="text-xl font-bold mb-2">{t('common:about.principles.personalization.title')}</h3>
+                <h3 className="text-h3 font-bold mb-2">{t('common:about.principles.personalization.title')}</h3>
                 <p className="text-muted-foreground">
                   {t('common:about.principles.personalization.description')}
                 </p>
@@ -75,7 +75,7 @@ export default function DespreMine() {
                 </p>
               </div>
               <div className="bg-card border border-primary-200 dark:border-primary-900/30 p-6 rounded-lg shadow-md transition-all duration-300 hover:transform hover:scale-105 hover:border-primary-400 dark:hover:border-primary-700 hover:shadow-lg">
-                <h3 className="text-xl font-bold mb-2">{t('common:about.principles.sustainability.title')}</h3>
+                <h3 className="text-h3 font-bold mb-2">{t('common:about.principles.sustainability.title')}</h3>
                 <p className="text-muted-foreground">
                   {t('common:about.principles.sustainability.description')}
                 </p>
@@ -96,7 +96,7 @@ export default function DespreMine() {
             <h2 className="text-3xl font-bold mb-6 text-center">{t('pages:about.certifications.title').split(' ')[0]} <span className="text-primary-600">{t('pages:about.certifications.title').split(' ').slice(1).join(' ')}</span></h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
               <div className="bg-card border border-primary-200 dark:border-primary-900/30 p-6 rounded-lg shadow-md transition-all duration-300 hover:transform hover:scale-105 hover:border-primary-400 dark:hover:border-primary-700 hover:shadow-lg">
-                <h3 className="text-xl font-bold mb-2">{t('pages:about.certifications.formal.title')}</h3>
+                <h3 className="text-h3 font-bold mb-2">{t('pages:about.certifications.formal.title')}</h3>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                   {(t('pages:about.certifications.formal.items', { returnObjects: true }) as string[]).map((item, index) => (
                     <li key={index}>{item}</li>
@@ -104,7 +104,7 @@ export default function DespreMine() {
                 </ul>
               </div>
               <div className="bg-card border border-primary-200 dark:border-primary-900/30 p-6 rounded-lg shadow-md transition-all duration-300 hover:transform hover:scale-105 hover:border-primary-400 dark:hover:border-primary-700 hover:shadow-lg">
-                <h3 className="text-xl font-bold mb-2">{t('pages:about.certifications.international.title')}</h3>
+                <h3 className="text-h3 font-bold mb-2">{t('pages:about.certifications.international.title')}</h3>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                   {(t('pages:about.certifications.international.items', { returnObjects: true }) as string[]).map((item, index) => (
                     <li key={index}>{item}</li>
@@ -121,7 +121,7 @@ export default function DespreMine() {
                   href="https://scitec.ro/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block"
+                  className="block min-w-[44px] min-h-[44px]"
                 >
                   <div className="bg-gradient-to-br from-[#f7cfd8]/50 to-[#ffe3e8]/50 hover:from-[#f7cfd8]/60 hover:to-[#ffe3e8]/60 border border-primary-200 rounded-lg shadow-sm p-6 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-md">
                     <h4 className="text-xl font-semibold mb-3 text-center">Scitec Nutrition</h4>
@@ -129,7 +129,7 @@ export default function DespreMine() {
                       {t('pages:about.partners.scitec.description')}
                     </p>
                     <p className="text-sm font-medium text-primary-600 mb-4 text-center">{t('pages:about.partners.scitec.promoCode')}</p>
-                    <div className="text-center">
+                    <div className="text-center min-w-[44px] min-h-[44px]">
                       <button className="inline-block bg-primary-500 text-white rounded-full py-2 px-4 hover:bg-primary-600 transition" aria-label={t('pages:about.partners.scitec.button')}>
                         {t('pages:about.partners.scitec.button')}
                       </button>
@@ -141,7 +141,7 @@ export default function DespreMine() {
                   href="https://gymhyper.ro" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block"
+                  className="block min-w-[44px] min-h-[44px]"
                 >
                   <div className="bg-gradient-to-br from-[#f7cfd8]/50 to-[#ffe3e8]/50 hover:from-[#f7cfd8]/60 hover:to-[#ffe3e8]/60 border border-primary-200 rounded-lg shadow-sm p-6 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-md">
                     <h4 className="text-xl font-semibold mb-3 text-center">GymHyper</h4>
@@ -149,7 +149,7 @@ export default function DespreMine() {
                       {t('pages:about.partners.gymhyper.description')}
                     </p>
                     <div className="text-center mb-4">
-                      <p className="text-sm font-medium text-primary-600">{t('pages:about.partners.gymhyper.promoCode')}</p>
+                      <p className="text-sm font-medium text-primary-600 min-w-[44px] min-h-[44px]">{t('pages:about.partners.gymhyper.promoCode')}</p>
                     </div>
                     <div className="text-center">
                       <button className="inline-block bg-primary-500 text-white rounded-full py-2 px-4 hover:bg-primary-600 transition" aria-label={t('pages:about.partners.gymhyper.button')}>
@@ -163,14 +163,14 @@ export default function DespreMine() {
                   href="https://cocosolis.com/ro/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block"
+                  className="block min-w-[44px] min-h-[44px]"
                 >
                   <div className="bg-gradient-to-br from-[#f7cfd8]/50 to-[#ffe3e8]/50 hover:from-[#f7cfd8]/60 hover:to-[#ffe3e8]/60 border border-primary-200 rounded-lg shadow-sm p-6 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-md">
                     <h4 className="text-xl font-semibold mb-3 text-center">Cocosolis</h4>
                     <p className="text-muted-foreground mb-4 text-center">
                       {t('pages:about.partners.cocosolis.description')}
                     </p>
-                    <p className="text-sm font-medium text-primary-600 mb-4 text-center">{t('pages:about.partners.cocosolis.promoCode')}</p>
+                    <p className="text-sm font-medium text-primary-600 mb-4 text-center min-w-[44px] min-h-[44px]">{t('pages:about.partners.cocosolis.promoCode')}</p>
                     <div className="text-center">
                       <button className="inline-block bg-primary-500 text-white rounded-full py-2 px-4 hover:bg-primary-600 transition" aria-label={t('pages:about.partners.cocosolis.button')}>
                         {t('pages:about.partners.cocosolis.button')}

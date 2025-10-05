@@ -65,19 +65,19 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4 mt-4">
               <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-muted-foreground hover:text-primary-600 transition">
-                <Instagram size={20} />
+                <Instagram size={20} className="min-w-[44px] min-h-[44px] p-2" />
               </a>
               <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-muted-foreground hover:text-primary-600 transition">
-                <Facebook size={20} />
+                <Facebook size={20} className="min-w-[44px] min-h-[44px] p-2" />
               </a>
               <a href={SOCIAL_LINKS.tiktok} target="_blank" rel="noopener noreferrer" aria-label="TikTok" className="text-muted-foreground hover:text-primary-600 transition">
-                <TikTokIcon size={20} />
+                <TikTokIcon size={20} className="min-w-[44px] min-h-[44px] p-2" />
               </a>
             </div>
           </div>
 
           {/* Quick Links */}
-          <div className="flex flex-col">
+          <div className="flex flex-col min-w-[150px]">
             <h3 className="text-lg font-medium mb-4">{t('footer.quickLinks')}</h3>
             <ul className="space-y-3">
               {NAV_LINKS.map((link) => (
@@ -91,7 +91,7 @@ const Footer = () => {
           </div>
 
           {/* Legal & Policies */}
-          <div className="flex flex-col">
+          <div className="flex flex-col min-w-[150px]">
             <h3 className="text-lg font-medium mb-4">{t('footer.legalPolicies')}</h3>
             <ul className="space-y-3">
               <li>
@@ -108,7 +108,7 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="flex flex-col">
+          <div className="flex flex-col min-w-[200px]">
             <h3 className="text-lg font-medium mb-4">{t('footer.contact')}</h3>
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">

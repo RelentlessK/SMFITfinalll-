@@ -24,7 +24,7 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { Mail, Phone, MapPin, Send, Clock, CheckCircle2 } from 'lucide-react';
-import { CONTACT_INFO, SERVICES } from '@/lib/constants';
+import { CONTACT_INFO as GLOBAL_CONTACT_INFO, SERVICES as GLOBAL_SERVICES } from '@/lib/constants';
 import { useToast } from "@/hooks/use-toast";
 import { cn } from '@/lib/utils';
 import debounce from 'lodash/debounce';
@@ -43,30 +43,14 @@ export default function ContactPage() {
     message: z.string().min(10, { message: t('pages:contact.validation.messageRequired') }),
   });
 
-  const SERVICES = [
-    {
-      id: 'antrenament-personal',
-      title: t('common:services.personal.title'),
-    },
-    {
-      id: 'nutritie-personalizata', 
-      title: t('common:services.nutrition.title'),
-    },
-    {
-      id: 'antrenament-online',
-      title: t('common:services.online.title'),
-    },
-    {
-      id: 'program-transformare',
-      title: t('common:services.transformation.title'),
-    },
-  ];
+  // Map global services to include translated titles
+  const servicesOptions = GLOBAL_SERVICES.map(service => ({
+    id: service.id,
+    title: t(`common:services.${service.id.replace(/-/g, '_')}.title`),
+  }));
 
-  const CONTACT_INFO = {
-    email: 'sabinaantrenor@gmail.com',
-    phone: '0787 333 500',
-    address: 'B-dul 1 Decembrie 1918, nr. 291, Centrul Comercial Auchan, Tîrgu Mureș, România',
-  };
+  // Use global contact info
+  const CONTACT_INFO = GLOBAL_CONTACT_INFO;
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),

@@ -79,6 +79,16 @@ const config: Config = {
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
       },
+      fontSize: {
+        // Fluid typography using clamp()
+        'h1': 'clamp(2.5rem, 5vw + 1rem, 4.5rem)', // ~40px to ~72px
+        'h2': 'clamp(2rem, 4vw + 1rem, 3.5rem)',   // ~32px to ~56px
+        'h3': 'clamp(1.75rem, 3vw + 1rem, 2.5rem)',// ~28px to ~40px
+        'lg': 'clamp(1.125rem, 0.5vw + 1rem, 1.25rem)', // ~18px to ~20px
+        'base': 'clamp(1rem, 0.2vw + 0.9rem, 1.125rem)', // ~16px to ~18px
+        'sm': 'clamp(0.875rem, 0.1vw + 0.8rem, 1rem)', // ~14px to ~16px
+        'xs': 'clamp(0.75rem, 0.1vw + 0.7rem, 0.875rem)', // ~12px to ~14px
+      },
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',

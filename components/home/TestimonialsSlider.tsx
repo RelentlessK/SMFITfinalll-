@@ -110,7 +110,7 @@ const TestimonialsSlider = () => {
           <div className="flex justify-center gap-2 mt-8">
             {TESTIMONIALS.map((_, index) => (
               <button
-                key={index}
+                key={index} // Ensure touch target size
                 className={cn(
                   "h-2 w-2 rounded-full transition-all",
                   currentIndex === index ? "bg-primary-500 w-8" : "bg-primary-200"
@@ -126,7 +126,7 @@ const TestimonialsSlider = () => {
           </div>
           
           <button 
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 lg:-translate-x-16 bg-card border border-border rounded-full p-2 shadow-md hover:bg-accent-100 transition-colors text-foreground"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 lg:-translate-x-16 bg-card border border-border rounded-full p-2 shadow-md hover:bg-accent-100 transition-colors text-foreground min-w-[44px] min-h-[44px]" // Ensure touch target size
             onClick={handlePrev}
             aria-label="Previous testimonial"
           >
@@ -134,7 +134,7 @@ const TestimonialsSlider = () => {
           </button>
           
           <button 
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 lg:translate-x-16 bg-card border border-border rounded-full p-2 shadow-md hover:bg-accent-100 transition-colors text-foreground"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 lg:translate-x-16 bg-card border border-border rounded-full p-2 shadow-md hover:bg-accent-100 transition-colors text-foreground min-w-[44px] min-h-[44px]" // Ensure touch target size
             onClick={handleNext}
             aria-label="Next testimonial"
           >

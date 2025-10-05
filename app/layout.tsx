@@ -40,6 +40,10 @@ export const metadata: Metadata = {
     description: 'Transformă-ți corpul cu SMfit: antrenamente personalizate online sau live și planuri nutriționale adaptate nevoilor tale.',
     siteName: 'SMfit',
   },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+  },
 };
 
 export default function RootLayout({

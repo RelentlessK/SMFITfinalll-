@@ -108,7 +108,7 @@ export default function ServiciiPage() {
                   <div className="mb-8">
                     <div className="text-2xl font-bold text-primary-600">{service.price}</div>
                   </div>
-                  
+
                   <Button asChild size="lg" className="bg-primary-500 hover:bg-primary-600 text-white">
                     <Link href="/contact">
                       {t('common:cta.takeFirstStep')}
@@ -130,7 +130,7 @@ export default function ServiciiPage() {
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"
                       className="object-cover rounded-lg"
-                      priority={index === 0}
+                      priority={index === 0} // Set priority for the first image (LCP)
                       loading={index === 0 ? "eager" : "lazy"}
                       placeholder="blur"
                       blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="

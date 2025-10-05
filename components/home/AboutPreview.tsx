@@ -46,7 +46,7 @@ const AboutPreview = () => {
               </div>
             </div>
             
-            <Button asChild className="group">
+            <Button asChild className="group min-w-[44px] min-h-[44px]">
               <Link href="/despre-mine" className="flex items-center">
                 {t('about.learnMore')}
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

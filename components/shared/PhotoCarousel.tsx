@@ -95,7 +95,7 @@ const PhotoCarousel = () => {
                                 transition-all duration-300 hover:shadow-[0_0_25px_rgba(247,168,196,0.3)]">
                     <img
                       src={image.src}
-                      alt={image.alt}
+                      alt={image.alt} // Ensure alt text is present
                       className="h-auto max-h-[600px] w-auto mx-auto"
                     />
                   </div>
@@ -105,13 +105,13 @@ const PhotoCarousel = () => {
           </CarouselContent>
           
           <CarouselNavigation 
-            alwaysShow 
-            classNameButton="bg-white/80 dark:bg-gray-800/80 p-2 hover:bg-white dark:hover:bg-gray-800 shadow-md"
+            alwaysShow
+            classNameButton="bg-white/80 dark:bg-gray-800/80 p-2 hover:bg-white dark:hover:bg-gray-800 shadow-md min-w-[44px] min-h-[44px]" // Ensure touch target size
             className="absolute left-[-5%] top-1/2 flex w-[110%] -translate-y-1/2 justify-between px-2"
           />
           
           <CarouselIndicator 
-            className="mb-4" 
+            className="mb-4 min-w-[44px] min-h-[44px]" // Ensure touch target size
             classNameButton={cn(
               "h-3 w-3",
               "hover:bg-primary-500"

@@ -93,7 +93,7 @@ export default function TestimonialePage() {
                 <div className="relative h-64 md:h-full w-full">
                   <Image
                     src="https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwhEfhGSkMYUJiv0l5kDVXSaf3eBAy1wz6NTgF"
-                    alt="Transformare Mădălina"
+                    alt={t('pages:testimonials.successStories.madalina.name')}
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover w-full h-full"
@@ -133,7 +133,7 @@ export default function TestimonialePage() {
                 <div className="relative h-64 md:h-full w-full">
                   <Image
                     src="https://uyy0kjad2n.ufs.sh/f/qhW01JguYVfwgaYpTuQZf18a5jMTEnP6XNRBJGA4CxwvbQDF"
-                    alt="Transformare Carina"
+                    alt={t('pages:testimonials.successStories.carina.name')}
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover w-full h-full"
