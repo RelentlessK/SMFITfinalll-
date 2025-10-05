@@ -2,49 +2,52 @@
 
 import { ReactNode, useEffect, useState } from 'react';
 import { I18nextProvider } from 'react-i18next';
-import { getI18nInstance } from '@/lib/i18n';
-import type { i18n as I18nType } from 'i18next';
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
+import { resources } from '@/lib/i18n';
 
 interface I18nProviderProps {
   children: ReactNode;
 }
 
 const I18nProvider = ({ children }: I18nProviderProps) => {
-  const [i18nInstance, setI18nInstance] = useState<I18nType | null>(null);
   const [isInitialized, setIsInitialized] = useState(false);
 
   useEffect(() => {
-    // Initialize client-side i18n instance
-    try {
-      const instance = getI18nInstance(true);
-      setI18nInstance(instance);
-      setIsInitialized(true);
-    } catch (error) {
-      console.error('i18n initialization failed:', error);
-      // Fallback to server instance
-      const fallbackInstance = getI18nInstance(false, 'ro');
-      setI18nInstance(fallbackInstance);
-      setIsInitialized(true);
-    }
+    i18n
+      .use(LanguageDetector)
+      .use(initReactI18next)
+      .init({
+        resources,
+        fallbackLng: 'en',
+        defaultNS: 'common',
+        ns: ['common', 'pages', 'faq'],
+        
+        detection: {
+          order: ['localStorage', 'navigator'],
+          caches: ['localStorage'],
+        },
+
+        interpolation: {
+          escapeValue: false,
+        },
+
+        react: {
+          useSuspense: false,
+        },
+      })
+      .then(() => {
+        setIsInitialized(true);
+      });
   }, []);
 
-  // During SSR, render with server instance
-  if (typeof window === 'undefined') {
-    const serverInstance = getI18nInstance(false, 'ro');
-    return (
-      <I18nextProvider i18n={serverInstance}>
-        {children}
-      </I18nextProvider>
-    );
-  }
-
-  // During client-side, wait for initialization
-  if (!isInitialized || !i18nInstance) {
+  if (!isInitialized) {
     return null;
   }
 
   return (
-    <I18nextProvider i18n={i18nInstance}>
+    <I18nextProvider i18n={i18n}>
       {children}
     </I18nextProvider>
   );

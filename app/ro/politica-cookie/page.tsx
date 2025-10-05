@@ -1,8 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Cookie, Info, HelpCircle, ChevronRight, ExternalLink, CheckCircle2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -18,14 +16,6 @@ import { motion } from 'framer-motion';
 
 export default function PoliticaCookiePage() {
   const { t } = useTranslation(['common', 'pages']);
-  const router = useRouter();
-
-  useEffect(() => {
-    // Redirect Romanian cookie policy to main cookie policy for static builds
-    if (typeof window !== 'undefined') {
-      router.replace('/cookie-policy');
-    }
-  }, [router]);
 
   const sections = [
     {
