@@ -11,7 +11,6 @@ import VortexEffect from '@/components/shared/VortexEffect';
 import FitnessIconSystem from '@/components/shared/FitnessIconSystem';
 import InstagramIcon from '@/components/ui/InstagramIcon';
 import I18nProvider from '@/components/providers/I18nProvider';
-import ChatAgent from '@/components/shared/ChatAgent';
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -92,7 +91,6 @@ export default function RootLayout({
               <VortexEffect excludeHomepageHero={true} />
               <FitnessIconSystem />
               <InstagramIcon />
-              <ChatAgent />
             </ThemeProvider>
           </I18nProvider>
         </Suspense>

@@ -1,6 +1,8 @@
 'use client';
 
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Mail, Info, CheckCircle2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -9,12 +11,20 @@ import { motion } from 'framer-motion';
 
 export default function TermeniSiConditiiPage() {
   const { t } = useTranslation(['common', 'pages']);
+  const router = useRouter();
 
   const lastUpdatedDate = new Date().toLocaleDateString('ro-RO', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
   });
+
+  useEffect(() => {
+    // Redirect Romanian terms to main terms for static builds
+    if (typeof window !== 'undefined') {
+      router.replace('/terms-and-conditions');
+    }
+  }, [router]);
 
   const sections = [
     {

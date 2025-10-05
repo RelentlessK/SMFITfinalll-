@@ -1,19 +1,41 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // output: 'export', // Commented out for development mode
+  output: 'export',
   swcMinify: false,
   eslint: {
     ignoreDuringBuilds: true,
   },
-  images: { unoptimized: true },
+  images: { 
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.pexels.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'uyy0kjad2n.ufs.sh',
+      },
+      {
+        protocol: 'https',
+        hostname: 'zbm5woa3iy.ufs.sh',
+      },
+      {
+        protocol: 'https',
+        hostname: 'vhqd75bvbs.ufs.sh',
+      },
+    ],
+  },
   reactStrictMode: false,
   poweredByHeader: false,
-  trailingSlash: true,
+  trailingSlash: false,
+  distDir: 'out',
   webpack: (config, { dev, isServer }) => {
-    // Disable webpack caching in development to prevent caching errors
-    if (dev) {
-      config.cache = false;
-    }
+    config.resolve.fallback = {
+      ...config.resolve.fallback,
+      fs: false,
+      path: false,
+    };
     return config;
   },
 };

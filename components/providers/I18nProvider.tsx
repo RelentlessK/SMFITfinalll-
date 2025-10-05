@@ -12,9 +12,14 @@ interface I18nProviderProps {
 }
 
 const I18nProvider = ({ children }: I18nProviderProps) => {
-  const [isInitialized, setIsInitialized] = useState(false);
+  const [isInitialized, setIsInitialized] = useState(true);
 
   useEffect(() => {
+    // Skip i18n initialization during static build
+    if (typeof window === 'undefined') {
+      return;
+    }
+    
     i18n
       .use(LanguageDetector)
       .use(initReactI18next)
@@ -39,10 +44,14 @@ const I18nProvider = ({ children }: I18nProviderProps) => {
       })
       .then(() => {
         setIsInitialized(true);
+      })
+      .catch((error) => {
+        console.error('i18n initialization failed:', error);
+        setIsInitialized(true); // Still render children even if i18n fails
       });
   }, []);
 
-  if (!isInitialized) {
+  if (typeof window !== 'undefined' && !isInitialized) {
     return null;
   }
 
