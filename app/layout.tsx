@@ -26,7 +26,12 @@ export const metadata: Metadata = {
   description: 'Transformă-ți corpul cu SMfit: antrenamente personalizate online sau live și planuri nutriționale adaptate nevoilor tale.',
   metadataBase: new URL('https://smfit.ro'),
   alternates: {
-    canonical: '/',
+    canonical: 'https://smfit.ro',
+    languages: {
+      'en': 'https://smfit.ro',
+      'ro': 'https://smfit.ro/ro',
+      'x-default': 'https://smfit.ro/ro', // Default to Romanian
+    },
   },
   robots: {
     index: true,
@@ -39,6 +44,20 @@ export const metadata: Metadata = {
     title: 'SMfit - Antrenamente Personalizate & Nutriție',
     description: 'Transformă-ți corpul cu SMfit: antrenamente personalizate online sau live și planuri nutriționale adaptate nevoilor tale.',
     siteName: 'SMfit',
+    images: [
+      {
+        url: 'https://images.pexels.com/photos/1092875/pexels-photo-1092875.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', // Placeholder image
+        width: 1200,
+        height: 630,
+        alt: 'SMfit - Antrenamente Personalizate & Nutriție',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'SMfit - Antrenamente Personalizate & Nutriție',
+    description: 'Transformă-ți corpul cu SMfit: antrenamente personalizate online sau live și planuri nutriționale adaptate nevoilor tale.',
+    images: ['https://images.pexels.com/photos/1092875/pexels-photo-1092875.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'], // Placeholder image
   },
   viewport: 'width=device-width, initial-scale=1, viewport-fit=cover',
 };
